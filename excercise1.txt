@@ -1,0 +1,9 @@
+Excercise 1
+
+Tools: ruby, textmate
+
+- this is not a real excercise
+- get you used to how I will write these up
+- run excercise1.rb now
+
+  

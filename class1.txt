@@ -10,7 +10,6 @@ STRUCTURE OF THE COURSE
 * different people will have different basis
 * We'll figure out as we go
 
-
 TOOLS
 
 * You can use your own tools and make many choices
