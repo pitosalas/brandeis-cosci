@@ -1,6 +1,6 @@
 Excercise 1
 
-Tools: ruby, textmate
+Tools: ruby, textmate 
 
 - this is not a real excercise
 - get you used to how I will write these up
