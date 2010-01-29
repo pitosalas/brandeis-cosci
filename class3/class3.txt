@@ -28,12 +28,23 @@ SECOND CONCEPT
 * Instead what do people remember easier?
 * Any regular life examples of this?
 * Solution: Indirection. But now we need a directory. Why?
+* DNS: distributed name service
 
+IP
 
+* So the IP address = 1 specific 'host' or server
+* (as usual there are exceptions :)
+* IP is the way servers talk 'to each other' to get a packet of bits between them
+* Conceptually, 'send these bits to this ip address'
+* Problems: your client isn't attached to my server by a wire
+* So who is that message sent to?
 
+ENTER PACKET SWITCHING
 
+* Big deal when it was invented
+* Contrast with POTS
+* There was a 'connection' literally between my phone and yours
+* Packet switching breaks message into pieces and sends them all on their way
+* Each one finds its own way to the target
+* Other components of the network? Routers
 
-- Core Web Architecture
-- IP, DNS, HTTP, HTML
-- Web Services
-- Introduction to Ruby
