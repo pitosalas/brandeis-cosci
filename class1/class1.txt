@@ -15,4 +15,7 @@ TOOLS
 * You can use your own tools and make many choices
 * I will use mine and so the examples will be more detailed
 * Your computer. Mac or Windows is fine.
+* You will need to install ruby and rails on your computer
+* A text editor that works well with ruby and rails
+
 
