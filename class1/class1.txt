@@ -1,6 +1,11 @@
 WELCOME
 
-* Introduce Pito
+* Introduce me
+* Goals of the course
+  - immerse yourself into the concepts and practices that go into building web applications
+  - develop an understanding of the architectures and the tradeoffs
+  - develop an real-world skill in using the tools
+
 
 STRUCTURE OF THE COURSE
 
@@ -21,5 +26,22 @@ STRUCTURE OF THE COURSE
 DISCUSSION
 
 * What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
+
+GRADING
+
+* Class participation
+* Doing exercises
+* Sign up for one of the student-led presentations
+* 2 Papers
+
+WORK
+
+* get your computer set up with Ruby and Git
+* download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
+
+
+
+
+
 
 
