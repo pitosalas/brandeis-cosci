@@ -10,12 +10,16 @@ STRUCTURE OF THE COURSE
 * different people will have different basis
 * We'll figure out as we go
 
-TOOLS
+* TOOLS
 
 * You can use your own tools and make many choices
 * I will use mine and so the examples will be more detailed
 * Your computer. Mac or Windows is fine.
 * You will need to install ruby and rails on your computer
 * A text editor that works well with ruby and rails
+
+DISCUSSION
+
+* What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
 
 
