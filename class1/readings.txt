@@ -1,3 +1,4 @@
 READINGS
 
 - Read and learn the gitoverview.pdf
+- Read and learn Programming Ruby, chapter 1 through 16

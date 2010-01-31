@@ -1,0 +1,43 @@
+CORE WEB ARCHITECTURE
+
+* Discussion. How does it all work?
+* Web Browsers are 'clients'
+* Web Servers are 'servers'
+* Client's ask work to be done; server does it.
+* Web browser is an http 'client'
+* What does that mean?
+* Web server is an http 'server'
+* What does that mean?
+* Take a look at a url
+* Let's take it apart
+
+URLS
+
+* What does it stand for?
+* What are the parts of a URL
+* http:// -> protocol
+* brandeis.edu -> where's the server
+* So the client -- your computer needs to be able to 'talk to' the server
+* Hm. So is http a protocol?
+* What about tcp/ip. What does that stand for?
+* So we have 3 protocols already: http, tcp and ip.
+
+PROTOCOLS
+
+* A protocol is a set of rules (see TV show '24' :) )
+
+DEMO
+
+* Look at curl and how it interprets urls
+* Compare with what the web browser does
+* Why different?
+
+PROTOCOLS
+
+* Protocols determine the way information is interpreted 'on the wire'
+* You can think of them as 'envelopes'
+* Imagine I mail a big box of books to 'brandeis unversity, South Street, Waltham MA'
+* Inside the box there are smaller boxes: 'computer science dept', 'math dept', etc.
+* Each book is in an envelope: J. Smith, F. Johnson, etc.
+* So with protocols are the first set of bits the 'higher' or 'lower' level protocol?
+

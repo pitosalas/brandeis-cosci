@@ -1,0 +1,50 @@
+REVIEW
+
+* protocols are always layered, one on top of the other
+* lower level protocols are 'closer to the hardware'
+* higher level protocols are 'closer to the user'
+* question: could you call .mp3 or .jpg a protocol?
+
+STARTING AT THE LOWEST LEVEL: IP
+
+* it's not really the lowest level
+* IP: "internetwork" protocol
+* it's job is to get data between one 'host' (=computer or server) and another
+* Like the boxes, we need an address from and to
+* "IP address!" 123.22.112.1
+
+CONCEPTS WE LEARN FROM IP addresses
+
+* Decentralized 'distribution' of a key
+* Problem: I want to have a unique key that is guaranteed to be unique
+* But, I don't want to have to go to a central authority to get the key
+* Discussion: By the way, why not?
+* Other examples of this principle?
+
+SECOND CONCEPT
+
+* We don't want 'people' to remember 12.31.2.123
+* Why not? What problems would arise?
+* Instead what do people remember easier?
+* Any regular life examples of this?
+* Solution: Indirection. But now we need a directory. Why?
+* DNS: distributed name service
+
+IP
+
+* So the IP address = 1 specific 'host' or server
+* (as usual there are exceptions :)
+* IP is the way servers talk 'to each other' to get a packet of bits between them
+* Conceptually, 'send these bits to this ip address'
+* Problems: your client isn't attached to my server by a wire
+* So who is that message sent to?
+
+ENTER PACKET SWITCHING
+
+* Big deal when it was invented
+* Contrast with POTS
+* There was a 'connection' literally between my phone and yours
+* Packet switching breaks message into pieces and sends them all on their way
+* Each one finds its own way to the target
+* Other components of the network? Routers
+

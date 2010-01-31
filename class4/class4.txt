@@ -1,0 +1,37 @@
+REVIEW
+
+- ip addresses, packet switching, routers
+- we can get a bunch of bits from one computer to another
+
+TCP
+
+- transport control protocol
+- handles delivery of those bits to and from a particular "application" to another "application"
+- adds a 'port' number
+- the 'application' aka the 'server' and the other application aka the 'client'
+
+DEMO
+
+- we will build an example of a client and a server.
+- there are two separate applications: myclient and myserver
+- my client asks for a fortune and myserver gives you a random fortune
+
+
+INTERNET HISTORY SEGUE
+
+- internet used to be arpanet
+- rfc: request for comment
+
+
+
+
+
+
+
+
+
+
+- Core Web Architecture
+- IP, DNS, HTTP, HTML
+- Web Services
+- Introduction to Ruby
