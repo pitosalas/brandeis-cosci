@@ -2,6 +2,5 @@
 - add intellectual property
 
 - do a schedule for myself completing these notes
-- learn more git
-- now on master
+
 
