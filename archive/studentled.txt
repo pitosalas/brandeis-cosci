@@ -1,0 +1,11 @@
+STUDENT LED DISCUSSIONS
+
+Below are a list of topics for student led discussions. Every student needs to select one and prepare a 15-30 minute discussion on the topic. You need to look into the topic, by reading from books, articles, the web, and so on and prepare to lead a discussion. This is analogous to a presentation but more interactive, and for example could include demoing web sites, showing code samples, it could be powerpoint or just verbal.
+
+
+TOPICS
+
+* Python and Django compared to Ruby and Rails
+* Dynamic Languages: Ruby, Python, Groovy and Java
+* DNS. Demo of the protocol, explanation of how the system works
+* Suggest a topic to Pito or Tim if you really want to do it and it's not on this list

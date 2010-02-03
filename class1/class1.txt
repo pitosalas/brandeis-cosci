@@ -39,6 +39,10 @@ WORK
 * get your computer set up with Ruby and Git
 * download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
 
+PREPARE FOR TOMORROW
+
+* Read the wikipedia article about the TCP/IP model: http://en.wikipedia.org/wiki/TCP/IP_model
+
 
 
 
