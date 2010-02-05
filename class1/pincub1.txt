@@ -11,9 +11,20 @@ BEST-OF-SHOW
 
 BRAINSTORMING
 
+* write ideas on white board. open ended.
+* post-it notes excercise
 
 CHOOSING BEST IDEAS
 
 * Seven by seven exercise
 * Affinity mapping
+
+TODAY:
+
+* Set up your computers
+* Set up git and get an account on github
+* Play with git and learn it
+* Develop your product ideas
+* Write a ruby program to do something interesting. Debug it. Learn Ruby Debug
+
 

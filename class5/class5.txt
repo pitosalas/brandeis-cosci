@@ -1,0 +1,24 @@
+REVIEW
+
+* Covered so far
+  - IP
+  - TCP (UDP?)
+  - DNS
+  - Questions?
+* Now we are finally ready for 'the web'
+
+WEB ARCHITECTURE - CLIENT
+
+* Web client: just a tcp/ip client that makes requests and displays results in a window
+* Default: HTTP protocol, port 80, expects to see html
+* But what other protocols and formats does it support?
+
+WEB ARCHITECTURE - SERVER
+
+* Web server: just a tcp/ip server that listens and responds to HTTP requests
+* 
+
+PREPARE FOR TOMORROW
+
+* make sure you have a working ruby, irb, git, github, text editor on your computer
+* make sure you've experimented with irb

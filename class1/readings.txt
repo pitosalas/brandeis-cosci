@@ -1,4 +1,6 @@
 READINGS
 
 - Read and learn the gitoverview.pdf
+- Another good link on git: http://progit.org/book/
 - Read and learn Programming Ruby, chapter 1 through 16
+
