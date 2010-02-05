@@ -1,0 +1,9 @@
+HTML Intro assignment
+
+- create (by hand, in a text editor) a working html page or more
+- include in it header levels, a few paragraphs, some graphics and a table of some kind
+- As an example, it can be a list of music (cd's) that you own
+- Demonstrate it in 3 different browsers
+- Investigate why it looks different
+- Investigate whether it is HTML5, 4 or whatever
+- Load it up on a web server (provided)

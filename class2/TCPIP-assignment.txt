@@ -1,0 +1,30 @@
+TCP/IP Assignment
+
+* write an application called tcpdemo.rb with the following shell interface:
+
+$ tcpdemo.rb    		called with no parameters, displays a little help
+$ tcpdemo.rb -s 		starts a tcp server on port 10001
+$ tcpdemo.rb -s 1234 	starts a tcp server on port 1234
+
+$ tcpdemo.rb -c			starts a tcp client talking on port 1001
+$ tcpdemo.rb -c 1234	... on 1234
+
+The server waits for a message on the specified port
+- If the request message is empty, the server responds with text strings which fortune cookie fortunes
+- If the request message is "t", it responds with the time of day at the server
+- If the request message is "x", it responds by exiting
+
+The client displays a prompt where the user can type. 
+Whatever is typed is sent to the server.
+Whatever response comes back from the server is displayed
+
+Hints:
+- Look at the GServer or HTTPServer classes in the Ruby Library
+- This does not require Rails
+- You can test the server (to some extent) with a web browser
+- You can run the whole thing on your own computer
+
+
+
+
+
