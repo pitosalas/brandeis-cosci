@@ -2,9 +2,13 @@ WELCOME
 
 * Introduce instructors!
 * Goals of the course
-  - immerse yourself into the concepts and practices that go into building web applications
-  - develop an understanding of the architectures and the tradeoffs
-  - develop an real-world skill in using the tools
+	- immerse yourself into the concepts and practices that go into building web applications
+	- develop an understanding of the architectures and the tradeoffs
+	- develop an real-world skill in using the tools
+* An amazing exciting opportunity
+	- brand new course
+	- for the first time marriage of academic and industry experiences
+	- lets build a long lived 'community' that helps each other getting exciting stuff done
 
 
 STRUCTURE OF THE COURSE
