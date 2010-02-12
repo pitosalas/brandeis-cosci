@@ -1,0 +1,38 @@
+DATABASES
+
+* A way to manage large amounts of data
+* Stored on disk (or in memory, or elsewhere)
+* Tables containing records (or objects, or other things)
+* Examples: SQL Databases, DNS database, Hierarchical file system, etc. etc.
+
+CRUD
+
+* Simplistic way to look at operations: Create, Update, Retrieve, Delete
+* Data Types
+* Access Control
+* Administration
+
+SQL Databases
+
+* Most common still
+* SQL is a simple programming/command language
+* Oddly you don't actually use it that much
+* All SQL databases are table-oriented
+
+INTERACTIVE DEMO
+
+* Use SQL command line
+* Use GUI
+
+JOIN
+
+* Family of operations to allow tables to be combined
+* 3d Normal form
+* Avoiding duplication
+
+WORKED EXAMPLE:
+
+* ... use the same one from before
+
+
+

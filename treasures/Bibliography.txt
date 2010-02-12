@@ -1,0 +1,7 @@
+BIBLIOGRAPHY
+
+* "Gang of Four": 
+  http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+  
+* "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. http://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199
+

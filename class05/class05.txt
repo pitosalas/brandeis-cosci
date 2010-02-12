@@ -20,5 +20,6 @@ WEB ARCHITECTURE - SERVER
 
 PREPARE FOR TOMORROW
 
-* make sure you have a working ruby, irb, git, github, text editor on your computer
-* make sure you've experimented with irb
+* you have a working ruby, irb, git, github, text editor on your computer
+* you've experimented with irb
+* you've read the Ruby manual

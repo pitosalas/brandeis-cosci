@@ -1,5 +1,0 @@
-INTRO TO RUBY
-
-* Dynamic languages
-* Compare Java to Ruby (or to Groovy)
-* 

@@ -9,3 +9,4 @@ TOPICS
 * Dynamic Languages: Ruby, Python, Groovy and Java
 * DNS. Demo of the protocol, explanation of how the system works
 * Suggest a topic to Pito or Tim if you really want to do it and it's not on this list
+* Non-SQL Databases. What are they, when are they interesting. How to use them.

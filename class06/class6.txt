@@ -1,0 +1,33 @@
+REVIEW
+
+* I assume that by now you've scoured the Ruby manuals and done coding
+* Discussion: where is everyone?
+
+DYNAMIC VS STATIC PROGRAMMING LANGUAGES
+
+* Dynamic languages
+* Compare Java to Ruby (or to Groovy)
+* Is one better than the other?
+* Why is it called a scripting language? 
+
+OBJECT ORIENTED LANGUAGES
+
+* Worked example: suggestions?
+* Brainstorm: what are all the possible classes
+* Term: Domain Model. What is it here?
+* What are techniques for identifying the classes?
+
+PATTERNS
+
+* Based on Alexander's "A Pattern Language"
+* Classic text is the "Gang of Four book"
+* Value of a pattern
+* Very basic patterns
+
+INHERITANCE
+
+* Duck Typing: very important concept
+* Compare to multiple inheritance
+* Compare to Java
+
+
