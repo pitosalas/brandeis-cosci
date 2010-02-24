@@ -11,8 +11,3 @@ ROUTING
 - State management
 - Sessions, Cookies
 - Browser/Server information exchange
-- Introduction to SQL
-- Key-Value databases
-- Forms
-- Model/View/Controller
-- Caching
