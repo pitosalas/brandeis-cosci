@@ -1,0 +1,16 @@
+SPEAKERS
+
+There are 16 speaker slots. Here are my list of ideas.
+
+Jeffrey Beir - VC, Startups
+Noah Mendelshon, W3C, Standards, etc
+Jered x, Scrum and agile
+Mussie Shore, User Interface and experience
+, NoSql databases
+, ORM systems background
+Brian DelVeccio, ?
+Marty Roth, ?
+Peter Grossman, Software in Biotech
+Doug Levin, Open Source Sw
+Bob Stachel, UI architecture
+glenn McDonald, User Experience

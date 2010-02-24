@@ -1,0 +1,18 @@
+REVIEW
+
+* Cookies and state
+* Questions that came up doing the assigment
+* Show and tell
+
+ROUTING
+
+
+
+- State management
+- Sessions, Cookies
+- Browser/Server information exchange
+- Introduction to SQL
+- Key-Value databases
+- Forms
+- Model/View/Controller
+- Caching

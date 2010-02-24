@@ -1,0 +1,24 @@
+INCUBATOR
+
+SHOULD CHECK OFF 10 of these
+
+* GPS
+* Maps
+* Touch screen
+* Gestural interface
+* A web server
+* Some kind of Database
+* Several public APIS
+* Could make money
+* Has social value
+* Impresses your Mom
+* Works with huge database
+
+
+IDEAS
+
+* Quick to set up 'group of people' for file sharing
+* Tool for a researcher to monitor and control their lab instruments remotely
+* Jordan Pollack games
+* Juxtapose and visualize societal data, e.g. stock prices, weather, population, political party, etc.
+* "Ask the Incubator" - a site where members of Brandeis community can 

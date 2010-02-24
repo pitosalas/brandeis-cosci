@@ -1,0 +1,19 @@
+STATE MANAGEMENT
+
+* HTTP is state-less. What does this mean?
+* What is good about this, and what is bad?
+* Some places where you do need state; and some where you don't need it
+
+SESSIONS
+* Having state (often) means having sessions
+* Does having a session require having a password?
+* Does it require having a username?
+
+TECHNIQUES
+* Adding state to the URL
+* Cookies
+* Other ways?
+
+COOKIES
+* Are cookies a server concept, a client concept, or something else?
+* Preview the Cookies assignment

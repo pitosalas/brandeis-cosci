@@ -20,9 +20,8 @@ RPC - Remote Procedure Calls
 * What would it mean to call it between two computers over the internet?
 * How would you approach it?
 
-REST
+REST - An different way to think about RPC
 
-* 
 
 
 

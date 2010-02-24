@@ -1,0 +1,6 @@
+COOKIE ASSIGNMENT
+
+- Enhance your server application to store a cookie
+- Demonstrate that it is able to store one or more cookies
+- And demonstrate that it can retrieve the cookies
+
