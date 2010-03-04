@@ -9,8 +9,9 @@ Mussie Shore, User Interface and experience
 , NoSql databases
 , ORM systems background
 Brian DelVeccio, ?
-Marty Roth, ?
+Marty Roth, Database
 Peter Grossman, Software in Biotech
 Doug Levin, Open Source Sw
 Bob Stachel, UI architecture
 glenn McDonald, User Experience
+Someone from Skyhook on location awareness

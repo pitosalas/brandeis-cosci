@@ -1,0 +1,43 @@
+BASIC APPS
+
+* Far more limited hardware 
+* Far more constraint and less freedom
+* Divergence of platforms and programming models
+
+PRESENTATION
+
+* How does location awareness work?
+
+CONTEXTUAL DIFFERENCES
+
+* Will the app work when not connected to the net
+* Connection speeds can vary wildly
+* User expectation of responsiveness
+* Device cannot crash or hang up
+
+WHATS A PROGRAMMING MODEL
+
+* How does the app get launched?
+* How does the app find out when the user does something
+* What happens to the app when it loses focus
+
+MAJOR STRATEGY DIFFERENCES
+
+* You need to pick device. Relatively little interop
+* Device have wildly different penetration
+
+TYPES OF MOBILE APP
+
+* Web based pros and cons
+  - UI somewhat less rich
+  - will not work while disconnected
+  - far easier to write
+  - really easy to deploy
+  - a 'chance' at interop
+*  Client App
+   - Richest UI
+   - Will work while disconnected
+   - Very tied to platform
+   - Need to figure out a way to deploy
+   - Can be harder to write
+* Can / Should you do both?

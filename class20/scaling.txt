@@ -1,0 +1,33 @@
+INTRO
+
+* What is 'scaling'?
+* Detailed definition: xxxx
+* Scaling out vs. Scaling Up
+
+TECHNIQUES
+
+* Caching
+* Database design
+* Queueing
+* Topology
+
+CACHING 
+
+* Principle: don't compute the same thing twice
+* So: 
+   - detect when the same thing is being asked for
+   - store ('cache') the result the first time
+   - return the stored thing the second thing
+* Considerations:
+	- is there a 'bottleneck' to detect that it's 'the same thing'
+	- is there a 'key' to use
+	- how expensive is it to 'store' it?
+* Stale Cache problem
+* Understand pattern of access
+* Does a cache always help?
+
+DATABASE DESIGN
+
+* Replication, different flavors
+* Sharding
+* Examining typical scaling architectures

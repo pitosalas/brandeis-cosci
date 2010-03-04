@@ -5,3 +5,5 @@ BIBLIOGRAPHY
   
 * "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. http://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199
 
+
+
