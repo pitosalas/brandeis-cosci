@@ -1,0 +1,21 @@
+PUSH
+
+* What is 'Push'?
+* When my desktop email dings, was there 'Push'?
+* Remember Request/Response model of HTTP
+* Remember Socket that is waiting for a request in TCP/IP
+* Is there really a difference between polling and push?
+
+PUSH IN MOBILE
+
+* When my cell phone rings, is that push?
+* Discussion: How does that work?
+* Push in mobile means: "an application can alert the user of some event even when the app is not running"
+* Considerations
+  - multi tasking
+  - battery life
+  - connectivity
+
+HOW DOES PUSH IN IPHONE WORK?
+
+* @TODO: study it in the manual and write it up

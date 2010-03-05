@@ -1,0 +1,21 @@
+DEPLOYING APPS
+
+* Compare Web based vs. Client app
+* App Stores
+
+ABOUT CLIENT APPS
+
+* What's the server?
+* Where is the server?
+* Is it a web server?
+* Can it use REST?
+* Where is the protocol? 
+* What is the protocol? 
+* How to think about designing the protocol
+
+VERSION MANAGEMENT
+
+* Is almost only a problem with Client app
+* What happens when you release a new client?
+* How does different versions of the client know how to talk to different versions of the server?
+* Version negotiation protocols: 'press 1 for english, 2 for spanish'

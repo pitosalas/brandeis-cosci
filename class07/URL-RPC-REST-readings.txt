@@ -1,1 +1,2 @@
 http://en.wikipedia.org/wiki/Representational_State_Transfer
+Chapter XX from Rails Book

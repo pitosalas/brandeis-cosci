@@ -15,3 +15,4 @@ Doug Levin, Open Source Sw
 Bob Stachel, UI architecture
 glenn McDonald, User Experience
 Someone suggested by Pat Johnson of TripAdvisor who will speak about mobile app development
+Someone from Skyhook on location awareness

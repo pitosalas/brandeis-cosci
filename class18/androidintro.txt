@@ -1,0 +1,11 @@
+ANDROID BASICS
+
+* Application model
+@TODO: Write up Android application model
+
+
+
+HOMEWORK FOR TOMORROW
+
+We are going to have a debate on user interface. Carefully chose an application, web based or stand alone, mobile or desktop that you think has a good user experience and another one with a bad user experience. Be able to explain why.
+
