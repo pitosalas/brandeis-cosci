@@ -19,6 +19,9 @@ TOPICS
 * iPhone vs. iPad vs. Android Phone vs. Motorola
 * How does GPS work. How does Wifi-location awareness work.
 * Tutorial on what the chain of events that causes my cell phone to ring when I call you
+* How do ad networks work. How to add them to your site
+* Push: How does push notification in iPhones work technically?
+* When I click on Send in my twitter app on my phone, how does that get processed
 
 OR: Suggest a topic to Pito or Tim if you really want to do it and it's not on this list
 

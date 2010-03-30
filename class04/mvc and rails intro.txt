@@ -1,0 +1,7 @@
+MVC + RAILS INTRO
+
+- mvc
+- demo a hello world rails app
+- tour of the code
+- make a change
+- explain where m v and c are

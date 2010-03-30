@@ -1,0 +1,6 @@
+- also scaling
+- scale up and out
+- sharding
+
+- application management, monitoring, etc etc 
+- akamai

@@ -1,6 +1,6 @@
 INCUBATOR
 
-SHOULD CHECK OFF 10 of these
+SHOULD CHECK OFF 6 of these
 
 * GPS
 * Maps
@@ -21,4 +21,5 @@ IDEAS
 * Tool for a researcher to monitor and control their lab instruments remotely
 * Jordan Pollack games
 * Juxtapose and visualize societal data, e.g. stock prices, weather, population, political party, etc.
-* "Ask the Incubator" - a site where members of Brandeis community can 
+* "Ask the Incubator" - a site where members of Brandeis community can ask for projects to do
+* Wireless feedback from listeners to speaker, red/green, poll yes/no, poll #
