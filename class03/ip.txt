@@ -11,7 +11,7 @@ STARTING AT THE LOWEST LEVEL: IP
 * IP: "internetwork" protocol
 * it's job is to get data between one 'host' (=computer or server) and another
 * Like the boxes, we need an address from and to
-* "IP address!" 123.22.112.1
+* "IP address!" 123.22.112.1  IPv6 ...
 
 CONCEPTS WE LEARN FROM IP addresses
 
@@ -47,4 +47,10 @@ ENTER PACKET SWITCHING
 * Packet switching breaks message into pieces and sends them all on their way
 * Each one finds its own way to the target
 * Other components of the network? Routers
+
+
+Firewalls and NAT
+* architecture of firewall between open internet and local internet
+* NAT, DMZ, ....
+* HTTP tunneling, AJAX ...
 
