@@ -9,6 +9,7 @@ Mussie Shore (Google) User Interface and experience
 , NoSql databases
 , ORM systems background
 Brian DelVeccio, ?
+David Cancel - Mobile, advertising, iPhone, strategy
 Marty Roth (Oracle), Databases
 Peter Grossman (), Software in Biotech
 Doug Levin, Open Source Sw
