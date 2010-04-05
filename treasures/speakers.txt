@@ -2,17 +2,25 @@ SPEAKERS
 
 There are 16 speaker slots. Here are my list of ideas.
 
-Jeffrey Beir - VC, Startups
-Noah Mendelshon, (W3C, IBM), HTTP, HTML, Standards, etc
-Jered Floid (Permabit), Scrum and agile
+Asked: tentative yes
+Jeffrey Beir - VC, Startups. Tentative Yes.
+Brian DelVeccio, ?
+Mobile, Ad networks, David Cancel
+
+
+Asked: waiting for response
+Jered Floid (Permabit), Scrum and agile. No response
 Mussie Shore (Google) User Interface and experience
+Marty Roth (Oracle), Databases
+glenn McDonald, User Experience
+
+
+Not asked
 , NoSql databases
 , ORM systems background
-Brian DelVeccio, ?
-Marty Roth (Oracle), Databases
 Peter Grossman (), Software in Biotech
 Doug Levin, Open Source Sw
 Bob Stachel, UI architecture
-glenn McDonald, User Experience
+
 Someone suggested by Pat Johnson of TripAdvisor who will speak about mobile app development
 Someone from Skyhook on location awareness
