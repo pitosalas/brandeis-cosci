@@ -20,6 +20,8 @@ WHATS A PROGRAMMING MODEL
 * How does the app get launched?
 * How does the app find out when the user does something
 * What happens to the app when it loses focus
+* On Mac/Windows there are windows, tasks, dialog boxes, files, folders, etc
+* Android totally different: Processes, Applications, Activities, Intents, etc.
 
 MAJOR STRATEGY DIFFERENCES
 
@@ -41,3 +43,5 @@ TYPES OF MOBILE APP
    - Need to figure out a way to deploy
    - Can be harder to write
 * Can / Should you do both?
+
+

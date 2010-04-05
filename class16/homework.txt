@@ -1,0 +1,12 @@
+HOMEWORK FOR TOMORROW
+
+* Read 'Design of Everyday Things', Don Norman
+* Install Eclipse, Android Development kit, Android Eclipse Plug in
+* Read and do HA: Chapter 1
+* Run "Hello Android" program in the emulator as well as your phone
+
+BE PREPARED TO DEMO THIS TOMORROW
+
+
+
+
