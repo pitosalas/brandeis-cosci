@@ -18,6 +18,9 @@ glenn McDonald, User Experience
 Not asked
 , NoSql databases
 , ORM systems background
+Brian DelVeccio, ?
+David Cancel - Mobile, advertising, iPhone, strategy
+Marty Roth (Oracle), Databases
 Peter Grossman (), Software in Biotech
 Doug Levin, Open Source Sw
 Bob Stachel, UI architecture
