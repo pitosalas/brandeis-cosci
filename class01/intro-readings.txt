@@ -8,3 +8,9 @@ USEFUL GEMS
 
 - http://www.valibuk.net/2010/04/command-line-options-parsing-in-ruby/
 
+USEFUL REFERENCE
+
+- http://www.caliban.org/ruby/rubyguide.shtml
+
+
+
