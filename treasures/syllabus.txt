@@ -1,4 +1,4 @@
-WEEK 1
+WEEK 1 - Intro and Network and Web Architectures
 
 class01 Tuesday June 1st
 10:00-10:30 Intro to JBS - Tim and Pito (mention student-led discussions)
@@ -15,12 +15,12 @@ class02 Wednesday June 2nd
 10:00-12:00  Core Web Architecture: clients/servers/URLs/protocols explain ruby in detail, multi-threading, ...
               in detail - Tim
 12:00-1:00 lunch
-1:00-3:00 - Pito -- brainstorming 
+1:00-3:00 - Pito -- Brainstorming, Agile, Project Management
 
 class03 Thursday June 3rd
 10:00-12:00 HTML/CSS - Tim  (forms ...)
 12:00-1:00 lunch
-1:00-2:00 Pito - brainstorming - Agile 
+1:00-2:00 Pito - Begin refinement of projects and prioritization
 
 ****************************************************************
 Week 2 -  Model/View/Controller and Rails 
@@ -50,11 +50,6 @@ class07 Thursday June 10th
 
 Week 3: State management and Persistence
 
-class08 Monday June 14th
-10-12 Persistence and State: sessions, cookies, cacheing - Tim
-12-1
-1-2 Speaker
-2-3 ???
 
 class09 Tuesday June 15th
 10-12 REST, web services, APIs  - Pito

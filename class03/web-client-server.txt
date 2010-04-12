@@ -17,9 +17,3 @@ WEB ARCHITECTURE - SERVER
 
 * Web server: just a tcp/ip server that listens and responds to HTTP requests
 * 
-
-PREPARE FOR TOMORROW
-
-* you have a working ruby, irb, git, github, text editor on your computer
-* you've experimented with irb
-* you've read the Ruby manual

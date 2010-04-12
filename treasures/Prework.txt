@@ -1,0 +1,10 @@
+REQUIRED BOOKS
+
+"Programming Ruby", Thomas et. al, Pragmatic Programmers
+"Agile Development with Rails", Thomas et. al, Pragmatic Programmers
+"Hello Android",  Burnette, Pramatic Programmers, 
+
+PREWORK
+
+To prepare for the start of the course you should read and learn Programming Ruby, chapter 1 through 16.
+

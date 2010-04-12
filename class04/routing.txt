@@ -15,6 +15,3 @@ Look at these URLS:
 	What does ?ref=profile tell us?
 	
 * Routing runs the specific code 'inside the server'
-
-* Assignment Review
-

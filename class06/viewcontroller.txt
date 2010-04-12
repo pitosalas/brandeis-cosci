@@ -1,0 +1,7 @@
+class06 Wednesday June 9th
+10-12 View/Controller - Pito
+12-1 lunch
+1-3  heroku.com  free ruby on rails platform, get students to set it up and upload helloworld apps
+
+DEMO and Lecture continues
+* Chapter 5 and 6 of ADR

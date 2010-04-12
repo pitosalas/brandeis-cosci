@@ -7,7 +7,7 @@ DATABASES
 
 CRUD
 
-* Simplistic way to look at operations: Create, Update, Retrieve, Delete
+* Simplistic way to look at operations: Create, Retrieve, Update, Delete
 * Data Types
 * Access Control
 * Administration
@@ -30,19 +30,18 @@ JOIN
 * 3d Normal form
 * Avoiding duplication
 
-WORKED EXAMPLE:
-
-* ... use the same one from before
-
 OR MAPPING
 
 * How does a relational table get accessed in an OO language?
 * Pros and Cons
-* NoSQL Movement
+* Introducing: Object / Relational Mapping
+* Goal: to be able to access relational tables *as if* they are classes and objects
+* It's an abstraction
+* Below the surface, they are still actual relational tables
+* Above the surface they function much like standard classes
 
-INTRO TO ACTIVERECORD
 
-...
+
 
 
 

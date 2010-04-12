@@ -1,3 +1,0 @@
-DbIntro - Readings
-
-* http://vermonster.com/2010/03/31/nosql-workshop-featuring-riak-and-couchdb/

@@ -1,0 +1,5 @@
+class12 Monday June 21th
+10-12 Testing - tools and techniques, BDD, TDD, Unit testing, System testing, error logging, bug tracking - Pito
+12-1
+1-2 Speaker
+2-3 ...
