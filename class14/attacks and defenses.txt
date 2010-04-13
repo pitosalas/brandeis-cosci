@@ -3,3 +3,53 @@ class14 Wednesday June 23th
 12-1
 1:00-1:30 Project Report
 1:30-3:00
+
+SQL INJECTION
+
+- what happens if a bad actor gets the ability to do sql commands directly to server
+- how can sql injection work and what are the countermeasures
+
+# WHAT NOT TO DO - an example
+Project.find(:all, :conditions => "name = '#{params[:name]}'")
+
+# Then user enters this in the box:
+; DELETE FROM PROJECTS; SELECT * from projects where '1'='1
+
+# Resultant command is:
+SELECT * FROM projects WHERE name = ''; DELETE FROM PROJECTS; SELECT * from projects where '1'='1'
+
+# Deleting all the projects
+# ref: http://newwiki.rubyonrails.org/howtos/security/sql_injection
+# ref: http://guides.rubyonrails.org/security.html#_sql_injection
+
+- as a general rule, never execute user input directly
+- but this can be pretty subtle
+
+SESSION HIJACKING
+ref: http://guides.rubyonrails.org/security.html#_sql_injection
+- sessions are the way to make http (stateless) act statefull
+- sessions are tied to each other via a magic code (sessionID)
+- if you can learn that you can pretend to be me (kind of like a temporary password)
+- session guideline: don't store large objects in session (store them in db)
+- session guideline: don't store critical data in a session
+- How can session info be stolen? Network sniffer; examination of user's computer
+- More tricky: session fixation attack where attacker tricks real user into using a known session
+- Session expiration is also a good general countermeasure
+
+FILE UPLOADS
+- When an application allows a file upload, the user specifies the path
+- Make sure the path is properly filtered so it can't clobber important files
+
+PASSWORDS
+- Use rational rules for preventing dictionary attacks
+- Rules like: length of pw, mix of character types, lookup in dictionary of common passwords, force user to change pw periodically
+- Make rules appropriate to the user and the application
+- Check them
+
+WHITELISTS vs. BLACKLISTS
+- When protecting something, you can either compare the value to a list of permitted values (white list) or a list of prohibited values (black list)
+- What are pros and cons of each one?
+- Compare: false negative to false positive. Discuss.
+
+SOCIAL ENGINEERING
+- Describe the process by which I was granted a staff account
