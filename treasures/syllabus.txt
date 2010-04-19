@@ -50,6 +50,11 @@ class07 Thursday June 10th
 
 Week 3: State management and Persistence
 
+class08 Monday June 14th
+10-12 Persistence and State: sessions, cookies, cacheing - Tim
+12-1
+1-2 Speaker
+2-3 ???
 
 class09 Tuesday June 15th
 10-12 REST, web services, APIs  - Pito

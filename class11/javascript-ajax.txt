@@ -1,5 +1,0 @@
-class11 Thursday June 15th
-10-12 javascript/ajax - Tim
-12-1
-1:00-1:30 Project Report
-1:30-3:00

@@ -1,4 +1,4 @@
-COOKIE ASSIGNMENT
+HOMEWORK
 
 - Enhance your server application to store a cookie
 - Demonstrate that it is able to store one or more cookies

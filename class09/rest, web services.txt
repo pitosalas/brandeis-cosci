@@ -14,6 +14,7 @@ REVIEW
 URLS
 
 * the third core format of the web
+* (what are the other two)
 * a standard syntax to refer to any resource on the web
 * what's a resource? 
 * http://www.brandeis.edu. Tease apart the parts
@@ -36,12 +37,19 @@ REST - An different way to think about RPC
    GET http://www.facebook.com/user/pitosalas 
    GET http://www.facebok.com/users
 * Some things are harder to fit with the model
+* What does the fortune cookie request look like as REST?
+* http://brandes.edu/fortunes/1
+* http://brandeis.edu/fortunes
+* http://brandeis.edu/fortunes/random
 * Two advantages: 
 -- some rhyme or reason on how to build urls and
 -- make logical use of url space
 * Different 'representations' possible: html and xml, but others too, say csv or video
 * Big one: Standards allow caching in the cloud
 * Is http://blog.programmableweb.com/2010/02/08/googles-secret-weather-api/ a REST call?
+* Now if we want to submit a new fortune to the fortune cookie server:
+* POST http://brandeis.edu/fortune/create; the message would follow a particular format for a new fortune cookie; the result would be the fortune cookie number, ready for a http
+* Try some more examples
 
 CLOUD
 
