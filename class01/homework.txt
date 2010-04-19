@@ -22,5 +22,9 @@ HOMEWORK
 * Modify excercise2.rb as follows:
   + add more fortunes
   + ensure that the same fortune does not show up twice
+  
+* Read http://railstips.org/blog/archives/2010/01/12/i-have-no-talent/
+
+
  
  
