@@ -1,3 +1,10 @@
+class09 Tuesday June 15th
+10-12 REST, web services, APIs  - Pito
+12-1
+1:00-1:30 Project Report
+1:30-3:00
+-------
+
 REVIEW
 
 * html and http are the core formats/protocols for the web
@@ -36,13 +43,13 @@ REST - An different way to think about RPC
 * Big one: Standards allow caching in the cloud
 * Is http://blog.programmableweb.com/2010/02/08/googles-secret-weather-api/ a REST call?
 
+CLOUD
 
-
-
-
-
-
-
+* So what is really meant by 'cloud computing' ?
+* What does it mean when a 'service' is 'in the cloud'?
+* "Cloud computing is just a data center with an API"
+* What's a data center? What does one look like
+* How big is the Google data center do you think?
 
 
 

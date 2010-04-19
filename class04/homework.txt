@@ -1,0 +1,18 @@
+HOMEWORK
+
+- Read (and do) Agile Development With Rails: Chapters 1 - 8
+- Install Rails, and create at least, a "Hello World" application
+
+ROUTING ASSIGMENT
+
+* Add logic to your server
+* Accept urls that look like these. Do as many as you can.
+
+http:0.0.0.0:10110//date
+http:0.0.0.0:10110//time
+http:0.0.0.0:10110//message/joke
+http:0.0.0.0:10110//message/fortune
+http:0.0.0.0:10110//message/joke?lang=en
+http:0.0.0.0:10110//message/joke?lang=<another language>
+
+

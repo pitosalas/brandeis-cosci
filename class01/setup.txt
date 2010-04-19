@@ -1,0 +1,22 @@
+Add this to your .irbrc file:
+
+begin
+    puts "running wirble"
+    require 'rubygems'
+    require 'pp'
+    require 'ap'
+    require 'wirble'
+    Wirble.init
+    Wirble.colorize
+
+    require 'logger'    
+    if ENV.include?('RAILS_ENV')&& !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+     Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
+    end
+
+    require 'hirb'
+    Hirb::View.enable
+    
+rescue LoadError => err
+    $stderr.puts "Couldn't load something for irb: #{err}"
+end

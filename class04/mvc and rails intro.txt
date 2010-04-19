@@ -1,7 +1,32 @@
 MVC + RAILS INTRO
 
-- mvc
+RAILS
+
+- What is it? 
+- "Convention over Configuration"
+- The Rails 'stack'
+
+DEMO (Page 35 ADR book)
 - demo a hello world rails app
+- how to launch server
+- how to look at result
 - tour of the code
-- make a change
-- explain where m v and c are
+
+ROUTING
+
+* Take a look at Routes.rb
+* Make a change to it to show the result
+* This can get fairly complicated by the way
+* Try accessing a url that doesn't route yet. What happens?
+
+MVC
+
+- Model: purely data representation. No UI. Connects to database
+- View: purely UI, no data. How information is displayed to the screen
+- Controller: Implement actions by calling code and then displaying new Views
+
+MORE DEMO (Rest of Chapter 4)
+
+- Show where M, V and C are in the code
+- Make a change to see the result
+

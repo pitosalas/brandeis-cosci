@@ -1,0 +1,5 @@
+class13 Tuesday June 22th
+10-12 authentication/authorization, HTTPS, certificates, password management, ... - Tim
+12-1
+1:00-1:30 Project Report
+1:30-3:00

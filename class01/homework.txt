@@ -1,0 +1,30 @@
+HOMEWORK
+
+* get your computer set up with Ruby and Git
+
+* download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
+
+* Read the wikipedia article about the TCP/IP model: http://en.wikipedia.org/wiki/TCP/IP_model
+
+* Read http://progit.org/book/ and practice with Git. Read and understand Chapters 1,2,3 at least.
+
+* Read and learn the gitoverview.pdf
+
+* Read and learn Programming Ruby, chapter 1 through 16
+
+* Run excercise1.rb and review the code
+  + this is not a real excercise
+  + get you used to how I will write these up
+  + run excercise1.rb now
+  + Look at documentation that will be required in every header
+
+
+* Modify excercise2.rb as follows:
+  + add more fortunes
+  + ensure that the same fortune does not show up twice
+  
+* Read http://railstips.org/blog/archives/2010/01/12/i-have-no-talent/
+
+
+ 
+ 

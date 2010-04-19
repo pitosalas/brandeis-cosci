@@ -1,0 +1,42 @@
+' create a new database called brandeis, with a table called students
+
+$ sqlite3 brandeis
+
+create table students(name string, phone integer, major string);
+
+insert into students values ("john smith", "666-1212", "computers");
+insert into students values ("karla smith", "234-1212", "computers");
+insert into students values ("karla jones", "666-4444", "history");
+
+select * from students;
+
+.mode line
+select * from sqlite_master;
+.tables
+.exit
+
+' create a new table called majors
+$ sqlite3 brandeis
+
+create table majors(id integer primary key,name string);
+insert into majors (name) values ("computer science");
+insert into majors (name) values ("history");
+insert into majors (name) values ("psychology");
+select * from majors;
+
+
+' modify table to drop the old major column
+.mode line
+alter table students add column major_id integer;
+
+' sqlite doesn't support direct deletion of columns. Instead, create a new table ' with the column, copy the data, delete the old and copy back.
+
+begin transaction;
+create temporary table s_back(name, phone, major_id);
+insert into s_back select name, phone, major_id from students;
+drop table students;
+create table students(name, phone, major_id);
+insert into students select name, phone, major_id from s_back;
+drop table s_back;
+commit;
+ 
