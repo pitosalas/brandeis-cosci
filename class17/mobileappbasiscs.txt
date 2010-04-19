@@ -1,47 +1,70 @@
-BASIC APPS
+class17: Tuesday June 29th
+10-12 Basic Concepts of the Mobile World - Pito
+12-1 Lunch
+1-3 Hello word Android, setup/install simulator, using phones 
+-----------
 
-* Far more limited hardware 
-* Far more constraint and less freedom
-* Divergence of platforms and programming models
+* student led presentation: How does location awareness work?
 
-PRESENTATION
+* How to think about the users. Who are they, what kinds of people?
+* When are they using your app? Where are they at the time?
+* How much are they able to focus on the app? 
+* Are they being entertained or trying to solve a problem?
+* What else?
 
-* How does location awareness work?
-
-CONTEXTUAL DIFFERENCES
-
-* Will the app work when not connected to the net
-* Connection speeds can vary wildly
-* User expectation of responsiveness
-* Device cannot crash or hang up
-
-WHATS A PROGRAMMING MODEL
-
-* How does the app get launched?
-* How does the app find out when the user does something
-* What happens to the app when it loses focus
-* On Mac/Windows there are windows, tasks, dialog boxes, files, folders, etc
-* Android totally different: Processes, Applications, Activities, Intents, etc.
-
-MAJOR STRATEGY DIFFERENCES
-
-* You need to pick device. Relatively little interop
-* Device have wildly different penetration
-
-TYPES OF MOBILE APP
-
+* Broad types of mobile apps:
 * Web based pros and cons
-  - UI somewhat less rich
-  - will not work while disconnected
-  - far easier to write
-  - really easy to deploy
-  - a 'chance' at interop
+	- UI somewhat less rich
+	- will not work while disconnected
+	- far easier to write
+	- really easy to deploy
+	- a 'chance' at interop
+	- No need to deal with 'app store'
 *  Client App
-   - Richest UI
-   - Will work while disconnected
-   - Very tied to platform
-   - Need to figure out a way to deploy
-   - Can be harder to write
+	- Richest UI
+	- Will work while disconnected
+	- Very tied to platform
+	- Need to figure out a way to deploy
+	- Can be harder to write
+	- Some hardware capabilities (camera, gps) may only be accessible
+	- easy to charge money for it
+	
 * Can / Should you do both?
+
+* information architecture usually means the navigation structure of an app
+* principles are analogous as for web apps, but limitations come into play
+* on mobile there is less space, less time, so info arch is simpler
+* KISS principle again. Stay close to your goals
+* "There should be only one way to do any particular thing": TRUE OR FALSE?
+* Discoverability of features: how important? Does everything need to be discoverable?
+* Teasing content: show a little preview of what lies behind the click
+* Instrumentation in general: let the app measure user behavior
+* Security and privacy paranoia / considerations
+* Clickstream: collect info about what the user clicks on to find their way
+* Wireframes: Very simplistic sketch of UI. Focus client/user on what it does not what it looks like
+* Paper Prototypes: Paper wireframes. Good for usability testing and design
+* HTML/Visio/OmniGraffle prototypes - also see http://gomockingbird.com/mockingbird/
+
+* Designing a mobile app
+* Restate the context -- who are the users, what's going on when they are using the app, do they need to interact, or be entertained, or do they have a specific task, where are they physically, in a car, at a desk, at the office, on a plane, at a club?
+* What 'impression' should your app give on first blush? Look and feel? What message should it convey?
+* Get in the head of the user. Right now. What does he want to do? Can you tell by looking at the app right now how to do that?
+* It's a subtle mind game
+
+* Labels in info architecture must the core vocabulary of the user
+* Labels also teach user about what the app does
+* Keep them very simple one or at most two words
+
+* What does typography, color and graphics convey
+* Purpose of an icon: decorative and memory
+* Does it matter if your app looks like another (or many other apps)
+* Especially on mobile devices, the basic building blocks of the look are determined by the platform
+
+* Screen sizes can vary from model to model
+* Landscape vs. Portrait also
+* You can simply re-scale the UI
+* Or you can offer specific fetures in specific positions
+* Which brings up the question of discoverability of features
+
 
 

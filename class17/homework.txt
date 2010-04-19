@@ -1,0 +1,1 @@
+* prototype of your mobile application using either paper prototyping or http://gomockingbird.com/mockingbird/

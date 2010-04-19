@@ -1,3 +1,10 @@
+class 19: Thursday July 1st
+10-12 UI Design - Pito
+12-1 Lunch
+1-3
+
+-----------
+
 DISCUSSION
 
 * Good - bad - indifferent user interfaces

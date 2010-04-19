@@ -7,6 +7,8 @@ WELCOME
 	- immerse yourself into the concepts and practices that go into building web applications
 	- develop an understanding of the architectures and the tradeoffs
 	- develop an real-world skill in using the tools
+	- there aren't pat answers. there are no textbooks.
+	-  Learn to think analytically to solve problems when ther
 * An amazing exciting opportunity
 	- brand new course
 	- for the first time marriage of academic and industry experiences
@@ -39,6 +41,11 @@ GRADING
 * Doing exercises
 * Sign up for one of the student-led presentations
 * 2 Papers
+
+HOMEWORK
+* Each class has a file called homework.txt
+* Collect all your work product so you can hand it in at the end
+* Be prepared to be called on to answer or demo your homework at the start of the next class
 
 WORK
 
