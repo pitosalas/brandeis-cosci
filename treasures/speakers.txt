@@ -6,21 +6,19 @@ Asked: tentative yes
 Jeffrey Beir - VC, Startups. Tentative Yes.
 Brian DelVeccio, ?
 Mobile, Ad networks, David Cancel
+Jered Floid (Permabit), Scrum and agile. No response
+Marty Roth (Oracle), Databases
+glenn McDonald, User Experience
+
 
 
 Asked: waiting for response
-Jered Floid (Permabit), Scrum and agile. No response
 Mussie Shore (Google) User Interface and experience
-Marty Roth (Oracle), Databases
-glenn McDonald, User Experience
 
 
 Not asked
 , NoSql databases
 , ORM systems background
-Brian DelVeccio, ?
-David Cancel - Mobile, advertising, iPhone, strategy
-Marty Roth (Oracle), Databases
 Peter Grossman (), Software in Biotech
 Doug Levin, Open Source Sw
 Bob Stachel, UI architecture
