@@ -7,6 +7,8 @@ Class 28: Monday July 19th
 - market Research
 - Competitive analysis
 - positioning: features/benefits. How to think about that
+- "Somebody must have already done this!?"
+- Competitors 'validate' a space
 - what does 'viral' adoption mean, how to achieve it
 - pricing. freemium. levels of users.
 - eRoom Case Study

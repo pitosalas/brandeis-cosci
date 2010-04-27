@@ -2,13 +2,20 @@ Tuesday June 1st 10-12
 
 WELCOME
 
-* Introduce instructors!
+* Introduce instructors
+* Pito
+* Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia
+* About programming languages and platforms. assume you will learn many. don't get too attached to any. they are not precious
+* About complexity: wheels within wheels. layers. amazing that it all works
+* About programming languages: most dont know ruby yet. modern. you will learn many languages and platforms. dont get too attached. the principles cary over. some ideas are re-invented over and over again
+* Difference between a school assignment/academic project and a product that you can build a carreer around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
+
 * Goals of the course
 	- immerse yourself into the concepts and practices that go into building web applications
 	- develop an understanding of the architectures and the tradeoffs
 	- develop an real-world skill in using the tools
 	- there aren't pat answers. there are no textbooks.
-	-  Learn to think analytically to solve problems when ther
+	-  Learn to think analytically to solve problems whe
 * An amazing exciting opportunity
 	- brand new course
 	- for the first time marriage of academic and industry experiences
@@ -46,6 +53,7 @@ HOMEWORK
 * Each class has a file called homework.txt
 * Collect all your work product so you can hand it in at the end
 * Be prepared to be called on to answer or demo your homework at the start of the next class
+* Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
 
 WORK
 

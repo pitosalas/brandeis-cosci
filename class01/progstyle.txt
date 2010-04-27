@@ -1,0 +1,25 @@
+PROGRAMMING HOMEWORK.
+
+* get good habits
+* well commented code.
+* Source file header:
+- your name, date, and assignment name
+- brief description of what the app does
+- specific outside requirements, e.g. a certain gem
+- specific instructions on how I should run it to see the results
+* it should look neat and clear
+- code formatting
+- useful variable names
+
+* Testing:
+- would be nice to include unit tests as appropriate
+
+* object oriented!
+- define classes thoughtfully
+- a comment introducing the class, and any methods that need explanation
+
+* hand-in
+- program on paper for grading
+- check it into your github repo
+- 3 attempts to meet the assignment, then it is graded
+
