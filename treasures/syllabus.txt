@@ -3,7 +3,8 @@ WEEK 1 - Intro and Network and Web Architectures
 class01 Tuesday June 1st
 10:00-10:30 Intro to JBS - Tim and Pito (mention student-led discussions)
 10:30-12:00 
-    Architecture of the Internet (TCP/IP, DNS, HTTP(GET/PUT/...), HTTPS, dig, ping, traceroute, etc.) - Tim
+    Architecture of the Internet (TCP/IP, DNS, HTTP(GET/PUT/...), 
+	HTTPS, dig, ping, traceroute, etc.) - Tim
     Give Assignments in Ruby
       * read/parse commandline
       * create/modify client server code in Ruby
@@ -12,8 +13,7 @@ class01 Tuesday June 1st
 3:00-5:00 They can stay and work on homework ...
 
 class02 Wednesday June 2nd
-10:00-12:00  Core Web Architecture: clients/servers/URLs/protocols explain ruby in detail, multi-threading, ...
-              in detail - Tim
+10:00-12:00  Core Web Architecture: clients/servers/URLs/protocols explain ruby in detail, multi-threading, ... in detail - Tim
 12:00-1:00 lunch
 1:00-3:00 - Pito -- Brainstorming, Agile, Project Management
 
@@ -132,6 +132,7 @@ class 19: Thursday July 1st
 class20: Monday July 5th
 10-12 HA: Chapter 3 - Designing the User Interface - Tim
 12-1 Lunch
+1-2 Speaker
 1-3
 
 Class21: Tuesday July 6th
@@ -155,7 +156,8 @@ Week 3
 Class 24: Monday July 12th
 10-12 Ch 8 Locating and Sensing - Tim
 12-1 lunch
-1-3
+1-2 Speaker
+2-3 
 
 Class 25: Tuesday July 13th
 10-12 Ch 9 DB access (local and remote) - Pito

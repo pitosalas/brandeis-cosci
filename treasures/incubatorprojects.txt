@@ -23,4 +23,7 @@ IDEAS
 * Juxtapose and visualize societal data, e.g. stock prices, weather, population, political party, etc.
 * "Ask the Incubator" - a site where members of Brandeis community can ask for projects to do
 * Wireless feedback from listeners to speaker, red/green, poll yes/no, poll
-* 
+* Youtube map of countries vs. number of listeners. Also Timeline of listeners vs. Videos (does this already exist? probably!)
+* API bingo: generate a suggestion for an application by randomly combining several web resources (e.g. apis) into a proposal written in quasi-english
+* Brandeis Mobile Photo Bench: Take a picture anywhere on campus (or not) and it appears on a site, keyed to the map of the campus, as well as time of day, what course is going on there if anything, etc. Make it suitable to be embedded on another site.
+

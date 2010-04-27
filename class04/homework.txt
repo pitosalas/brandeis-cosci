@@ -1,6 +1,7 @@
 HOMEWORK
 
 - Read (and do) Agile Development With Rails: Chapters 1 - 8
+- Write a blog post about each chapter what you found interesting or/and confusing
 - Install Rails, and create at least, a "Hello World" application
 
 ROUTING ASSIGMENT
