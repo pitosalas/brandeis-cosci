@@ -23,4 +23,4 @@ IDEAS
 * Juxtapose and visualize societal data, e.g. stock prices, weather, population, political party, etc.
 * "Ask the Incubator" - a site where members of Brandeis community can ask for projects to do
 * Wireless feedback from listeners to speaker, red/green, poll yes/no, poll
-* 
+* One-sentence-definition: A site where people supply a single sentence definition or explanation of anything at all. Supernova. Discrimination. Lawn Mower.
