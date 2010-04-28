@@ -1,6 +1,6 @@
-REQUIRED PREWORK
+We expect everyone to do some serious hacking with Ruby before the class starts. We expect you to have a good working knowledge of the Ruby language. Here are the specific assignments:
 
-We expect everyone to do some serious hacking with Ruby before the class starts. We expect you to have a good working knowledge of the Ruby language. Here's the specific assignment, which will be part of the grade.
+REQUIRED PREWORK
 
 * Read part 1 and 2 of Programming Ruby
 * Play with this, you will find it useful: http://tryruby.org/
