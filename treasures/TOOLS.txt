@@ -1,0 +1,15 @@
+REQUIRED BOOKS
+
+"Programming Ruby", Thomas et. al, Pragmatic Programmers
+"Agile Development with Rails", Thomas et. al, Pragmatic Programmers
+"Hello Android",  Burnette, Pramatic Programmers, 
+
+* TOOLS
+
+* You can use your own tools and make many choices
+* I will use TextMate, Eclipse, Git, Ruby, Rails and Android and so the examples will be more detailed
+* Your computer. Mac or Windows is fine.
+* You will need to install ruby and rails on your computer
+* A text editor that works well with ruby and rails
+* get your computer set up with Ruby and Git
+* download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
