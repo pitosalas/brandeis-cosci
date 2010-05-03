@@ -6,7 +6,7 @@
 # Description: Trivial program to demonstrate that I got my enviuronment to work correctly.
 #
 # Running: 
-#       $ ruby excercise1.rb
+#       $ ruby exercise1.rb
 #
 # Expected result:
 #       $ hello brandeis

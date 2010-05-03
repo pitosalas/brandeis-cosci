@@ -1,6 +1,6 @@
 # Simple Server - Pito Salas
 #
-# This is a very trivial server that listens on port 888 and simply responds with the time of day at the server.
+# This is a very trivial server that listens on port 8888 and simply responds with the time of day at the server.
 # 
 # To Run:
 # ruby simplerver.rb

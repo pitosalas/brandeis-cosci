@@ -11,7 +11,7 @@ STARTING AT THE LOWEST LEVEL: IP
 * IP: "internetwork" protocol
 * it's job is to get data between one 'host' (=computer or server) and another
 * Like the boxes, we need an address from and to
-* "IP address!" 123.22.112.1  IPv6 ...
+* "IP address!" 123.22.112.1 
 
 CONCEPTS WE LEARN FROM IP addresses
 
@@ -48,9 +48,12 @@ ENTER PACKET SWITCHING
 * Each one finds its own way to the target
 * Other components of the network? Routers
 
+WEB ARCHITECTURE - CLIENT
 
-Firewalls and NAT
-* architecture of firewall between open internet and local internet
-* NAT, DMZ, ....
-* HTTP tunneling, AJAX ...
+* Web client: just a tcp/ip client that makes requests and displays results in a window
+* Default: HTTP protocol, port 80, expects to see html
+* But what other protocols and formats does it support?
 
+WEB ARCHITECTURE - SERVER
+
+* Web server: just a tcp/ip server that listens and responds to HTTP requests

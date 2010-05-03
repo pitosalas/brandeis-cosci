@@ -6,7 +6,7 @@
 # Description: Fortune Cookie Generator class
 #
 # Running: 
-#       $ ruby excercise2.rb
+#       $ ruby exercise2.rb
 #
 # Expected result:
 #       "a fortune"

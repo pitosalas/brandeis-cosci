@@ -1,0 +1,5 @@
+== Name: exercise1.rb ==
+
+* when this program is run, it displays the sentence "Hello World" on the console
+
+

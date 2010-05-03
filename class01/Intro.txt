@@ -1,46 +1,31 @@
-Tuesday June 1st 10-12
+class01 Tuesday June 1st
+10:00-10:30 Intro to JBS - Tim and Pito (mention student-led discussions)
+10:30-12:00 
+    Architecture of the Internet (TCP/IP, DNS, HTTP(GET/PUT/...), 
+	HTTPS, ping, traceroute, etc.) - Tim
+    Give Assignments in Ruby
+      * read/parse commandline
+      * create/modify client server code in Ruby
+12:00-1:00 lunch
+1:00-3:00 Incubator - Pito ..  intro to Ruby, brainstorming
+3:00-5:00 They can stay and work on homework ...
 
 WELCOME
 
 * Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia
 * About programming languages and platforms. assume you will learn many. don't get too attached to any. they are not precious
 * About complexity: wheels within wheels. layers. amazing that it all works
-* About programming languages: most dont know ruby yet. modern. you will learn many languages and platforms. dont get too attached. the principles cary over. some ideas are re-invented over and over again
-* Difference between a school assignment/academic project and a product that you can build a carreer around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
-
-* Goals of the course
-	- immerse yourself into the concepts and practices that go into building web applications
-	- develop an understanding of the architectures and the tradeoffs
-	- develop an real-world skill in using the tools
-	- there aren't pat answers. there are no textbooks.
-	-  Learn to think analytically to solve problems whe
-* An amazing exciting opportunity
-	- brand new course
-	- for the first time marriage of academic and industry experiences
-	- lets build a long lived 'community' that helps each other getting exciting stuff done
-
-STRUCTURE OF THE COURSE
-
-* 4 weeks
-* very  intensive
-* will expect you to work offline a lot to keep up
-* different people will have different basis
-* We'll figure out as we go
+* About programming languages: most dot know ruby yet. modern. you will learn many languages and platforms. don't get too attached. the principles cary over. some ideas are re-invented over and over again
+* Difference between a school assignment/academic project and a product that you can build a career around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
 
 DISCUSSION
 
-* What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
+* discussion: What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
 
-GRADING
+MECHANICS
 
-* Class participation
-* Doing exercises
-* Sign up for one of the student-led presentations
-* 2 Papers
-
-HOMEWORK
+* Grading: Class participation, Doing exercises, Sign up for one of the student-led presentations, 2 Papers
 * Each class has a file called homework.txt
+* Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
 * Collect all your work product so you can hand it in at the end
-* Be prepared to be called on to answer or demo your homework at the start of the next class
 * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
-

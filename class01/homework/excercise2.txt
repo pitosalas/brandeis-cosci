@@ -1,0 +1,3 @@
+== Exercise 2 ==
+
+* Each time exercise2.rb is run from the command line it displays a random fortune. 

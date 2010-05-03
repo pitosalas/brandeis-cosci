@@ -1,3 +1,8 @@
+class02 Wednesday June 2nd
+10:00-12:00  Core Web Architecture: clients/servers/URLs/protocols, More Ruby, ... in detail - Pito
+12:00-1:00 lunch
+1:00-3:00 - Pito -- Brainstorming, Agile, Project Management
+
 CORE WEB ARCHITECTURE
 
 * Discussion. How does it all work?
@@ -28,9 +33,13 @@ PROTOCOLS
 
 DEMO
 
-* Look at curl and how it interprets urls
-* Compare with what the web browser does
-* Why different?
+curl http://brandeis.edu
+curl http://www.brandeis.edu
+
+- What does curl do?
+- Why do brandeis.edu and www.brandeis.edu act differently?
+- Why does it act differently from in the browser?
+- Who handles HTTP result-codes?
 
 PROTOCOLS
 
@@ -40,7 +49,3 @@ PROTOCOLS
 * Inside the box there are smaller boxes: 'computer science dept', 'math dept', etc.
 * Each book is in an envelope: J. Smith, F. Johnson, etc.
 * So with protocols are the first set of bits the 'higher' or 'lower' level protocol?
-
-ROUTERS
-* ROUTING TABLES
-

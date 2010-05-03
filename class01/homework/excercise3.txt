@@ -1,0 +1,4 @@
+== Exercise 3: Simple Server == 
+
+* Write an application, which when you run it will listen on port 8888
+* Whenever a client connects to it, it returns the time of day

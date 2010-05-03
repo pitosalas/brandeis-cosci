@@ -1,10 +1,11 @@
 All code handed in should follow these basic professional standard. Note that you will get three attempts to hand something in (before it gets graded)
 
-All source files start with a comment block header explaining:
-* the name of the program
-* briefly its purpose
-* your name
-* specific preconditions to running it (e.g. install this gem)
-* command line(s) to run it and demonstrate that it works
+* All source files start with a comment block header explaining:
+** the name of the program
+** briefly its purpose
+** your name
+**  specific preconditions to running it (e.g. install this gem)
+** command line(s) to run it and demonstrate that it works
+
 * All classes and methods are preceded by something explaining it (can be as little as one sentence.)
 * Variable and other names should be well chosen. (Hint: if it's one letter, it may not be so well chosen.)

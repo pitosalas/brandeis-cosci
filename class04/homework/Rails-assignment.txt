@@ -6,7 +6,6 @@ RAILS Assigment
 - For music, have the application contain "Title", "Genre", "Artist", "Date Added"
 - Provide CRUD functionality
 
-
 HINTS
 
 - Read the tutorials because you can do a quick and easy version of this assignment a few shell commands

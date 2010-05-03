@@ -4,7 +4,7 @@ class01 Tuesday June 1st
 10:00-10:30 Intro to JBS - Tim and Pito (mention student-led discussions)
 10:30-12:00 
     Architecture of the Internet (TCP/IP, DNS, HTTP(GET/PUT/...), 
-	HTTPS, dig, ping, traceroute, etc.) - Tim
+	HTTPS, ping, traceroute, etc.) - Tim
     Give Assignments in Ruby
       * read/parse commandline
       * create/modify client server code in Ruby
