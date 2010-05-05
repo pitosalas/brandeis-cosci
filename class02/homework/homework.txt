@@ -1,0 +1,21 @@
+* write two applications. One called tcpclient and one called tcpserver
+
+myclient.rb
+
+* displays a prompt: >>
+* when user types in, a connection is made to server, over port 8888, and text is sent
+* whatever comes back is displayed on the console
+
+myserver.rb
+
+* awaits a connection over port 8888
+* if text that is sent is "t", then, the server responds with time of day
+* if text that is sent is "f", then the server responds with a fortune
+
+Hints:
+- Use the GServer class
+- This does not require Rails
+- You can test the server (to some extent) with a web browser
+- You can run the whole thing on your own computer
+
+
