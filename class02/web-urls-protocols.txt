@@ -49,3 +49,10 @@ PROTOCOLS
 * Inside the box there are smaller boxes: 'computer science dept', 'math dept', etc.
 * Each book is in an envelope: J. Smith, F. Johnson, etc.
 * So with protocols are the first set of bits the 'higher' or 'lower' level protocol?
+
+TCP
+
+* transport control protocol
+* handles delivery of those bits to and from a particular "application" to another "application"
+* adds a 'port' number
+* the 'application' aka the 'server' and the other application aka the 'client'

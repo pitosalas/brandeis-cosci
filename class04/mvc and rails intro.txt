@@ -1,28 +1,25 @@
 class04 Monday June 7th
 10-12 Routing, MVC and Rails intro - Pito
 12-1 lunch
-1-2 Guest Lecturer
+1-2 Guest Lecturer - Jered Floyd
 2-3 Group formation - Tim
 
-RAILS
+ * What is it Rails? 
+ * "Convention over Configuration"
+ * The Rails 'stack'
 
-- What is it? 
-- "Convention over Configuration"
-- The Rails 'stack'
+ * demo a hello world rails app (Page 35 of ADR book)
+ * how to launch server
+ * how to look at result
+ * tour of the code
 
-DEMO (Page 35 ADR book)
-- demo a hello world rails app
-- how to launch server
-- how to look at result
-- tour of the code
-
-ROUTING
+==== ROUTING ====
 
 Look at these URLS:
 	http://www.facebook.com/pitosalas?ref=profile
 	http://www.jewishboston.com/events/67-glbt-and-and-friends-shabbat-potluck
 	
-* Let's deconstruct:
+ * Let's deconstruct:
 	What does http:// tell us?
 	What does www.facebook.com tell us
 	What does /pitosalas tell us?
@@ -30,19 +27,28 @@ Look at these URLS:
 	
 * Routing runs the specific code 'inside the server'
 
-* Take a look at Routes.rb
-* Make a change to it to show the result
-* This can get fairly complicated by the way
-* Try accessing a url that doesn't route yet. What happens?
+ * Take a look at Routes.rb
+ * Make a change to it to show the result
+ * This can get fairly complicated by the way
+ * Try accessing a url that doesn't route yet. What happens?
 
-MVC
+==== MVC ==== 
 
-- Model: purely data representation. No UI. Connects to database
-- View: purely UI, no data. How information is displayed to the screen
-- Controller: Implement actions by calling code and then displaying new Views
+ * Model: purely data representation. No UI. Connects to database
+ * View: purely UI, no data. How information is displayed to the screen
+ * Controller: Implement actions by calling code and then displaying new Views
 
-MORE DEMO (Rest of Chapter 4)
+==== MORE DEMO (Rest of Chapter 4) ==== 
 
-- Show where M, V and C are in the code
-- Make a change to see the result
+ * Show where M, V and C are in the code
+ * Make a change to see the result
+ 
+==== MODEL(s) ====
+ * sometimes we say 'the domain model' meaning the key objects in the system
+ * the model also is closely related to the database. We say "persistence"
+ * what are the fundamental "nouns" ? 
+ * Lets practice: what are some of the models in Facebook? Twitter? Wiki-software?
+ * "Modeling the application"
+ * This is closely related to Object Oriented Design. Picking the right Objects.
+ 
 

@@ -18,4 +18,6 @@ Hints:
 - You can test the server (to some extent) with a web browser
 - You can run the whole thing on your own computer
 
-
+* Modify myserver.rb as follows:
+  * if the text that is sent is d followed by a filename (e.g. dtest.txt) then respond with that file
+  

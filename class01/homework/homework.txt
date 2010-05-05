@@ -27,6 +27,8 @@ HOMEWORK
   
 * Read http://railstips.org/blog/archives/2010/01/12/i-have-no-talent/
 
+* http://en.wikipedia.org/wiki/TCP/IP_model
+
 
  
  
