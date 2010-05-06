@@ -1,0 +1,5 @@
+==== 2: Web Architecture Concepts: Wed, June 2 ====
+
+ * 10:00-12:00 (Pito)[http://github.com/pitosalas/brandeis-cosci/tree/master/class02/, Web Architecture, URLs, HTTP] 
+ * 12:00-1:00 Lunch
+ * 1:00-3:00 Incubator: Brainstorming projects, intro to Agile development (Pito)

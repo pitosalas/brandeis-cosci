@@ -1,15 +1,3 @@
-class01 Tuesday June 1st
-10:00-10:30 Intro to JBS - Tim and Pito (mention student-led discussions)
-10:30-12:00 
-    Architecture of the Internet (TCP/IP, DNS, HTTP(GET/PUT/...), 
-	HTTPS, ping, traceroute, etc.) - Tim
-    Give Assignments in Ruby
-      * read/parse commandline
-      * create/modify client server code in Ruby
-12:00-1:00 lunch
-1:00-3:00 Incubator - Pito ..  intro to Ruby, brainstorming
-3:00-5:00 They can stay and work on homework ...
-
 WELCOME
 
 * Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia

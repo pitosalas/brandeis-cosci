@@ -1,0 +1,6 @@
+==== 5: Databases and OR Mapping: Tue, June 8 ====
+
+ * 10:00-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class05/, Databases, SQL, OR Mapping (Pito)]
+ * 12:00-1:00 Lunch
+ * 1:00-2:30 Intro to PivotalTracker. Set up projects.Create stories etc.
+ * Homework for tomorrow: see Github

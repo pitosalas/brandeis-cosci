@@ -7,7 +7,7 @@ HOMEWORK
 
 * Read and learn the gitoverview.pdf
 
-* Read and learn Programming Ruby, Part III
+* Read and learn Programming Ruby, Chapter 22-24 (So you will have seen Chapt 1-24 by now)
 
 * Review exercise1.txt and run exercise1.rb and review the code
   + this is not a real exercise
@@ -26,8 +26,6 @@ HOMEWORK
 * Modify it so that each time it is called, it returns a fortune cookie
   
 * Read http://railstips.org/blog/archives/2010/01/12/i-have-no-talent/
-
-* http://en.wikipedia.org/wiki/TCP/IP_model
 
 
  

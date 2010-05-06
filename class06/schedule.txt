@@ -1,0 +1,9 @@
+==== 6: Views and Controllers: Wed, June 9 ====
+
+ * 10:00-10:30 [:StudentLed: Student Led Discussion]
+ * 10:30-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class06/, Views and Controllers (Pito)]
+ * 12:00-1:00 Lunch
+ * 1:00-2:30 Intro to Heroku. Demonstration. Students set up Helloworld app on it
+ * Homework for tomorrow: see Github
+ 
+ 

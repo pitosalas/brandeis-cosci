@@ -1,0 +1,6 @@
+==== 7: Scaling: Thu, June 10 ====
+
+ * 10:00-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class07/, 3-tier, Loadsharing, Caching, Scaling (Tim)] 10:00 - 12:00
+ * 12:00-1:00 Lunch
+ * 1:00-3:00 Incubator: Brainstorm on each project. What does the model look like. What are the controllers. etc.
+ * Homework for tomorrow: see Github

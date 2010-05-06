@@ -1,8 +1,3 @@
-class02 Wednesday June 2nd
-10:00-12:00  Core Web Architecture: clients/servers/URLs/protocols, More Ruby, ... in detail - Pito
-12:00-1:00 lunch
-1:00-3:00 - Pito -- Brainstorming, Agile, Project Management
-
 CORE WEB ARCHITECTURE
 
 * Discussion. How does it all work?
@@ -27,10 +22,6 @@ URLS
 * What about tcp/ip. What does that stand for?
 * So we have 3 protocols already: http, tcp and ip.
 
-PROTOCOLS
-
-* A protocol is a set of rules (see TV show '24' :) )
-
 DEMO
 
 curl http://brandeis.edu
@@ -43,6 +34,7 @@ curl http://www.brandeis.edu
 
 PROTOCOLS
 
+* A protocol is a set of rules (see TV show '24' :) )
 * Protocols determine the way information is interpreted 'on the wire'
 * You can think of them as 'envelopes'
 * Imagine I mail a big box of books to 'brandeis unversity, South Street, Waltham MA'
