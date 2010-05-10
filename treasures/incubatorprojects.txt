@@ -13,6 +13,9 @@ SHOULD CHECK OFF 6 of these
 * Has social value
 * Impresses your Mom
 * Works with huge database
+* Accelerometer
+* Voice Recognition
+
 
 
 IDEAS

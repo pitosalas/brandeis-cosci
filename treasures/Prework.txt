@@ -1,19 +1,23 @@
 We expect everyone to do some serious hacking with Ruby before the class starts. We expect you to have a good working knowledge of the Ruby language. Here are the specific assignments:
 
-REQUIRED PREWORK
 
-* Read part 1 and 2 of Programming Ruby
-* Play with this, you will find it useful: http://tryruby.org/
-* read _why's (very brief) poignant guide to ruby: http://mislav.uniqpath.com/poignant-guide/book/ 
-* Implement at least 3 of the Ruby Quick problems: http://rubyquiz.com/index.html Obviously we want original solutions. In your code, follow the source code guidelines
+== Required Prework ==
+ * Get your computer set up with Ruby and Git
+ * Learn Git: http://progit.org/
+ * Download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
+ * Read chapters 1 through 10 of Programming Ruby
+ * Play with this, you will find it useful: http://tryruby.org/ 
+ * Write a program to do one of these problems:
+  * SecretSanta
+  * MadLibs
+  * AnimalGame
 
-OPTIONAL PREWORK
+You may work with one partner. Either one of you may be asked to explain the solution. 
+In your code, follow the ProgrammingStyle
+
+== Optional Prework ==
 
 If you want to really hit the ground running, I also suggest the following:
 
-* optional: read part 3 of Programming Ruby
-* optional: read part 1 and 2 of Agile Development with Rails
-
-
-
-
+ * Read as much of Part 1, 2 and 3 of Programming Ruby as you can
+ * Read part 1 and 2 of Agile Development with Rails
