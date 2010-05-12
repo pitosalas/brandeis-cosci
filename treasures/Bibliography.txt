@@ -20,6 +20,10 @@ I recommend these books very highly. You should consider having them on your boo
 
 These are books referenced that you might find interesting
 
-  * "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. 
-  * Patterns in Ruby: I haven't read this myself but it's supposed to be the Ruby equivalent of the Gang of Four
+ * "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. 
+ * Patterns in Ruby: I haven't read this myself but it's supposed to be the Ruby equivalent of the Gang of Four
+  
+  
+=== Useful Links ===
+ * [http://progit.org/book/, Pro Git Book, online, free] - a comprehensive intro to Git
 

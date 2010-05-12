@@ -1,6 +1,7 @@
 ==== 8: Persistence and State: Mon, June 14 ====
 
- * 10:00-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class08/, Persistence, Cookies, State (Tim)]
+ * 10:00-10:20 - Homework cold calls
+ * 10:20-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class08/, Persistence, Cookies, State (Tim)]
  * 12:00-1:00 Lunch
  * 1:00-2:00 Speaker: [http://www.linkedin.com/pub/martin-roth/4/598/7b. Marty Roth '76, Architect at Oracle Corporation], 1-2pm
  * 2:00-3:00 Incubator. Discussion.
