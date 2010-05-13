@@ -1,7 +1,6 @@
-class06 Wednesday June 9th
-10-12 View/Controller - Pito
-12-1 lunch
-1-3  heroku.com  free ruby on rails platform, get students to set it up and upload helloworld apps
-
-DEMO and Lecture continues
-* Chapter 5 and 6 of ADR
+ * review: the model (sometimes we say the "domain model") has the actual 'data' of the application
+ * it has NO user interface and NO real algorithms. (Although the boundary can be grey)
+ * Lets take a look at a real application, ElectionManager
+ * First look at the user experience, and identify the views and the controllers
+ * Now look at the code and find the corresponding elements
+ 

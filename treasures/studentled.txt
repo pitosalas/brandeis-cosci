@@ -1,28 +1,31 @@
-STUDENT LED DISCUSSIONS
+=== Student Led Discussions ===
 
-Below are a list of topics for student led discussions. Every student needs to select one and prepare a 15-30 minute discussion on the topic. 
+Every Wednesday one student will be required to lead a 15-30 minute, informal discussion on one of these topics. 
+You should each select a topic you would like to present and on which Wednesday you prefer to do it. 
 
-You need to look into the topic, by reading from books, articles, the web, and so on and prepare to lead a discussion. 
+Basically what you will have to do is to research on the web or anywhere else information about the topic and plan to have an interactive presentation/discussion about the topic so that we can all learn from your work. We will ask questions but don't expect that you need to be an instant expert on the topic.
 
-This is analogous to a presentation but more interactive, and for example could include demoing web sites, showing code samples, it could be powerpoint or just verbal.
+You show us web sites, applications, code samples, or even slides. 
 
 We're available to give you more details or tips if you ask
 
-TOPICS
+Here are the topics to pick from:
 
-* Python and Django compared to Ruby and Rails
-* Dynamic Languages: Ruby, Python, Groovy and Java
-* DNS. Demo of the protocol, explanation of how the system works
-* Non-SQL Databases. What are they, when are they interesting. How to use them
-* Chrome vs. Firefox vs. Safari vs. Internet Explorer
-* Google Android OS vs. Apple OS X vs. MS Windows 7
-* iPhone vs. iPad vs. Android Phone vs. Motorola
-* How does GPS work. How does Wifi-location awareness work.
-* Tutorial on what the chain of events that causes my cell phone to ring when I call you
-* How do ad networks work. How to add them to your site
-* Push: How does push notification in iPhones work technically?
-* When I click on Send in my twitter app on my phone, how does that get processed
-* Large scale cloud computing. All about the google data center. Compared Google with Amazon cloud services.
+=== TOPICS === 
+
+  * Python and Django compared to Ruby and Rails
+  * Dynamic Languages: Ruby, Python, Groovy and Java
+  * DNS. Demo of the protocol, explanation of how the system works
+  * Non-SQL Databases. What are they, when are they interesting. How to use them
+  * Chrome vs. Firefox vs. Safari vs. Internet Explorer
+  * Google Android OS vs. Apple OS X vs. MS Windows 7
+  * iPhone vs. iPad vs. Android Phone vs. Motorola
+  * How does GPS work. How does Wifi-location awareness work.
+  * Tutorial on what the chain of events that causes my cell phone to ring when I call you
+  * How do ad networks work. How to add them to your site
+  * Push: How does push notification in iPhones work technically?
+  * When I click on Send in my twitter app on my phone, how does that get processed
+  * Large scale cloud computing. All about the google data center. Compared Google with Amazon cloud services.
 
 OR: Suggest a topic to Pito or Tim if you really want to do it and it's not on this list
 

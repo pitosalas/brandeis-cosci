@@ -1,10 +1,29 @@
-BIBLIOGRAPHY
+=== Required Books ===
 
-* "Gang of Four": 
-  http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+ * Programming Ruby 1.9, Thomas
+ * Agile Web Development with Rails, Ruby and Thomas
+ * Hello Android
+
+=== Seminal relevant books ===
+
+I recommend these books very highly. You should consider having them on your bookshelf.
+
+ * The Ruby Way, Fulton
+ * The Rails Way, Fernandez
+ * Design Patterns ("Gang of Four Book"), 
+ 
+ * Crossing the Chasm, Geoffrey Moore
+
+ * "The Innovator's Dilemma," by Clayton M. Christensen
+
+=== Other Bibliography ===
+
+These are books referenced that you might find interesting
+
+ * "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. 
+ * Patterns in Ruby: I haven't read this myself but it's supposed to be the Ruby equivalent of the Gang of Four
   
-* "A Pattern Language". Famous book by architect who proposed "patterns" as a way to think about design. http://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199
+  
+=== Useful Links ===
+ * [http://progit.org/book/, Pro Git Book, online, free] - a comprehensive intro to Git
 
-* "Crossing the Chasm,"  by Geoffrey Moore
-
-* "The Innovator's Dilemma," by Clayton M. Christensen

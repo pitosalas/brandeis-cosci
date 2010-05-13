@@ -1,3 +1,0 @@
-* Gang Of Four: The classic pattern book about software patterns: http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
-
-* Patterns in Ruby: I haven't read this myself but it's supposed to be the Ruby equivalent of the Gang of Four Book: http://www.amazon.com/Design-Patterns-Ruby-Russ-Olsen/dp/0321490452

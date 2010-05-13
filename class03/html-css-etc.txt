@@ -1,4 +1,3 @@
-class03 Thursday June 3rd
-10:00-12:00 HTML/CSS - Tim  (forms ...)
-12:00-1:00 lunch
-1:00-2:00 Pito - Begin refinement of projects and prioritization
+=== HTML, CSS===
+
+ * yada yada

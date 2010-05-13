@@ -1,19 +1,12 @@
-HOMEWORK
+RAILS
+- Continue reading and doing examples: Development With Rails: Chapters 1 - 8
+- Email a blog post to the list about each chapter what you found interesting or/and confusing
+- Create a Rails application, for example: "music" (any other trivial list manager is ok)
+- For music, have the application contain "Title", "Genre", "Artist", "Date Added"
+- Provide CRUD functionality
 
-- Read (and do) Agile Development With Rails: Chapters 1 - 8
-- Write a blog post about each chapter what you found interesting or/and confusing
-- Install Rails, and create at least, a "Hello World" application
+HINTS
 
-ROUTING ASSIGMENT
-
-* Add logic to your server
-* Accept urls that look like these. Do as many as you can.
-
-http:0.0.0.0:10110//date
-http:0.0.0.0:10110//time
-http:0.0.0.0:10110//message/joke
-http:0.0.0.0:10110//message/fortune
-http:0.0.0.0:10110//message/joke?lang=en
-http:0.0.0.0:10110//message/joke?lang=<another language>
-
-
+- Read the tutorials because you can do a quick and easy version of this assignment a few shell commands
+- But it's ok if you want to be fancier
+- Review and understand the folder structure created. We will discuss this in class

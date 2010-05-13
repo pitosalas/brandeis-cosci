@@ -1,11 +1,3 @@
-class08 Monday June 14th
-10-12 Persistence and State: sessions, cookies, cacheing - Tim
-12-1
-1-2 Speaker
-2-3 ???
-
------
-
 STATE MANAGEMENT
 
 * HTTP is state-less. What does this mean?

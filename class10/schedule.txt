@@ -1,0 +1,7 @@
+==== 10: Programmable Web: Wed, June 16th ====
+ * 10:00-10:20 - Homework cold calls
+ * 10:20-11:00 [:StudentLed: Student Led Discussion]
+ * 11:00-12:00 - REST API Design, Programmable Web (Pito)
+ * 12:00-1:00: Lunch
+ * 1:00-1:30: Incubator Project Report
+ * Homework for tomorrow: see Github
