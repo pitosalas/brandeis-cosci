@@ -8,6 +8,11 @@ SQL HOMEWORK
  * Install SqlLiteManager plug in for FireFox (http://sqlite-manager.googlecode.com/files/SQLiteManager_0.4.8.xpi)
  * Create some tables, add records, etc.
  * Follow along: http://souptonuts.sourceforge.net/readme_sqlite_tutorial.html
+ 
+RAILS HOMEWORK
+
+ * Continue reading and doing examples: Development With Rails: Chapters 9, 10, 11 and 14
+
 
 
 

@@ -1,0 +1,4 @@
+==== 10: name: date ====
+ * 10:00-10:20 - Homework cold calls
+ * 12:00-1:00: Lunch
+ * Homework for tomorrow: see Github

@@ -1,0 +1,4 @@
+=== Web Security Homework ===
+
+ * read http://guides.rubyonrails.org/security.html
+ * answer these questions: tbd

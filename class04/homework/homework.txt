@@ -1,12 +1,13 @@
 RAILS
-- Continue reading and doing examples: Development With Rails: Chapters 1 - 8
-- Email a blog post to the list about each chapter what you found interesting or/and confusing
-- Create a Rails application, for example: "music" (any other trivial list manager is ok)
-- For music, have the application contain "Title", "Genre", "Artist", "Date Added"
-- Provide CRUD functionality
+ * Continue reading and doing examples: Development With Rails: Chapters 1 - 8
+ * Email a blog post to the list about each chapter what you found interesting or/and confusing
+ * Create a Rails application, for example: "music" (any other trivial list manager is ok)
+ * For music, have the application contain "Title", "Genre", "Artist", "Date Added"
+ * Provide CRUD functionality
 
 HINTS
 
-- Read the tutorials because you can do a quick and easy version of this assignment a few shell commands
-- But it's ok if you want to be fancier
-- Review and understand the folder structure created. We will discuss this in class
+ * Read the tutorials because you can do a quick and easy version of this assignment a few shell commands
+ * But it's ok if you want to be fancier
+ * Review and understand the folder structure created. We will discuss this in class
+ * What does it mean 'to do examples?' You should type in some of the ones from the book, and get them to run. Be prepared to talk about them in class.

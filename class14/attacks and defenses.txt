@@ -1,9 +1,3 @@
-class14 Wednesday June 23th
-10-12 attacks and defenses - SQL injection, denial of server, password guessing, social engineering ....
-12-1
-1:00-1:30 Project Report
-1:30-3:00
-
 SQL INJECTION
 
 - what happens if a bad actor gets the ability to do sql commands directly to server

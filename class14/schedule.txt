@@ -1,0 +1,10 @@
+==== 14: Web App Security: Wed June 23 ====
+ * 10:00-10:20 - Homework cold calls
+ * 10:20-12:00 - (Tim) Web Attacks and defenses
+ * Homework for tomorrow: see Github
+ 
+ 
+ class14 Wednesday June 23th
+ 12-1
+ 1:00-1:30 Project Report
+ 1:30-3:00

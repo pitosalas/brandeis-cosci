@@ -15,5 +15,9 @@ RAILS PRE-WORK
  * Make sure you have a good installation of Ruby, Rails, and Gem on your computer
  * I recommend Ruby 1.8.x and Rails 2.3.x but you are welcome to try Ruby 1.9
  * Install Rails, and create at least, a "Hello World" application
+ 
+SPEAKER
+
+ * On Monday, there will be a speaker. Who will prepare 5+ minutes about his company?
 
 

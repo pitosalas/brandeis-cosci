@@ -1,0 +1,5 @@
+REST
+
+ * Add a rest call to your web application
+ * Explain why you added that one
+ * demonstrate it using a browser

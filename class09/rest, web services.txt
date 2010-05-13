@@ -1,13 +1,3 @@
-class09 Tuesday June 15th
-* 10:00-10:20 - Homework cold calls
-* 10:20-11:00 [:StudentLed: Student Led Discussion]
-
-10-12 REST, web services, APIs  - Pito
-12-1
-1:00-1:30 Project Report
-1:30-3:00
--------
-
 REVIEW
 
 * html and http are the core formats/protocols for the web
@@ -32,7 +22,7 @@ RPC - Remote Procedure Calls
 * What would it mean to call it between two computers over the internet?
 * How would you approach it?
 
-REST - An different way to think about RPC
+REST - A different way to think about RPC
 
 * HTTP Verbs: GET (HEAD), PUT, POST, DELETE.
 * Think of everything in terms of a 'resource' that is being manipulated
