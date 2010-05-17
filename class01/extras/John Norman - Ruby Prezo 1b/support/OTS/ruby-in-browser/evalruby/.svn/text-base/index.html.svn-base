@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>text/ruby or text/x-ruby</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/x-ruby">
+#class Foo; def initialize; @foo = 'whee'; end; end; f = Foo.new; f
+Time.now
+</script>
+
+<script type="text/javascript" src="../src/js/ruby.js"></script>
+
+<script type="text/javascript">
+function showRuby() {
+  alert(Ruby.code());
+}
+
+function echoRuby(ruby) {
+  document.getElementById("output").innerHTML = Ruby.eval(ruby);
+}
+
+window.onload = function() {
+  Ruby.init(function(result) {
+    document.getElementById("output").innerHTML = result;
+  });
+}
+
+</script>
+</head>
+
+<body>
+
+<h1>Running Ruby in the Browser</h1>
+
+<p>
+This is an experiement to run Ruby in the browser. It uses an embedded JRuby applet, and the page communicates to that puppy via LiveConnect. This simple example shows running code via <code>script type="text/jruby"</code> (which is run automaticlly once, which you see in the output below), and from a form itself. From here we will allow smart bidirectional talk between the DOM and Ruby, and offer up a nice abstraction layer to hopefully enable something like:
+
+<pre>&lt;script type="text/ruby"&gt;
+  document.ready do |dom|
+    dom["table tr"] &lt;&lt;"&lt;td&gt;test&lt;/td&gt;"
+  end
+&lt;/script&gt;
+</pre>
+</p>
+
+<div class="output">
+<h2>Ruby Output</h2>
+<p>Results from either your own ruby, or the embedded ruby, will appear here:</p>
+<div id="output">Loading...</div>
+</div>
+
+<div class="input">
+<h2>Running embedded script</h2>
+<p>
+	If you do a view source, you will see JRuby code wrapped in a &lt;script type="text/jruby"&gt; tag. You can see that code by clicking the show embedded ruby button, or you can run it via the Run button (output below)
+</p>
+<button onclick="showRuby()">Show Embedded Ruby</button>
+
+<button onclick="echoRuby(Ruby.code())">Run Embedded Ruby</button>
+
+<h2 style="margin-top: 20px;">Running your ruby</h2>
+<p>
+	Interactively throw some ruby in, and stuff from the last line will come back at you in the output. Right now the input/output streams are not setup correctly, so do not put in any output code (such as puts) as it won't work.
+</p>
+
+<textarea id="enterruby" cols="60" rows="5">
+# put in your own ruby here.
+%w[foo bar baz].join ', '
+</textarea><br />
+
+<button onclick="echoRuby(document.getElementById('enterruby').value)">Run Your Ruby</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+<title>E-168</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Content: Copyright &#169; 2007-2008 John G. Norman; Slidy: Copyright &#169; 2005 W3C (MIT, ERCIM, Keio)" />
+<meta name="font-size-adjustment" content="-2" />
+<link rel="stylesheet" href="support/OTS/Slidy/slidy.css" type="text/css" media="screen, projection, print" />
+<link rel="stylesheet" href="support/OTS/Slidy/w3c-blue.css" type="text/css" media="screen, projection, print" />
+<script src="support/OTS/Slidy/slidy.js" type="text/javascript"></script>
+
+<!-- BEGIN: E168 additions to standard Slidy head -->
+<script src="support/OTS/scriptaculous-js/lib/prototype.js" type="text/javascript"></script>
+<script src="support/OTS/scriptaculous-js/src/scriptaculous.js?load=effects" type="text/javascript"></script>
+<link rel="stylesheet" href="support/additional/theme.css" type="text/css" media="screen, projection, print" />
+<script src="support/additional/ruby-control.js" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+window.onload = mystart;
+// ]]>
+</script>
+<!-- END: E168 additions to standard Slidy head -->
+
+</head>
+
+
+
+<body>
+
+<div class="background"><img alt="" id="head-icon" src="support/OTS/Slidy/cleardot.gif"/>
+
+<!--
+<object id="head-logo"
+data="support/OTS/Slidy/w3c-logo-blue.svg" type="image/svg+xml"
+title="W3C logo"><a href="http://www.w3.org/"><img
+alt="W3C logo" id="head-logo-fallback"
+src="support/OTS/Slidy/w3c-logo-blue.gif" /></a></object>
+-->
+</div>
+
+<div class="background slanty">
+<img src="support/OTS/Slidy/w3c-logo-slanted.jpg" alt="slanted W3C logo" />
+</div>
+<div class="slide cover title" style="margin: 0 0 0 0;">
+  <!-- hidden style graphics to ensure they are saved with other content -->
+  <img class="hidden" src="support/OTS/Slidy/bullet.png" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold-dim.gif" alt="" />
+
+<!--
+<img src="support/OTS/Slidy/keys.jpg" alt="Cover page images (keys)" class="cover" />
+-->
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br clear="all" />
+<h1>CSCI E-168: Ruby and Ruby on Rails</h1>
+
+<p><a href="http://7fff.com">John G. Norman</a>,
+&lt;<a href="mailto:john@7fff.com">john@7fff.com</a>&gt;<br />
+<br />
+<br />
+<br />
+<br /><em>Hit the space bar for next slide</em></p>
+</div>
+
+
+<div class="slide">
+  <h1>Logistics</h1>
+<ul><li>Assignment 0</li>
+<li>Assignment 1: Due Monday, 28-Sep.</li>
+<li>Assignment 2: Handed out on 24-Sep. or earlier</li>
+<li>John Butler: E-mail me: Your TA wants to confer with you</li>
+<li><a href="http://forum.e168f09.plugh.org">http://forum.e168f09.plugh.org</a> - send your opinions to me</li></ul></div>
+<div class="slide">
+  <h1>Agenda</h1>
+<ul><li>Notes about Assignment 1 questions</li>
+<li>Bit more on inject, parallel assignment, parallel assignment and block parameters, spaceship, case equality</li>
+<li>Classes, modules</li>
+<li>Setting groundwork for "self"</li></ul></div>
+<div class="slide">
+  <h1>Assignment 1 Notes</h1>
+<ul><li>For Question 4: you may assume that the sorted order of the values is distinct.</li>
+<li>For Question 5: the output order should be the same as the input Hash key order (the wording is a leftover from Ruby 1.8.6/7)</li></ul></div>
+<div class="slide">
+  <h1>#inject (again)</h1>
+<ul><li>Remember that the block must return a value suitable for the memo</li>
+<li>Try code with and without "; m"</li>
+<li>(Error message more obvious in regular irb)
+
+<br/><br/><textarea class='runnable irb' rows='4'>
+[ 20, 1, -5, 3, 4, 4, 4 ].inject([]) { |m, e| m << e * 2 if e % 2 == 0; m }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>parallel assignment and Arrays</h1>
+<ul><li>IF the left-hand side is a single variable, but two (or more) comma-separated items on right . . .</li>
+<li>THEN left-hand side variable is set to an Array</li>
+<li>Last time, we also saw two variables on the left</li>
+<li>Finally, note last line: NOT how parallel assignment works!
+
+<br/><br/><textarea class='runnable irb' rows='12'>
+a = 1, 2
+a
+a, b = 1, 2
+a
+b
+### Next line: NOT what you want!!
+x = 1, y = 2
+x
+y
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Block parameters</h1>
+<ul><li>Remember block parameters, inside the vertical bars?
+
+<br/><br/><textarea class='runnable ' rows='13'>
+x = [ 1, 2, 3 ].map { |e| e * 2 }
+y = [ 1, 2, 3 ].map do |e|
+  a = e * 2
+  if e % 2 == 0
+    a += 1
+  end
+  a
+end
+p x
+p y
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Block parameters are assigned like parallel assignment</h1>
+<ul><li>This is a big deal</li>
+<li>Hash#each internally yields an <b>Array</b></li>
+<li>(NOTE: method parameters are <b>not</b> assigned like this)
+
+<br/><br/><textarea class='runnable ' rows='7'>
+h = { 'Harvard' => 'Crimson', 'Yale' => 'Bulldogs' }
+h.each { |e| puts e }
+h.each { |k, v| puts "U.: #{k}; Team: #{v}"}
+h.each { |e| puts e.join(" @ ") }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>The spaceship operator <=></h1>
+<ul><li>a <=> b</li>
+<li>returns -1 when a < b, 0 when a == b, 1 when a > b</li>
+<li>NOTE: When your code implements <=> (2nd hour), return -1, 0, 1 as above</li>
+<li>NOTE: But if you need to examine the return value of <=>, compare < 0, > 0, 'cos some implement incorrectly</li>
+<li>Study the docs for per-class semantics
+
+<br/><br/><textarea class='runnable irb' rows='6'>
+1 <=> 2
+"John" <=> "Keith"
+[ 3, 2, 1 ] <=> [ 1, 2, 3 ]
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Using the spaceship operator</h1>
+<ul><li>Documentation for Array#sort: "Returns a new array created by sorting _self_. Comparisons for the sort will be done using the +<=>+ operator or using an optional code block. <b>The block implements a comparison between _a_ and _b_,
+returning -1, 0, or +1.</b>"</li>
+<li>Hmm, interesting that the code block wants to have -1, 0, or +1 returned . . .
+
+<br/><br/><textarea class='runnable ' rows='6'>
+## Which array is the longest?
+a = [ [9], [ 3, 2, 1], [ 0, 0, 0, 0 ] ]
+p a.sort { |x, y| x.length <=> y.length }.last
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>The case equality operator ===</h1>
+<ul><li>Default is for === to act like ==</li>
+<li>However, means "membership"
+
+<br/><br/><textarea class='runnable irb' rows='9'>
+## Does the Range 1..10 equal 5?
+(1..10) == 5
+## Is 5 a member of 1..10?
+(1..10) === 5
+## Is 5 a member of 1..4?
+(1..4) === 5
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Case statement uses ===</h1>
+<ul><li>Remember, most classes delegate === to ==</li>
+<li>But Range, Regexp, Symbol, and Class implement ===</li>
+<li>Upshot is that case/when "does what you want"</li></ul></div>
+<div class="slide">
+  <h1>Case statement (from last time)</h1>
+
+<br/><br/><textarea class='runnable ' rows='13'>
+income = 35_000
+bracket = case income
+  when income < 20_000
+    1
+  when income >= 20_000 && income <= 30_000
+    2
+  else
+    3
+end
+puts "Bracket: #{bracket}"
+</textarea></div>
+<div class="slide">
+  <h1>Case statement using Range (leveraging case equality)</h1>
+<ul><li>Again, it does what you want
+
+<br/><br/><textarea class='runnable ' rows='13'>
+income = 35_000
+bracket = case income
+  when 0...20_000
+    1
+  when 20_000..30_000
+    2
+  else
+    3
+end
+puts "Bracket: #{bracket}"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Classes and objects</h1>
+<ul><li>Class - blueprint, template, etc.</li>
+<li>Attributes and methods defined by the class "blueprint"</li></ul></div>
+<div class="slide">
+  <h1>Architectural example</h1>
+<ul><li>Sears Kit House, "The Alhambra," 1915-1920
+
+<center><img width='400' src='lecture03-images/foursquare-sears-alhambrasm.jpg'/></center></li></ul></div>
+<div class="slide">
+  <h1>But each home (instantiation of a house blueprint) is tailored for a specific state</h1>
+
+<center><img width='400' src='lecture03-images/53.jpg'/></center></div>
+<div class="slide">
+  <h1>Another version</h1>
+
+<center><img width='400' src='lecture03-images/57.jpg'/></center></div>
+<div class="slide">
+  <h1>Classes and objects</h1>
+<ul><li>A class defines the possibilities for state and behavior</li>
+<li>State: How the object's representation can be tailored</li>
+<li>Behavior: What the object can do</li>
+<li>Make a home from a blueprint of a house . . .</li>
+<li>Instantiate an object based on a class</li></ul></div>
+<div class="slide">
+  <h1>A home's state (like nouns)</h1>
+<ul><li>color</li>
+<li>number of rooms</li>
+<li>number of windows</li>
+<li>garage</li>
+<li>notice how the fact that a house can have color is implied by the blueprint, while the actual color is defined by the instantiation</li></ul></div>
+<div class="slide">
+  <h1>A home's behavior (like verbs)</h1>
+<ul><li>set color to a new color</li>
+<li>tell us whether there's a garage</li>
+<li>set garage</li>
+<li>open front door</li>
+<li>close front door</li>
+<li>notice how all of these behaviors are defined by the blueprint, while the state conditions whether the operations will succeed</li></ul></div>
+<div class="slide">
+  <h1>Hierarchies of blueprints</h1>
+<ul><li>Object</li>
+<li>Building is an Object</li>
+<li>a House is a Building</li>
+<li>a Sears House is a House</li>
+<li>an Alhambra is a Sears House</li></ul></div>
+<div class="slide">
+  <h1>Modeling</h1>
+<ul><li>We could have some big arguments</li>
+<li>Which class should define the method garage? Building? House?</li>
+<li>Should garage even be an attribute?</li></ul></div>
+<div class="slide">
+  <h1>Object construction</h1>
+<ul><li>Class names begin with a capital: Hash, Array, String (our old friends)</li>
+<li>Call new <b><i>on the class</i></b> by following the class name with a . then new</li>
+<li>Hash.new</li>
+<li>Memory gets allocated</li>
+<li>the new instance's initialize method is called with parameters passed to new
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+## call new on the class
+h = Hash.new(0)
+## memory allocated
+## control passed to h.initialize(0)
+h['foo']
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Defining a class</h1>
+<ul><li>Starts with keyword "class" ends with "end"</li>
+<li>keyword "class" followed by the name of the class</li>
+<li>Inside the class: method declarations with "def / end"
+
+<br/><br/><textarea class='runnable ' rows='16'>
+class House
+  def initialize(c, nr, nw)
+    @color = c
+    @num_rooms = nr
+    @num_windows = nw
+  end
+  def to_s
+    "The #{@color} home has #{@num_rooms} rooms."
+  end
+end
+
+my_home = House.new("white", 7, 14)
+puts my_home
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Method definition</h1>
+<ul><li>"def" followed by name of method</li>
+<li>Method declaration terminated with "end"</li>
+<li>Let's add a method to return the color of the home</li>
+<li>Notice that I'm using parallel assignment in initialize
+
+<br/><br/><textarea class='runnable ' rows='14'>
+class House
+  def initialize(c, nr, nw)
+    @color, @num_rooms, @num_windows = c, nr, nw
+  end
+  def color_of_the_house
+    @color
+  end
+end
+
+my_home = House.new("white", 7, 14)
+puts my_home.color_of_the_house
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Conventional to use same names</h1>
+<ul><li>Not going to baby you</li>
+<li>Use same names for parameter names, instance names, method names
+
+<br/><br/><textarea class='runnable ' rows='14'>
+class House
+  def initialize(color, num_rooms, num_windows)
+    @color, @num_rooms, @num_windows = color, num_rooms, num_windows
+  end
+  def color
+    @color
+  end
+end
+
+my_home = House.new("white", 7, 14)
+puts my_home.color
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Method parameters</h1>
+<ul><li>To define parameters, add parenthesized list of params after method name</li>
+<li>Already doing this with initialize</li>
+<li>Same as above, but using param on color
+
+<br/><br/><textarea class='runnable ' rows='14'>
+class House
+  def initialize(color, num_rooms, num_windows)
+    @color, @num_rooms, @num_windows = color, num_rooms, num_windows
+  end
+  def color(number)
+    ([ @color ] * number).join('---')
+  end
+end
+
+my_home = House.new("green", 7, 14)
+puts my_home.color(3)
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Defining instance methods within a class: Recap</h1>
+<ul><li>Starts with keyword "def" ends with "end"</li>
+<li>keyword "def" followed by optional parenthesized parameter list</li></ul></div>
+<div class="slide">
+  <h1>Methods: Return values</h1>
+<ul><li>Final thing evaluated in method is return value</li>
+<li>Or use "return" to return explicitly</li>
+<li>Use "return" if you need to return a value before end of method
+
+<br/><br/><textarea class='runnable ' rows='14'>
+def five
+  5
+end
+
+def cinq
+  return 5
+  4
+end
+
+puts five
+puts cinq
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Specializing (inheritance)</h1>
+<ul><li>Left angle bracket (less than) indicates superclass</li>
+<li>A SearsKitHouse is a House, but with extra attributes</li>
+<li>Notice: Because a SearsKitHouse "extends" a House, it gets to do everything a House can do</li>
+<li>P.S. <b>Use of set_, get_: Not the Ruby Way!</b> More later . . .
+
+<br/><br/><textarea class='runnable ' rows='17'>
+class SearsKitHouse < House
+  def set_num_parts(np)
+    @np = np
+  end
+  def get_num_parts
+    @np
+  end
+end
+
+skh = SearsKitHouse.new('blue', 8, 20)
+skh.set_num_parts(5_000)
+puts skh.get_num_parts
+puts skh
+puts skh.class.ancestors
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Relationship between Class and Superclass</h1>
+<ul><li>Class to superclass must satisfy "Is a?"</li>
+<li>(House is a Building; is a Building always a House?)</li></ul></div>
+<div class="slide">
+  <h1>Classes: Modeling</h1>
+<ul><li>Did we model House right?</li>
+<li>Must all Houses have a door?</li>
+<li>Can another subclass of Building have a door?</li>
+<li>Adding an additional subclass . . . Are Huts Houses?</li>
+<li>Is a Hut a SearsKitHouse?</li></ul></div>
+<div class="slide">
+  <h1>Duck Typing</h1>
+
+<center><img width='400' src='lecture03-images/duck.jpg'/></center></div>
+<div class="slide">
+  <h1>Duck Typing: 1 of 3</h1>
+<ul><li>Assume that the Cassette and AudioStream classes both have age_level methods</li>
+<li>Our Player indicates the age level of the media it plays
+
+<br/><br/><textarea class='code ' rows='12'>
+class Player
+  def play(thing)
+    p 'Suitable for ' + thing.age_level
+  end
+end
+
+p = Player.new
+p.play(Cassette.new('U2', 'Boy', 11, 2533))
+p.play(AudioStream.new('Arcade Fire', 'Funeral', 11, 2533))
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Duck Typing: 2 of 3</h1>
+<ul><li>Notice: Player.play accepts . . . anything . . . and works if what's passed in implements age_level</li>
+<li>Notice as well that there might be semantic mismatch between playing media and playing (with) a toy</li>
+<li>Example is deliberately queasy
+
+<br/><br/><textarea class='code ' rows='10'>
+class Toy
+  def age_level
+    "6 years"
+  end
+end
+
+p.play(Toy.new)
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Duck Typing: 3 of 3</h1>
+<ul><li>"If it walks like a duck, and talks like a duck, it's a duck."</li>
+<li>(Or it might as well be a duck.)</li>
+<li>We are interested in the <b><i>capabilities</i></b> of an object.</li>
+<li>Java developers <sup>.;oO: "This makes me very nervous..."</sup></li>
+<li>Java projects increasingly use reflection to identify methods that can be "invoked" rather than using Interfaces (why? Because if the Interface signature or packing changes, everything breaks)</li>
+<li>Read Pickaxe chapter "Duck Typing"</li></ul></div>
+<div class="slide">
+  <h1>Instance variables</h1>
+<ul><li>Prefixed with @</li>
+<li>Only directly accessible inside object; <b>no other objects can get at instance variables except via method</b></li>
+<li>Java developers take note: You can't make a variable "public"</li>
+<li>Again, must define a method to permit outsiders to get value</li></ul></div>
+<div class="slide">
+  <h1>Adding a Setter</h1>
+<ul><li>Remember when we defined get_num_parts ? Not the Ruby Way</li>
+<li>Ruby allows us to pretend that we can assign to a property
+
+<br/><br/><textarea class='runnable ' rows='16'>
+class AudioStream
+  def age_level=(age_level)
+    @age_level = age_level
+  end
+  def age_level
+    @age_level
+  end
+end
+
+s = AudioStream.new
+## Next two statements do the same thing; 2nd is more readable
+s.age_level=('13 years')
+s.age_level = '13 years'
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Even better: Convenience declaration</h1>
+<ul><li>Possible to <b><i>declare</i></b> properties</li>
+<li>attr_accessor, attr_reader, attr_writer</li>
+<li>Now we don't have to define age_level=(...) ourselves
+<br/><br/><textarea class='runnable ' rows='9'>
+class AudioStream
+  attr_accessor :age_level
+end
+s = AudioStream.new
+s.age_level = '21 years'
+puts s.age_level
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>attr declarations</h1>
+<ul><li>attr_accessor: read and write (like getter and setter)</li>
+<li>attr_reader: read only</li>
+<li>attr_writer: write only</li></ul></div>
+<div class="slide">
+  <h1>Let's look at our House code again</h1>
+<ul><li>Before
+
+<br/><br/><textarea class='runnable ' rows='14'>
+class House
+  def initialize(color, num_rooms, num_windows)
+    @color, @num_rooms, @num_windows = color, num_rooms, num_windows
+  end
+  def color
+    @color
+  end
+end
+
+my_home = House.new("white", 7, 14)
+puts my_home.color
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Revised using accessor</h1>
+<ul><li>After
+
+<br/><br/><textarea class='runnable ' rows='12'>
+class House
+  attr_reader :color
+  def initialize(color, num_rooms, num_windows)
+    @color, @num_rooms, @num_windows = color, num_rooms, num_windows
+  end
+end
+
+my_home = House.new("white", 7, 14)
+puts my_home.color
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Methods: No overloading!</h1>
+<ul><li>Sorry, Java and C++ developers
+
+<br/><br/><textarea class='code ' rows='13'>
+## To handle two parameters of different types, check them
+def check(p)
+  if p.instance_of? Fixnum
+    ## do something
+  elsif p.instance_of? String
+    ## do something else
+  else
+    ## Might raise an exception (more on this later)
+  end
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Methods: Default values for parameters</h1>
+<ul><li>Possible to define default values in method declaration
+
+<br/><br/><textarea class='runnable ' rows='10'>
+# Default values
+def assign_grade(grade = 'A')
+  ## assign the grade; if no parameters, grade will be 'A'
+  grade
+end
+
+puts assign_grade
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Common Java developer mistake</h1>
+<ul><li>Instance variables must be set / manipulated inside methods</li>
+<li>If @ variable outside method, means something else (next lecture)
+
+<br/><br/><textarea class='code ' rows='16'>
+class Player
+
+  # WRONG!!
+  @completed_games = 0
+
+  def initialize(first_name, number)
+    @first_name, @number = first_name, number
+
+    # RIGHT!!
+    @completed_games = 0
+  end
+
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Can't use "getter/setter"-style methods w/o receiver</h1>
+<ul><li>Notice below we say attr_accessor to define methods current_opponent= and current_opponent</li>
+<li>But the syntax is only identified when there is a receiver (when you use a dot to indicate a receiver)</li>
+<li>Without receiver, you just assign to a new local variable
+
+<br/><br/><textarea class='code ' rows='19'>
+class Player
+  attr_accessor :current_opponent
+  def initialize(first_name, number)
+    @first_name, @number = first_name, number
+
+    # WRONG!!
+    current_opponent = 'None'
+
+    # RIGHT: Either
+    self.current_opponent = 'None'
+
+    # OR
+    @current_opponent = 'None'
+
+  end
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Access control for methods - the idea</h1>
+<ul><li>Suppose we have a class that manages a social security number</li>
+<li>Should other classes be able to retrieve it?</li></ul></div>
+<div class="slide">
+  <h1>Access Control for methods</h1>
+<ul><li>All interpreted at run-time; and can be changed at run-time</li>
+<li>Public: anyone (default)</li>
+<li>Protected: invokable by defining class and subclasses; good for when an object of Class A needs to get invoke a method on another instance of the same class (e.g., for <=>)</li>
+<li>Private: Next slide</li></ul></div>
+<div class="slide">
+  <h1>Private</h1>
+<ul><li>Not allowed to call method on explicit receiver</li>
+<li>That is: If def foo(x); end is a private method on bar, can't say: bar.foo(5)</li>
+<li>Can only say foo(5)</li>
+<li>Assumes that message (foo) will be sent to the current object</li>
+<li>Similar to "privacy" of instance variables</li></ul></div>
+<div class="slide">
+  <h1>Private - consequences</h1>
+<ul><li><b><i>Invokable only by another method in same object, via descendants <u>or ancestors</u></i></b></li>
+<li>Commonly wrongly described as working only for class or subclasses</li>
+<li>Note that initialize is (implicitly) private; called during object construction</li></ul></div>
+<div class="slide">
+  <h1>Access control - how to declare</h1>
+<ul><li>Put "private" "public" or "protected" keyword in front of methods</li>
+<li>Then switch to other visibilities as needed by adding keyword again
+
+<br/><br/><textarea class='code ' rows='14'>
+class Example
+  private
+  def ssn
+    @ssn
+  end
+  # Notice: following methods are public 'cos of keyword
+  public
+  def ssn_last_four_digits
+    @ssn[-4..-1]
+  end
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Access control -how to declare (2)</h1>
+<ul><li>Alternative: follow keyword with symbol-style name of methods
+
+<br/><br/><textarea class='code ' rows='12'>
+class Example
+  def ssn
+    @ssn
+  end
+  def ssn_last_four_digits
+    @ssn[-4..-1]
+  end
+  private :ssn
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Access control - private - examples</h1>
+<ul><li>Private methods much like instance variables</li>
+<li>subclasses <b><i>do</i></b> get access
+
+<br/><br/><textarea class='runnable ' rows='18'>
+class One
+  private
+  def meth
+    puts 'hi'
+  end
+end
+
+class Two < One
+  def user_of_meth
+    meth
+  end
+end
+
+two = Two.new
+two.user_of_meth
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Access control - private - from superclass</h1>
+<ul><li>Even a superclass can call a subclass's private method (!)
+
+<br/><br/><textarea class='runnable ' rows='23'>
+class Vehicle
+ def full_product_name
+   "#{brand} - #{model}"
+ end
+end
+
+class Sedan < Vehicle
+ private
+  def brand
+    "Toyota"
+  end
+  def model
+    "Camry"
+  end
+end
+
+vehicle = Vehicle.new
+sedan = Sedan.new
+# puts vehicle.full_product_name  # brand method not available
+puts sedan.full_product_name
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Scope and Naming</h1>
+<ul><li>Global: Available everywhere:   Prefix with $</li>
+<li>Class: Owned by the class:   Prefix with @@</li>
+<li>Instance: Owned by the instance:   Prefix with @, use lowercase</li>
+<li>Local: Local to block:   use lowercase</li></ul></div>
+<div class="slide">
+  <h1>Modules</h1>
+<ul><li>A module is a class without its own state</li>
+<li>It provides capabilities</li>
+<li>It's a mixin</li></ul></div>
+<div class="slide">
+  <h1>Suppose: Things that we can compare</h1>
+<ul><li>A SearsKitHouse extends a House</li>
+<li>Might it also extend another class: E.g., Comparable</li>
+<li>Should Comparable really be a class?</li>
+<li>Can there be a thing that is ONLY Comparable?</li></ul></div>
+<div class="slide">
+  <h1>Suppose: A SearsKitHouse has a Chimney</h1>
+<ul><li>You can open and close the flue on a chimney</li>
+<li>Should the SearsKitHouse extend both House and Chimney?</li>
+<li>Why or why not?</li></ul></div>
+<div class="slide">
+  <h1>Module provides capabilities</h1>
+<ul><li>A SearsKitHouse extends House, and includes OperableChimney</li>
+<li>OperableChimney might provide methods such as . . .</li>
+<li>open_flue</li>
+<li>close_flue</li></ul></div>
+<div class="slide">
+  <h1>Sample class and module</h1>
+
+<br/><br/><textarea class='code ' rows='13'>
+module OperableChimney
+  def open_flue
+  end
+  def close_flue
+  end
+end
+
+class SearsKitHouse
+  include OperableChimney
+end
+</textarea></div>
+<div class="slide">
+  <h1>Comparable</h1>
+<ul><li>What the documentation says (ri Comparable)
+
+<br/><br/><textarea class='code ' rows='4'>
+The +Comparable+ mixin is used by classes whose objects may be ordered. <b>The class must define the +<=>+ operator</b>, which compares the receiver against another object, returning -1, 0, or +1 depending on whether the receiver is less than, equal to, or greater than the other object. +Comparable+ uses +<=>+ to implement the conventional comparison operators (+<+, +<=+, +==+, +>=+, and +>+) and the method +between?+.
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Comparable SearsKitHouses?</h1>
+<ul><li>On what basis would we compare two SearsKitHouses?
+
+<br/><br/><textarea class='runnable ' rows='12'>
+class SearsKitHouse < House
+  attr_accessor :num_parts
+end
+
+skh1 = SearsKitHouse.new('brown', 10, 20)
+skh1.num_parts = 5_000
+skh2 = SearsKitHouse.new('pink', 40, 80)
+skh2.num_parts = 4_450
+# puts skh1 < skh2
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Let's make the houses comparable</h1>
+<ul><li>Easy!
+
+<br/><br/><textarea class='runnable ' rows='16'>
+class SearsKitHouse < House
+  include Comparable
+  attr_accessor :num_parts
+  def <=>(other)
+    @num_parts <=> other.num_parts
+  end
+end
+
+skh1 = SearsKitHouse.new('brown', 10, 20)
+skh1.num_parts = 5_000
+skh2 = SearsKitHouse.new('pink', 40, 80)
+skh2.num_parts = 4_450
+puts skh1 < skh2
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>The End</h1>
+
+<center><img width='400' src='lecture03-images/end.jpg'/></center></div>
+
+
+
+</body>
+</html>

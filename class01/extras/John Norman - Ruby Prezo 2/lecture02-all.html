@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+<title>E-168</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Content: Copyright &#169; 2007-2008 John G. Norman; Slidy: Copyright &#169; 2005 W3C (MIT, ERCIM, Keio)" />
+<meta name="font-size-adjustment" content="-2" />
+<link rel="stylesheet" href="support/OTS/Slidy/slidy.css" type="text/css" media="screen, projection, print" />
+<link rel="stylesheet" href="support/OTS/Slidy/w3c-blue.css" type="text/css" media="screen, projection, print" />
+<script src="support/OTS/Slidy/slidy.js" type="text/javascript"></script>
+
+<!-- BEGIN: E168 additions to standard Slidy head -->
+<script src="support/OTS/scriptaculous-js/lib/prototype.js" type="text/javascript"></script>
+<script src="support/OTS/scriptaculous-js/src/scriptaculous.js?load=effects" type="text/javascript"></script>
+<link rel="stylesheet" href="support/additional/theme.css" type="text/css" media="screen, projection, print" />
+<script src="support/additional/ruby-control.js" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+window.onload = mystart;
+// ]]>
+</script>
+<!-- END: E168 additions to standard Slidy head -->
+
+</head>
+
+
+
+<body>
+
+<div class="background"><img alt="" id="head-icon" src="support/OTS/Slidy/cleardot.gif"/>
+
+<!--
+<object id="head-logo"
+data="support/OTS/Slidy/w3c-logo-blue.svg" type="image/svg+xml"
+title="W3C logo"><a href="http://www.w3.org/"><img
+alt="W3C logo" id="head-logo-fallback"
+src="support/OTS/Slidy/w3c-logo-blue.gif" /></a></object>
+-->
+</div>
+
+<div class="background slanty">
+<img src="support/OTS/Slidy/w3c-logo-slanted.jpg" alt="slanted W3C logo" />
+</div>
+<div class="slide cover title">
+  <!-- hidden style graphics to ensure they are saved with other content -->
+  <img class="hidden" src="support/OTS/Slidy/bullet.png" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold-dim.gif" alt="" />
+
+<!--
+<img src="support/OTS/Slidy/keys.jpg" alt="Cover page images (keys)" class="cover" />
+-->
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br clear="all" />
+<h1>CSCI E-168: Ruby and Ruby on Rails</h1>
+
+<p><a href="http://7fff.com">John G. Norman</a>,
+&lt;<a href="mailto:john@7fff.com">john@7fff.com</a>&gt;<br />
+<br />
+<br />
+<br />
+<br /><em>Hit the space bar for next slide</em></p>
+</div>
+
+
+<div class="slide">
+  <h1>Logistics</h1>
+<ul><li>Sections have been assigned</li>
+<li>We have already swapped a number of people between sections, and are currently stable and well-balanced across section times</li>
+<li>To request a section swap, e-mail john@7fff.com and keithlmorrison@gmail.com with "SWAP" in the subject line . . . ASAP</li></ul></div>
+<div class="slide">
+  <h1>Assignments</h1>
+<ul><li>Assignment 0, System Setup: Due Monday, 14-Sep-2009</li>
+<li>Assignment 1, One-Liners: Due Monday, 28-Sep-2009</li>
+<li>Use "rake package" to ZIP up your project; ok to rename result to include your name</li>
+<li>Submit via dropbox system (see <a href="http://e168f09.plugh.org/notes/note-isites-drop-boxes-for-assignments/">http://e168f09.plugh.org/notes/note-isites-drop-boxes-for-assignments/</a>)</li>
+<li>Assignment 2 will be published on or before 24-Sep-2009</li></ul></div>
+<div class="slide">
+  <h1>Assignment 0</h1>
+<ul><li>versions.rb</li>
+<li>demo.rb</li></ul></div>
+<div class="slide">
+  <h1>Assignment 1</h1>
+<ul><li>What is a one-liner? Will discuss in 2nd hour</li></ul></div>
+<div class="slide">
+  <h1>Agenda</h1>
+<ul><li>Bit more on operators</li>
+<li>Ranges</li>
+<li>Arrays</li>
+<li>Hashes</li>
+<li>Control structures</li>
+<li>Iteration</li></ul></div>
+<div class="slide">
+  <h1>Operators: compound assignment</h1>
+<ul><li>Mentioned +, -, <<, etc.</li>
+<li>Frequently get operators +=, -=, <<= "for free"</li>
+<li>Check API docs
+
+<br/><br/><textarea class='runnable irb' rows='11'>
+a = 5
+### Following means: a = a + 1
+a += 1
+b = [ "John", "Paul" ]
+### Following means: b = b << "George"
+b <<= "George"
+### Following is actually a bit different
+b << "Ringo"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Operators: % for Strings</h1>
+<ul><li>Used to format Strings</li>
+<li>Syntax: 'someformat' % value</li>
+<li>Or, for muliple: 'someformat' % [ val1, val2 ]</li>
+<li>In formats, % indicates start of formatting substring</li>
+<li>Can mix with String iterpolation</li>
+<li>For documentation on formatting: ri Kernel#sprintf
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+'%10s' % 'right'
+'--%-10s--' % 'left'
+'%05d' % '5'
+width = 20
+"%#{width}s: %3.1f" % [ 'John', 95 ]
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Operators: <=> and ===</h1>
+<ul><li>Will mention in passing; discussion later</li>
+<li>Read up on these</li></ul></div>
+<div class="slide">
+  <h1>Standard type: Range</h1>
+<ul><li>Represents a sequence</li>
+<li>Syntax: start..end
+(a "closed" or "inclusive" range: includes start and end)</li>
+<li>Syntax: start...end
+  (an "open" or "exclusive" range: note the three dots: <b><i>excludes</i></b> end value)</li>
+<li>Examples: 1..10, 'a'...'z'</li>
+<li>Only stores start and end values, so 1..100000 only a few bytes</li></ul></div>
+<div class="slide">
+  <h1>Ranges and iteration</h1>
+<ul><li>Endpoints must respond to <=> operator (more next lecture)</li>
+<li>To iterate through a range, endpoint classes must implement #succ (such a range called "discrete"; w/o #succ, "continuous")</li>
+<li>Terminates when value greater than succeeding value</li>
+<li>discrete ranges can index Strings and Arrays</li>
+<li>to_a method</li>
+<li>also very useful: #include?, #first, #last, #exclude_end?</li>
+<li>flip-flop operator: See Pickaxe</li></ul></div>
+<div class="slide">
+  <h1>Range: examples</h1>
+<ul><li>A few things we do with Ranges
+
+<br/><br/><textarea class='runnable irb' rows='12'>
+(1..5).to_a
+('p'...'s').to_a
+## Next example: Notice how we dropped the parentheses
+('a'..'c').include? 'b'
+("7".."9").to_a
+## Next example: Caution. And why?
+("7".."10").to_a
+(10..1).first
+"John"[1..3]
+</textarea>
+<!-- "7".."10" terminates when left val gt right val; so starts off that way --></li></ul></div>
+<div class="slide">
+  <h1>Array</h1>
+<ul><li>Represents an ordered collection of elements</li>
+<li>Syntax: [1, 2, 3], [ '1', 2, RUBY_VERSION.reverse ]</li>
+<li>First element has index 0</li>
+<li>Elements needn't be of same class</li>
+<li>An Array literal is a comma-separated list of elements, surrounded by square brackets</li>
+<li>For Array of Strings, %w|foo bar baz| (see Pickaxe: PDF, p. 330, print, p. 318)</li>
+<li>Declare empty Array with Array.new or [] (known as the literal array constructor); Array.new allows you to set length and values</li></ul></div>
+<div class="slide">
+  <h1>Array: examples</h1>
+
+<br/><br/><textarea class='runnable irb' rows='15'>
+a = [1, 2] # Construct a literal array
+## Two ways to put a value onto the end of an array
+a << 3
+a.push(4)
+## Selecting an element by index
+a[1]
+a.at(1) # Only takes int; bit faster
+## Getting a sub-array
+a.slice(1..2)
+a[1..2] # same thing as slice with range
+a[1, 2] # notice: with comma, means start and length
+%w|foo bar baz|
+</textarea></div>
+<div class="slide">
+  <h1>Array: Bit more on Array.new</h1>
+<ul><li>Array.new(size, default)</li>
+<li>Watch out! default is <b>re-used</b></li>
+<li>We will talk about how to fix this . . .
+
+<br/><br/><textarea class='runnable irb' rows='6'>
+a = Array.new(4, 'john')
+a[0].upcase!
+a
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: Indexing</h1>
+<ul><li>Can use negative indices; a[-1] gets last element, a[-2] next to last, etc.</li>
+<li>If your Array has 3 elements, and you ask for, say, a[5] you just get nil</li>
+<li>If you assign a value to an element beyond the end, it gets extended
+
+<br/><br/><textarea class='runnable irb' rows='11'>
+a = [ 1, 2, 3 ]
+a[-1]
+a[-2]
+a[0..-2]
+a[-2..0]
+a[3]
+a[10] = "whoa!"
+a.size
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: Putting subarray on left-hand side of equals</h1>
+<ul><li>subarray on left replaced with Array elements on right
+
+<br/><br/><textarea class='runnable ' rows='13'>
+a = [ 'John', 'Paul', 'George', 'Pete' ]
+a[3] = 'Ringo'
+p a
+a.sort!
+p a
+a[0..1] = []
+p a
+## a[0] = nil replaces with nil in 1.9; removes element(s) in 1.8
+a[0] = nil
+p a
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: Favorite methods</h1>
+<ul><li>As with Fixnum and String, you are advised to read the API docs in the Pickaxe and/or ri</li>
+<li>clear, compact!, uniq!, join, pop, push, +, -, empty?, include?, first, last, reverse, unshift, length, size (same as length), sort (also NOTE: sort_by), cycle (new for 1.9)
+
+<br/><br/><textarea class='runnable irb' rows='17'>
+### Array - basic methods
+a = ["testing", "one", "two", "three"]
+a.pop
+a.pop
+a.push("four")
+a.empty?
+a.include?("testing")
+a.first
+a.last
+a.reverse
+a.unshift("zero")
+a.length
+a.size # same thing as length
+a.sort
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: operators</h1>
+<ul><li>When reading docs, notice that operators are defined</li>
+<li>- (removes common elements), + (aka concat), << (aka push), * (repetition and, w/ String, aka join)</li>
+<li>And booleans: | and & (for big collections, use Set)</li>
+<li>And comparisons (ordering analogous to Strings: see ri "Array#<=>")
+<br/><br/><textarea class='runnable irb' rows='12'>
+a = [ 'Lisp', 'Fortran', 'Cobol', 'C', 'Pascal', 'C++' ]
+a - [ 'C', 'C++' ]
+a = a + [ 'Perl' ]
+[ 'Ruby' ] * 2
+a * ', '
+a & [ 'Ruby', 'Perl' ]
+a | [ 'Ruby' ]
+### following: -1 because 1 < 4; see docs!
+[ 1, 2 ] <=> [ 4, 5 ]
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: join</h1>
+<ul><li>Compare with String#split</li>
+<li>Converts elements to String first!
+
+<br/><br/><textarea class='runnable irb' rows='6'>
+[ 1, 2, 3 ].join
+[ 1, 2, 3 ].join(', ')
+["testing", "one", "two", "three"].join("... ")
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: Destructive operations</h1>
+<ul><li>When a method ends with ! (bang), the result usually changes the object</li>
+<li>The ! is a convention, not required</li>
+<li>Note: If YOU introduce a ! method, it is conventional to also have a non-bang version
+
+<br/><br/><textarea class='runnable ' rows='9'>
+### Array - destructive operations
+a = ["one", "two", "three"]
+a.reverse
+puts "after a.reverse, a = #{a.inspect}"
+a.reverse!
+puts "after a.reverse!, a = #{a.inspect}"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Parallel assignment</h1>
+<ul><li>Ruby allows you to assign multiple values in the same expression</li>
+<li>Best to learn by example</li>
+<li>See Pickaxe for discussion of different numbers of values on left and right</li>
+<li>NOTE: Also related to the "splat" operator (discussed later)
+
+<br/><br/><textarea class='runnable irb' rows='14'>
+## same number of values on left and right
+x, y, z = 1, 2, 3
+x
+y
+## single value on left, multiple on right
+x = 1, 2, 3
+x
+## multiple on left, array on right
+x, y, z = [ 1, 2, 3 ]
+x
+y
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Hash</h1>
+
+<center><img width='400' src='lecture02-images/hash.jpg'/></center></div>
+<div class="slide">
+  <h1>Hash</h1>
+<ul><li>A hash is an unordered collection of elements</li>
+<li>Syntax: { 'one' => 1, 'two' => 2 }</li>
+<li>Elements stored in key/value pairs</li>
+<li>Create with Hash.new or Hash literal: {}</li>
+<li>Can also do Hash[1, 'a', 2, 'b'] to get 1=>'a', 2=>'b'</li>
+<li>Retrieve via a key using brackets: h['one']</li>
+<li>In other languages: dictionaries, associative arrays, maps</li>
+<li>Special role in Rails: keys acting as names of parameters</li></ul></div>
+<div class="slide">
+  <h1>Hash: Setting one up</h1>
+<ul><li>Traditional syntax: h = { key1 => value1, key2 => value2 }</li>
+<li>Would you use an Array or Hash to represent the separate details of a course?
+
+<br/><br/><textarea class='runnable ' rows='9'>
+# Syntax for Array vs. syntax for Hash
+a = [ "Harvard", "Computer Science", "E-168", "Building Web-Based Software with Ruby and Ruby on Rails" ]
+h = { 'institution' => "Harvard",
+'department' => "Computer Science",
+'course_number' => "E-168",
+'course_title' => "Building Web-Based Software with Ruby and Ruby on Rails" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Hash: New syntax when keys are symbols</h1>
+<ul><li>{ key1: value1, key2: value2 }</li>
+<li>Keys must be legitimate tokens for symbols
+
+<br/><br/><textarea class='runnable irb' rows='5'>
+{ one: 1, two: 2 }
+{ one: "1", two: "2" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Hash: Favorite methods</h1>
+<ul><li>empty?, include? (aka has_key?), length (aka size)</li>
+<li>Retrieve elements with brackets <b>(reminder: create Hash with braces, retrieve element with brackets)</b></li>
+<li>Set element by putting retrieval on left-hand side</li>
+<li>Can define a default value with .default</li>
+<li>Default value is re-used: Watch out!
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+### Retrieve; use of .default
+h = { '02138' => 'Harvard', '02139' => 'Central Square', '02141' => 'East Cambridge' }
+h['02139']
+h.default = 'No idea'
+h['02142']
+h['02138'] = 'Harvard Square'
+h['02138']
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Also can give the default value in the constructor</h1>
+<ul><li>A Hash of section leader names, each with an Array of student names
+
+<br/><br/><textarea class='runnable ' rows='8'>
+classrooms_for_sections = Hash.new("unknown")
+classrooms_for_sections['Amy'] = "Story 302"
+classrooms_for_sections['Keith'] = "Story 303"
+puts classrooms_for_sections['John']
+puts classrooms_for_sections
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Repeat: Default value is re-used</h1>
+<ul><li>What will this print out?</li>
+<li>We will come back to this
+
+<br/><br/><textarea class='runnable ' rows='10'>
+## What is Hash.new([]) saying?
+students_for_section = Hash.new([])
+students_for_section['Amy'] = students_for_section['Amy'] << 'Harlan'
+## The <<= operator has semantics like previous line
+students_for_section['Amy'] <<= 'John'
+students_for_section['Keith'] <<= 'Jim'
+puts students_for_section
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures</h1>
+
+<center><img width='400' src='lecture02-images/looping.jpg'/></center></div>
+<div class="slide">
+  <h1>Control Strctures: A Note</h1>
+<ul><li>For small tight loops, Rubyists don't use while, until, for, loop!</li>
+<li>They use iterators instead - coming up!</li></ul></div>
+<div class="slide">
+  <h1>Control Structures: if, unless</h1>
+<ul><li>Allow us to run a block based on a condition
+
+<br/><br/><textarea class='runnable ' rows='11'>
+age = 10
+if age < 16
+  puts "You're #{age}; please obtain a license or permit."
+end
+## unless is "if not"
+unless age >= 16
+  puts "You're #{age}; please obtain a license or permit."
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>if, unless: as modifiers</h1>
+<ul><li>if and unless can be used as statement modifiers</li>
+<li>I find the unless modifier hard to read
+
+<br/><br/><textarea class='runnable ' rows='6'>
+age = 10
+puts 'Age: #{age}; Please obtain a license or permit.' if age < 16
+puts 'Age: #{age}; Please obtain a license or permit.' unless age >= 16
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Reminder about truth</h1>
+<ul><li>"Any value that is not nil or the constant false is true." (Pickaxe)</li>
+<li>Remember when we looked at String.index ? Now here's =~ again</li>
+<li>=~ returns a number if there is a match, which is considered to be true in a condition
+
+<br/><br/><textarea class='runnable ' rows='11'>
+s = "The Boston Red Sox drive me crazy. The Bruins, too."
+p s =~ /Sox/
+p s =~ /Bruins/
+p s =~ /Patriots/
+p s =~ /The/
+if (s =~ /Sox/) then p "contains 'Sox'" else p "does not contain 'Sox'" end
+if (s =~ /Patriots/) then p "contains 'Patriots'" else p "does not contain 'Patriots'" end
+p s =~ /Patriots/ ? true : false
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures: if, elsif, else</h1>
+<ul><li>if / elsif / else much like other languages
+
+<br/><br/><textarea class='runnable ' rows='13'>
+## if, elsif, else
+income = 35_000
+if income < 20_000
+  bracket = 1
+elsif income >= 20_000 && income <= 30_000
+  bracket = 2
+else
+  bracket = 3
+end
+puts "Bracket: #{bracket}"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Sometimes need "then" keyword</h1>
+<ul><li>If on one line, add "then"
+
+<br/><br/><textarea class='runnable ' rows='5'>
+income = 15_000
+if income < 20_000 then puts "You need a raise!" end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures: case</h1>
+<ul><li>Somewhat like "switch" in other languages
+
+<br/><br/><textarea class='runnable ' rows='14'>
+## Case
+income = 35_000
+case income
+  when income < 20_000
+    bracket = 1
+  when income >= 20_000 && income <= 30_000
+    bracket = 2
+  else
+    bracket = 3
+end
+puts "Bracket: #{bracket}"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures: case and assignment</h1>
+<ul><li>Personally, I don't like this this idiom (below)</li>
+<li>Reason: If I add lines, what's inside "when" depends on order to return value properly
+
+<br/><br/><textarea class='runnable ' rows='14'>
+## Case
+income = 35_000
+bracket = case income
+  when income < 20_000
+    1
+  when income >= 20_000 && income <= 30_000
+    2
+  else
+    3
+end
+puts "Bracket: #{bracket}"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures: case equality</h1>
+<ul><li>Case/when uses "case equality" (next lecture)</li></ul></div>
+<div class="slide">
+  <h1>Control Structures: While and Until</h1>
+<ul><li>classic while: test expression at the top; keep looking while expression evaluates to true</li>
+<li>until: same syntax, but means: while not
+
+<br/><br/><textarea class='runnable ' rows='16'>
+## while example
+i = c = 0
+p = 10
+while i < 100000
+  c += 1 if (Math.sqrt((rand - 0.5)**2 + (rand - 0.5)**2) < 0.5)
+  i += 1
+  if ( i % p == 0)
+    printf "After %7i iterations, pi = %5.4f", i, 4.0 * c / i
+    puts
+    p *= 10
+  end
+end
+## NOTE: Until is "while not"; body WILL NOT RUN if expression is true (test NOT at bottom)
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control structures: while and until modifiers</h1>
+<ul><li>Gotcha: When you do begin ... end until, inside will always run at least once!</li>
+<li>Below: Example 1 prints nothing, but Example 2 does</li>
+<li>Need to copy and paste this code into irb
+
+<br/><br/><textarea class='runnable ' rows='12'>
+## Syntax: expression while boolean-expression
+## If expression is begin/end block, block always executes at least once!
+i = 0
+## Example 1
+p "It's: #{i}" until i == 0
+## Example 2
+begin
+  p "value = #{i}"
+end until i == 0
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Control Structures: For and Loop</h1>
+<ul><li>We will discuss the "for" control structure when we get into Rails. Not super-Ruby-y.</li>
+<li>Loop means: while true do ... end (Pickaxe).</li></ul></div>
+<div class="slide">
+  <h1>Iteration in Ruby</h1>
+<ul><li>Ruby provides "external" iterators (like Java)</li>
+<li>But most natural in Ruby are "internal" iterators</li>
+<li>Let's take a peek at external iteration</li></ul></div>
+<div class="slide">
+  <h1>Oh, by the way</h1>
+<ul><li>Will be smuggling in later topics</li>
+<li>Defining methods</li>
+<li>Passing parameters</li>
+<li>I don't think it will be surprising</li></ul></div>
+<div class="slide">
+  <h1>External iterators (for the Java/C# developers)</h1>
+<ul><li>An external iterator is a helper object</li>
+<li>In Ruby, an external iterator is an instance of the Enumerator class</li>
+<li>Unless you need to pass an interator around, don't iterate this way</li>
+<li>We'll come back the use of external iterators
+
+<br/><br/><textarea class='runnable ' rows='9'>
+## NOTE: Won't run in JRuby; try it yourself in regular Ruby
+a = [ "John", "Keith", "Antony", "Jonathan" ]
+e = a.to_enum
+loop do
+  puts e.next
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array#each</h1>
+<ul><li>Our first iterator . . .</li>
+<li>The "each" method iterates through the array, and <i>yields</i> each element to the code block</li>
+<li>We don't see yield: It's in the code for the #each method
+
+<br/><br/><textarea class='runnable ' rows='5'>
+## Array - each (Pickaxe, pp. 59ff)
+["H", "A", "L"].each { |e| puts e.downcase }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Eh?</h1>
+<ul><li>Did you say "yield" to "block"??
+
+<center><img width='400' src='lecture02-images/yield.jpg'/></center></li></ul></div>
+<div class="slide">
+  <h1>Digression on yield to block: 1 of 5</h1>
+<ul><li>A programmer has existing code that repeats a long boring computation:
+
+<br/><br/><textarea class='runnable ' rows='11'>
+## Long boring computation
+def compute
+  for i in [1, 2, 3, 4, 5]
+    # some long boring computation
+  end
+  "done"
+end
+p compute
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Digression on yield to block: 2 of 5</h1>
+<ul><li>Boss says: Could you print out the time for each iteration? I need to know how it's going</li>
+<li>Developer: OK
+
+<br/><br/><textarea class='runnable ' rows='12'>
+## Long boring computation
+def compute
+  for i in [1, 2, 3, 4, 5]
+    # some long boring computation
+    p i
+  end
+  "done"
+end
+p compute
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Digression on yield to block: 3 of 5</h1>
+<ul><li>Boss says: Could you print the time, too?</li>
+<li>Developer <sup>.;oO: "I don't like modifying my compute method... I'll pass in a block and yield to it."</sup>
+
+<br/><br/><textarea class='runnable ' rows='14'>
+## Long boring computation
+def compute
+  for i in [1, 2, 3, 4, 5]
+    # some long boring computation
+    if block_given?
+      yield i
+    end
+  end
+  "done"
+end
+p compute { |i| p "#{i} at #{Time.now}" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Digression on yield to block: 4 of 5</h1>
+<ul><li>Boss says: Could you e-mail me for each compute?</li>
+<li>Developer: NO PROBLEM!!
+
+<br/><br/><textarea class='runnable ' rows='15'>
+# Long boring computation
+def compute
+  for i in [1..10]
+    # some long boring computation
+    if block_given?
+      yield i
+    end
+  end
+  "done"
+end
+# Next line won't actually run in the browser . . .
+p compute { |i| system("echo \"#{i} at #{Time.now}\" | mail -s update john@7fff.com" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Digression on yield to block: 5 of 5</h1>
+<ul><li>Yield provides for means to call a passed-in block</li>
+<li>A "callback"</li>
+<li>"Don't call us, we'll call you"</li>
+<li>miniature Inversion of control (IoC)</li>
+<li>Design pattern: Strategy</li></ul></div>
+<div class="slide">
+  <h1>Blocks</h1>
+<ul><li>Use braces for single-line blocks</li>
+<li>Use do/end for multi-line blocks
+
+<br/><br/><textarea class='runnable ' rows='9'>
+## Array - each with do end multi-line block
+["H", "A", "L"].each do |e|
+   print 'Letter: '
+   puts e.downcase
+end
+p ["H", "A", "L"].map { |e| e.downcase }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array#each_with_index</h1>
+<ul><li>The each_with_index calls yield with the element, and the index value
+
+<br/><br/><textarea class='runnable ' rows='5'>
+## Array - each_with_index
+["H", "A", "L"].each_with_index { |e, i| puts "element #{i} = #{e}" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array#inject</h1>
+<ul><li>Allows for an accumulator, i.e., a variable (called the memo) that is preserved across iterations</li>
+<li>Slower than each</li>
+<li>But Knuth sayeth: "premature optimization is the root of all evil"</li>
+<li>Incredibly useful for one-liners
+
+<br/><br/><textarea class='runnable irb' rows='9'>
+### Array - inject
+book_prices = [ 24.95, 39.95, 10.00 ]
+book_prices.inject { |sum, price| sum + price }
+# i.e., each time, sum = sum + price
+book_prices.inject(5.00) { |sum, price| sum + price } # provide initial value for sum
+book_prices.inject([]) { |new_orders, price| new_orders << price * 2 } # memo is an object
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array#collect</h1>
+<ul><li>Synonym is map</li>
+<li>Block value used to create new Array element</li>
+<li>Also very useful for one-liers
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+### Array - collect
+["H", "A", "L"].collect { |e| e.downcase }
+["H", "A", "L"].collect { |e| e.downcase }.join
+# Compare with the following
+["H", "A", "L"].inject([]) { |a, e| a << e.downcase }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Array: Other Useful iterators (taking blocks) for Assignment 1</h1>
+<ul><li>find</li>
+<li>find_all</li>
+<li>delete</li>
+<li>delete_at</li>
+<li>select</li>
+<li>reject</li>
+<li>grep</li>
+<li>partition</li></ul></div>
+<div class="slide">
+  <h1>TMTOWTDI (1) (As the Perlists say)</h1>
+<ul><li>"There's more than one way to do it" -- Larry Wall</li>
+<li>Take an Array, and return a new Array of all elements greater than 3
+
+<br/><br/><textarea class='runnable irb' rows='4'>
+[ 20, 1, -5, 3, 4, 4, 4 ].reject { |e| e <= 3 }
+</textarea>
+
+<br/><br/><textarea class='runnable irb' rows='5'>
+### Do it with .partition
+[ 20, 1, -5, 3, 4, 4, 4 ].partition { |e| e <= 3 }.last
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>TMTOWTDI (2)</h1>
+<ul><li>Given an Array, return a new Array where every element is doubled
+
+<br/><br/><textarea class='runnable irb' rows='4'>
+[ 20, 1, -5, 3, 4, 4, 4].map { |e| e * 2 }
+</textarea>
+
+<br/><br/><textarea class='runnable irb' rows='5'>
+### Do it with .inject
+[ 20, 1, -5, 3, 4, 4, 4 ].inject([]) { |m, e| m << e * 2 }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>TMTOWTDI (3)</h1>
+<ul><li>Given an Array, return a new Array where every element is doubled; but only for the even ones. Use inject.
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+### NOTE: Remove "; m" inside the block to see a common mistake
+### Block must return value appropriate for m, in this case, an Array
+### Without ; m, sometimes the prior statement evaluates to nil, which
+### is not an Array.
+[ 20, 1, -5, 3, 4, 4, 4 ].inject([]) { |m, e| m << e * 2 if e % 2 == 0; m }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Hash#each, Hash#each_pair, Hash#each_key</h1>
+<ul><li>Hash's way of iteration</li>
+<li>Most obvious is each_pair
+
+<br/><br/><textarea class='runnable ' rows='9'>
+### Hash - each and each_key
+h = { 'hello' => 'bonjour', 'wine' => 'vin', 'song' => 'chanson' }
+h.each { |e| p e }
+h.each_pair { |k, v| p "#{k} => #{v}" }
+h.each_key { |k| p "Key: #{k}" }
+h.each_key { |k| p "Value: #{h[k]}" }
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Hash#delete, Hash#delete_if</h1>
+<ul><li>No ! because not destructive of the Hash, just its elements
+
+<br/><br/><textarea class='runnable ' rows='9'>
+## Hash - delete, delete_if
+h = { 'hello' => 'bonjour', 'wine' => 'vin', 'song' => 'chanson' }
+h.delete('hello')
+p h
+h.delete_if { |key, value| value.include?('i') }
+p h
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Converting Hash to Array and back</h1>
+<ul><li>Hash to Array, Array of keys, Array of values, Array to Hash</li>
+<li>NOTE! Hash[ 1, 'a', 2, 'b' ] has four parameters. Notice below that Hash[*a] has one parameter, the Array a, but prefixed with a *. When prefixed with a *, the Array is turned into a series of individual parameters. See Pickaxe PDF, pp. 143ff. See what happens if you remove the * and re-run. (To make matters worse, you can also use * when you declare a method: See Pickaxe PDF, pp. 353ff.) Hint: This business of writing Hash[*some_array] can be useful.
+
+<br/><br/><textarea class='runnable irb' rows='11'>
+### Hash conversions
+h = { '02138' => 'Harvard', '02139' => 'Central Square', '02141' => 'East Cambridge' }
+h.to_a
+h.to_a.flatten
+h.keys
+h.values
+a = [ 1, 'a', 2, 'b']
+h = Hash[*a]
+</textarea></li></ul></div>
+
+
+
+</body>
+</html>

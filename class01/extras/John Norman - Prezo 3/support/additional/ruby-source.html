@@ -1,0 +1,68 @@
+<html><!-- $Id: ruby-source.html 111 2008-03-04 13:50:04Z jgn $ -->
+<head>
+<script src="../OTS/json/json.js" type="text/javascript"></script>
+<script src="ruby-source.js" type="text/javascript"></script>
+</head>
+<body onload="sendSource()">
+
+
+<!-- Each Ruby fragment goes into a textarea, where the id is the name of the
+fragment, and the interior of the textarea is the fragment source -->
+
+<textarea id="pre">
+
+# Switch $stdout to a StringIO
+require 'stringio'
+string_out = StringIO.new
+$stdout = string_out
+
+</textarea>
+
+
+
+
+<textarea id="post">
+
+# Restore $stdout, and save our result
+string_out.close
+$stdout = STDOUT
+evaled_code + string_out.string.split("\n").collect { |l| '# ' + l + "\n"}.join("")
+
+</textarea>
+
+
+
+
+<textarea id="xmp">
+
+# A version of XMP that provides some flexibility for display
+OK = ' #=> '
+EX = ' #!! '
+def xmp(source, irb = true, statement_width = 40, total_width = 80)
+  if !irb
+    eval(source)
+    source
+  else
+    source.split("\n").inject('') do |source_irbed, line|
+      line.chomp!
+      result = ''
+      if line[0..1] != '##' then
+  	    result = begin
+	        OK + (eval(line, TOPLEVEL_BINDING)).inspect
+	      rescue
+          EX + $!
+	      end
+	    end
+	    if line.length > statement_width || line.length + result.length + OK.length > total_width
+	      source_irbed << line << "\n" << result << "\n"
+	    else
+	      source_irbed << line.ljust(statement_width) << result << "\n"
+	    end
+    end
+  end
+end
+
+</textarea>
+
+</body>
+</html>

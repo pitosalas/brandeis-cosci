@@ -1,0 +1,70 @@
+8
+
+dir
+47
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09/trunk/lectures/html/finished/support/OTS/scriptaculous-js/test
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09
+
+
+
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1845a009-6ba0-4c37-b6c9-b5e6adae077d
+
+unit
+dir
+
+functional
+dir
+
+test.css
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+b01684fb1facf401bd7e298305236037
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+run_unit_tests.html
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+c18e2b877f1f7b281ea9db7f2083a2b7
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+run_functional_tests.html
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+4613b293901bd902f08dd2e0a0b9d3bd
+2009-08-24T01:33:34.316818Z
+5
+jgn
+

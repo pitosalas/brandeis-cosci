@@ -1,0 +1,73 @@
+8
+
+dir
+47
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09/trunk/lectures/html/finished/support/OTS/scriptaculous-js
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09
+
+
+
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1845a009-6ba0-4c37-b6c9-b5e6adae077d
+
+test
+dir
+
+lib
+dir
+
+src
+dir
+
+CHANGELOG
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+9f58b2ec12dc21f74a69513b77a5ebdb
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+MIT-LICENSE
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+644476df73032b063a33b199a3003fd8
+2009-08-24T01:33:34.316818Z
+5
+jgn
+
+README
+file
+
+
+
+
+2009-08-28T14:32:53.000000Z
+5c5dcebaf7c33c3f1f7190f7b2decde1
+2009-08-24T01:33:34.316818Z
+5
+jgn
+

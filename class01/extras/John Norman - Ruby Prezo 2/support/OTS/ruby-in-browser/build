@@ -1,0 +1,3 @@
+#!/bin/sh
+javac -cp lib/jruby-complete.jar -d classes/ src/java/RubyApplet.java 
+cp classes/RubyApplet.class lib/

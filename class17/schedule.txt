@@ -1,0 +1,12 @@
+class17: Tuesday June 29th
+10-12 Basic Concepts of the Mobile World - Pito
+12-1 Lunch
+1-3 Hello word Android, setup/install simulator, using phones 
+-----------
+
+==== 17: Basic Concepts of the Mobile World: June 29th ====
+ * 10:00-10:20 - Homework cold calls
+ * 10:20-12:00 - (Pito) Basic Concepts of the Mobile World
+ * 12:00-1:00: Lunch
+ * 1:00-3:00: Workshop: Hello World Android; Setup and Install Emulator; Use the phones
+ * Homework for tomorrow: see Github

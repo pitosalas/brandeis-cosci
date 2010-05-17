@@ -1,0 +1,1 @@
+java -cp lib/:lib/jruby-complete.jar RubyApplet

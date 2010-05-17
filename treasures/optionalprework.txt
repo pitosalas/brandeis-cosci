@@ -1,0 +1,6 @@
+== Optional Prework ==
+
+If you want to really hit the ground running, I also suggest the following:
+
+ * Read as much of Part 1, 2 and 3 of Programming Ruby as you can
+ * Read part 1 and 2 of Agile Development with Rails

@@ -1,0 +1,6 @@
+HOMEWORK
+ * Read and understand: http://www.engineyard.com/blog/2009/5-tips-to-scale-your-ror-application/
+ * Read and understand: http://www.engineyard.com/blog/2009/a-quick-primer-on-sharding-for-ruby-on-rails/
+
+VOLUNTEER
+ * Learn a little about Oracle, particularly Business Intelligence DBs, Data warehouses, DB Machines. 5 minute presentation.

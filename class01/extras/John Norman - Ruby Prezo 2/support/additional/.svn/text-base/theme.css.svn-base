@@ -1,0 +1,92 @@
+/* $Id$
+
+Slidy-Ruby tweaks to w3c-blue.css
+
+13-July-2007 (jgn) original
+
+Reference this style sheet after the W3C w3c-blue.css has been loaded;
+the definitions below represent additions and tweaks both for
+the color scheme and layout and for styles for Ruby support.
+
+*/
+
+textarea.runnable, textarea.code {
+ font-family: monospace;
+ font-size: 80%;
+ font-weight: bold;
+ line-height: 120%;
+ padding-top: 0.2em;
+ padding-bottom: 0.2em;
+ padding-left: 1em;
+ padding-right: 1em;
+ border-style: solid;
+ border-left-width: 1em;
+ border-top-width: thin;
+ border-right-width: thin;
+ border-bottom-width: thin;
+ border-color: #8E2400;
+ color: #000000;
+ background-color: #E4E5E7;
+ margin-left: 1em;
+ margin-right: 1em;
+ width: 92%;
+}
+ 
+textarea.runnable:focus, textarea.runnable:hover { background-color: lightyellow; }
+
+div.controls {
+   margin-left: 1em;
+   opacity: 0.5;
+}
+
+div.controls button {
+  font-size: 8pt;
+  background-color: #842400;
+  color: lightyellow;
+}
+
+div.controls {
+  font-size: 8pt;
+}
+
+ul li { 
+  background: transparent url(bullet.png) no-repeat 2px 2px;
+}
+
+div.background {
+  background-color: #8E2400;
+}
+
+div.slide h1 {
+  background: #8E2400;
+}
+
+#head-icon {
+  background:  #8E2400;
+}
+
+#head-logo {
+  background: #8E2400;
+}
+
+pre {
+ border-color: #8E2400; 
+ color: #000000;
+ background-color: #E4E5E7;
+}
+
+div.header {
+  background-color: #8E2400;
+}
+
+#w3c-logo {
+  background: #8E2400;
+}
+
+#w3c-logo-fallback {
+  background: #8E2400;
+}
+
+div.slide.cover {
+  background-color: #8E2400;
+}

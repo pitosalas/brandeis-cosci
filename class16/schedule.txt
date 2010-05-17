@@ -1,0 +1,6 @@
+==== 16: Intro to Mobile Apps: Monday June 28 ====
+ * 10:00-12:00 (Pito) Intro to Mobile Applications
+ * 12:00-1:00: Lunch
+ * 1:00-2:00: Speaker
+ * 2:00-2:30: Discussion
+ * Homework for tomorrow: see Github

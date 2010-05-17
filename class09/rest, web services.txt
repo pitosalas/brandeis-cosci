@@ -24,24 +24,27 @@ RPC - Remote Procedure Calls
 
 REST - A different way to think about RPC
 
-* HTTP Verbs: GET (HEAD), PUT, POST, DELETE.
-* Think of everything in terms of a 'resource' that is being manipulated
-* For example, GET means get a representation of the resource marked, e.g.
+ * HTTP Verbs: GET (HEAD), PUT, POST, DELETE.
+ * Think of everything in terms of a 'resource' that is being manipulated
+ * For example, GET means get a representation of the resource marked, e.g.
    GET http://www.facebook.com/user/pitosalas 
    GET http://www.facebok.com/users
-* Some things are harder to fit with the model
-* What does the fortune cookie request look like as REST?
-* http://brandes.edu/fortunes/1
-* http://brandeis.edu/fortunes
-* http://brandeis.edu/fortunes/random
-* Two advantages: 
--- some rhyme or reason on how to build urls and
--- make logical use of url space
-* Different 'representations' possible: html and xml, but others too, say csv or video
-* Big one: Standards allow caching in the cloud
+ * Some things are harder to fit with the model
+ * What does the fortune cookie request look like as REST?
+ * http://brandes.edu/fortunes/1
+ * http://brandeis.edu/fortunes
+ * http://brandeis.edu/fortunes/random
+ * Two advantages: 
+  * some rhyme or reason on how to build urls and
+  * make logical use of url space
+  * Different 'representations' possible: html and xml, but others too, say csv or video
+  * Big one: Standards allow caching in the cloud
+  
 * Is http://blog.programmableweb.com/2010/02/08/googles-secret-weather-api/ a REST call?
 * Now if we want to submit a new fortune to the fortune cookie server:
 * POST http://brandeis.edu/fortune/create; the message would follow a particular format for a new fortune cookie; the result would be the fortune cookie number, ready for a http
+
+
 * Try some more examples
 
 CLOUD

@@ -1,0 +1,23 @@
+body {
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	color: #666;
+}
+
+h1, h2 {
+  color: black;
+  border-bottom: #ddd 1px solid;
+  margin-top: 0;
+}
+.output {
+  float: right; margin: 5px; padding: 5px; height: 300px; width: 300px; 
+  border: black 1px solid;
+  background-color: #ddd;
+}
+
+#output {
+  background-color: yellow; border: solid grey 1px; padding: 5px;
+}
+
+.input {
+  margin-right: 40px;
+}

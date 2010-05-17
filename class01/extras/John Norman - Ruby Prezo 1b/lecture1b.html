@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+<title>E-168</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Content: Copyright &#169; 2007-2008 John G. Norman; Slidy: Copyright &#169; 2005 W3C (MIT, ERCIM, Keio)" />
+<meta name="font-size-adjustment" content="-2" />
+<link rel="stylesheet" href="support/OTS/Slidy/slidy.css" type="text/css" media="screen, projection, print" />
+<link rel="stylesheet" href="support/OTS/Slidy/w3c-blue.css" type="text/css" media="screen, projection, print" />
+<script src="support/OTS/Slidy/slidy.js" type="text/javascript"></script>
+
+<!-- BEGIN: E168 additions to standard Slidy head -->
+<script src="support/OTS/scriptaculous-js/lib/prototype.js" type="text/javascript"></script>
+<script src="support/OTS/scriptaculous-js/src/scriptaculous.js?load=effects" type="text/javascript"></script>
+<link rel="stylesheet" href="support/additional/theme.css" type="text/css" media="screen, projection, print" />
+<script src="support/additional/ruby-control.js" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+window.onload = mystart;
+// ]]>
+</script>
+<!-- END: E168 additions to standard Slidy head -->
+
+</head>
+
+
+
+<body>
+
+<div class="background"><img alt="" id="head-icon" src="support/OTS/Slidy/cleardot.gif"/>
+
+<!--
+<object id="head-logo"
+data="support/OTS/Slidy/w3c-logo-blue.svg" type="image/svg+xml"
+title="W3C logo"><a href="http://www.w3.org/"><img
+alt="W3C logo" id="head-logo-fallback"
+src="support/OTS/Slidy/w3c-logo-blue.gif" /></a></object>
+-->
+</div>
+
+<div class="background slanty">
+<img src="support/OTS/Slidy/w3c-logo-slanted.jpg" alt="slanted W3C logo" />
+</div>
+<div class="slide cover title">
+  <!-- hidden style graphics to ensure they are saved with other content -->
+  <img class="hidden" src="support/OTS/Slidy/bullet.png" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/unfold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-fold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-nofold-dim.gif" alt="" />
+  <img class="hidden" src="support/OTS/Slidy/bullet-unfold-dim.gif" alt="" />
+
+<!--
+<img src="support/OTS/Slidy/keys.jpg" alt="Cover page images (keys)" class="cover" />
+-->
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br clear="all" />
+<h1>CSCI E-168: Ruby and Ruby on Rails</h1>
+
+<p><a href="http://7fff.com">John G. Norman</a>,
+&lt;<a href="mailto:john@7fff.com">john@7fff.com</a>&gt;<br />
+<br />
+<br />
+<br />
+<br /><em>Hit the space bar for next slide</em></p>
+</div>
+
+
+<div class="slide">
+  <h1>Warnings and Encouragements</h1>
+<ul><li>Ruby requires practice</li>
+<li>Blocks may be a new experience</li>
+<li>irb is your friend</li>
+<li>Pickaxe is loaded with examples</li></ul></div>
+<div class="slide">
+  <h1>Agenda</h1>
+<ul><li>About tonight's slides</li>
+<li>Numbers, String</li>
+<li>Symbols, Regular Expressions</li>
+<li>Arrays (maybe)</li>
+<li>Hashes (maybe)</li></ul></div>
+<div class="slide">
+  <h1>About tonight's slides</h1>
+<ul><li>Check "irb-style" to see expression result in a comment</li>
+<li>Uncheck and the code must "print" output</li>
+<li>When checked, can't do multiline statements (if / else / end)</li>
+<li>print vs. puts vs. p
+
+<br/><br/><textarea class='runnable irb' rows='6'>
+a = "hello, world!"
+puts a
+p a
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Preview of classes, objects, and messages (methods)</h1>
+<ul><li>The things we play with in Ruby are called objects</li>
+<li>An object has a class</li>
+<li>The class defines the messages to which the object can respond</li>
+<li>We send messages such as "length" to an object of a class</li>
+<li>If the object can respond, it returns a message</li></ul></div>
+<div class="slide">
+  <h1>How to send a message to an object</h1>
+<ul><li>Follow an object literal or the name of an object with a dot and the name of the message</li>
+<li>NOTE: Frequently in docs, in ri, and here, will say #name to indicate method you call on an object; more on this later
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+10.zero?
+10.class
+n = 20
+n.zero?
+n.class
+s = "John"
+s.reverse
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Names</h1>
+<ul><li>Local variables start with a lowercase letter</li>
+<li>Class names start with an uppercase letter</li>
+<li>Can create objects of a class by following class name with ".new"</li>
+<li>(send the message "new" to the class)
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+a = Array.new
+a.size
+a.push(15)
+a.push(25)
+a.push(35)
+a.size
+a.reverse
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Class hierarchies</h1>
+<ul><li>An object's class may have a superclass (think parent class)</li>
+<li>superclasses define additional messages</li>
+<li>Animal kingdom: Collie &rarr; Dog &rarr; Mammal</li>
+<li>Vehicles: Camry &rarr; Sedan &rarr; Automobile</li>
+<li>Ruby: Fixnum &rarr; Integer &rarr; Numeric</li>
+<li>Ruby also has an idea of an included module, so:</li>
+<li>Ruby: Array includes module Enumerable</li></ul></div>
+<div class="slide">
+  <h1>Why are we belaboring this?</h1>
+<ul><li>For Assignment 1, you may want to do something with an Array;</li>
+<li>Functionality may be defined in a superclass or module!</li>
+<li><a href="http://www.ruby-doc.org/core/classes/Array.html">Doc for Array</a></li>
+<li>You can also send .superclass and .ancestors methods
+
+<br/><br/><textarea class='runnable irb' rows='5'>
+Array.ancestors
+Fixnum.superclass
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Numeric</h1>
+<ul><li>At the very least, Ruby is a great calculator
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+10 + 5
+(10 + 2) / 2
+(10 + 1) / 2
+10.5 + 10.5
+(10.5 + 10.5) / 2.0
+(10 + 11) / 2
+(10 + 11) / 2.0
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Fixnum</h1>
+<ul><li>Fixnum is a class for your garden-variety signed integer</li>
+<li>Smallish numbers are objects of the class Fixnum</li>
+<li>So . . . the class of 5 is Fixnum</li>
+<li>The max value is whatever can be expressed in the machine's idea of an integer</li>
+<li>OS X Intel: -2147483648 .. 2147483647 (i.e., from -(2**31) to (2**31) - 1)</li>
+<li>JRuby: -9223372036854775808 .. 9223372036854775807 (i.e., from -(2**63) to (2**63) - 1)</li></ul></div>
+<div class="slide">
+  <h1>What's bigger than a Fixum?</h1>
+<ul><li>Add 1 to the largest Fixnum
+
+<br/><br/><textarea class='runnable irb' rows='11'>
+### Doing some arithemetic
+# NOTE: You will have to change the power to 31 for Intel              
+f = (2**63) - 1
+f.class
+f = f + 1
+f.class
+f = f - 1
+f.class
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Bit more about Fixnums</h1>
+<ul><li>Hex (base 16), Octal (base 8), or Binary: Prefix Fixnum with 0x, 0, or 0b (respectively)</li>
+<li>So . . . No leading zeroes for decimal!!: 0500 means 500 Octal</li>
+<li>Use _ for a comma separator: 700_000_000_000 (700 billion)</li></ul></div>
+<div class="slide">
+  <h1>Remember, numbers are truly objects</h1>
+<ul><li>Sending messages to a Fixnum
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+n = -5
+n.abs
+n.zero?
+## From Object
+n.to_s
+## From Integer
+n.next
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Floating point numbers</h1>
+<ul><li>optional sign, then digits followed by decimal point, additional digits</li>
+<li>Example: -1.01</li>
+<li>Can follow with exponent: letter "e" followed by sign and digits</li>
+<li>Example: 6.02e23</li>
+<li>Mix Fixnum and Float and get a Float
+
+<br/><br/><textarea class='runnable irb' rows='5'>
+5 / 2
+5 / 2.0
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Floats and arithmetic</h1>
+
+<center><img width='400' src='lecture1b/pie.jpg'/></center></div>
+<div class="slide">
+  <h1>Floats and comparisons</h1>
+<ul><li>Due to round-off, see if numbers within a range
+
+<br/><br/><textarea class='runnable irb' rows='9'>
+### Floating point arithmetic
+x = 9.0 / 10.0
+y = 9.0 / 100.0 * 10.0
+x == y
+# oops
+(x - y).abs < 0.001
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>BigDecimal</h1>
+<ul><li>Many decimal places</li>
+<li>If you're dealing with pennies, use BigDecimal</li>
+<li>Math with lots of digits</li>
+<li>Can do things like "bankers' rounding"
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+require 'bigdecimal'
+BigDecimal('1') / BigDecimal('3')
+a = BigDecimal('4.055')
+a.round(2, BigDecimal::ROUND_HALF_UP)
+a.round(2, BigDecimal::ROUND_HALF_DOWN)
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Strings</h1>
+
+<center><img width='400' src='lecture1b/string.jpg'/></center></div>
+<div class="slide">
+  <h1>Strings</h1>
+<ul><li>Very powerful in Ruby</li>
+<li>Many Array/Enumerable methods work on Strings (e.g., "foo".reverse)</li>
+<li>Operators do interesting things: e.g., * repeats a string, << means append to end, etc.</li>
+<li>Favorite methods: upcase, downcase, slice, capitalize, tr, reverse</li></ul></div>
+<div class="slide">
+  <h1>Strings, under the covers</h1>
+<ul><li>Ruby Strings encoded in UTF-8</li>
+<li>Ruby 1.8: String is a sequence of 8-bit bytes (more like C)</li>
+<li>In regular irb, show UTF-8
+
+<br/><br/><textarea class='runnable irb' rows='7'>
+### Selecting an element of a String
+s = "john"
+s[2]
+s.length
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Splitting Strings</h1>
+<ul><li>Lots of ways to split a String, but Ruby provides convenience method</li>
+<li>split(): split a String wherever there is whitespace</li>
+<li>split('-'): split by arbitrary String</li>
+<li>split(''): split by "nothing"</li>
+<li>split(/-|,|\./): split by regular expression (more on Regexp later)</li>
+<li>Companion is Array#join
+
+<br/><br/><textarea class='runnable irb' rows='7'>
+"What time is it?".split
+"555-1212,x100".split('-')
+"555-1212,x100".split('')
+"555-1212,x100".split(/-|,|\./)
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Substrings</h1>
+<ul><li>s[n] to get character at index n</li>
+<li>Ruby 1.8: s[n] returns ASCII value</li>
+<li>s[n, len] to get len chars starting at n</li>
+<li>s[start..end] to get a range of chars</li>
+<li>Negative indexes wrap around
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+"McCain"[2]
+"Obama"[2, 3]
+"Barack"[0..2]
+"John"[-1]
+"John"[2..-1]
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Character Literals; Converting to from character "ordinals"</h1>
+<ul><li>Precede char with ? to get String for that letter</li>
+<li>Then use .ord to get the "integer ordinal"</li>
+<li>Use Integer#chr to get a String</li>
+<li>Ruby 1.8: ?A's value IS the numeric ASCII value (don't do .ord)
+
+<br/><br/><textarea class='runnable irb' rows='7'>
+?A
+?A.ord
+?A.ord + 1
+(?A.ord + 1).chr
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Defining Strings</h1>
+<ul><li>Double-quoted Strings: provides for interpolation</li>
+<li>Double-quoted Strings: Full escape codes</li>
+<li>Single-quoted Strings: More literal, less escaping: Read PR</li>
+<li>%q to use your own delimiters for single-quote-style</li>
+<li>%Q to use your own delimiters for double-quote-style
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+### String initialization
+i = 17
+s = 'My daughter has a birthday'
+s = "My daughter has a birthday on October #{i}"
+s = %q{The party's at my place.}
+"Remember: #{i.to_s * 3}"
+%Q|"Seventeen #{i}"|
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>About String interpolation</h1>
+<ul><li>Yes, you can add (concatenate) Strings</li>
+<li>But Rubyists use interpolation all the time
+
+<br/><br/><textarea class='runnable irb' rows='7'>
+name = 'John'
+email = 'john@7fff.com'
+name + ' (' + email + ')'
+"#{name} (#{email})"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>"Here" documents</h1>
+<ul><li>Like Perl</li>
+<li>Way to do long String literals</li>
+<li>Variations to suppress interpolation, have whitespace in front of end flag</li>
+<li>See PR for more
+
+<br/><br/><textarea class='runnable ' rows='8'>
+a = <<DONE
+hi
+there
+DONE
+puts a
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Conversions between Strings and Numbers</h1>
+<ul><li>remember .to_s and .to_i
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+### Simple conversions
+i = 5
+i.to_s
+i.to_s.class
+s = "10"
+s.to_i
+s.to_i.class
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Variables (1)</h1>
+<ul><li>You can name a reference to an object
+
+<br/><br/><textarea class='runnable irb' rows='4'>
+a = "John"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Variables (2)</h1>
+<ul><li>Set two variables to the same object</li>
+<li>Change the object referred to by one variable</li>
+<li>... The other variable still points to the same object
+
+<br/><br/><textarea class='runnable irb' rows='13'>
+### Assignments means making another variable point to same object
+a = "John"
+b = a
+a << ", John, the Piper's Son"
+b
+# Sometimes you need a copy...
+a = "John"
+b = a.dup
+a << ", John, the Piper's Son"
+b
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Conventional Operators</h1>
+<ul><li>Basic arithmetic: + - * / ** %</li>
+<li>Logic: && ||</li>
+<li>Bitwise logic: & | ^</li>
+<li>Comparisons: < > == != === <=></li>
+<li>Ternary: ? :</li>
+<li>(will come back to some of these, e.g., === and <=>)</li></ul></div>
+<div class="slide">
+  <h1>More Unusual Operators</h1>
+<ul><li>Exponentiation: **</li>
+<li>Modulo: %</li>
+<li>Bitwise exclusive-or: ^</li>
+<li>No >>> shift operator (with zero shifted into leftmost bits as in Java)</li>
+<li>Not equals: != (there is no <> operator)</li>
+<li>No postfix operators (can't do a++ to mean a = a + 1; use a += 1)</li></ul></div>
+<div class="slide">
+  <h1>Operator Precedence</h1>
+<ul><li>See PR</li></ul></div>
+<div class="slide">
+  <h1>true, false, conditionals and nil</h1>
+<ul><li>In Ruby, nil, false, and true are all objects</li>
+<li>An expression is "true" if it doesn't evaluate to nil or false</li>
+<li>NOTE: Zero (0) evaluates to true</li>
+<li>We will see below occasionally use of the "if" statement or modifier</li></ul></div>
+<div class="slide">
+  <h1>true, false, conditionals and nil: subtle examples</h1>
+<ul><li>A number is neither nil nor false, so evaluates to "true"
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+5 ? "True" : "False"
+0 ? "True" : "False"
+### .index returns nil if not found, otherwise starting char index
+"John".index('o')
+"John".index('o') ? "True" : "False"
+"John".index('x')
+"John".index('x') ? "True" : "False"
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Standard type: Symbol</h1>
+<ul><li>A Symbol uniquely represents a name</li>
+<li>colon followed by name, e.g., :all, :first, :conditions, :include</li>
+<li>Good for enums: :up, :down:, :right, :left</li>
+<li>Think of it as an immutable String, and (in 1.8) with no String operation methods</li>
+<li>String vs. Symbol: "bar" can be stored many times; :bar only once
+
+<br/><br/><textarea class='runnable irb' rows='10'>
+### String vs. Symbol
+a = [ "bar", "bar" ]
+a[0].object_id
+a[1].object_id
+b = [ :bar, :bar ]
+b[0].object_id
+b[1].object_id
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Symbol used for Hash keys</h1>
+<ul><li>Ideal for Hash keys</li>
+<li>Ruby's way of supporting "named parameters"</li>
+<li>Used <b><i>everywhere</i></b> in Rails to define option values
+
+<br/><br/><textarea class='runnable ' rows='14'>
+def do_something(options)
+  if options[:burn_after_print]
+    puts "Torched!"
+  else
+    puts "Not burned."
+  end
+end
+
+do_something( { :copies => 10, :two_sided => true, :burn_after_print => true } )
+## If last param, can omit braces
+do_something( :copies => 10, :two_sided => true, :burn_after_print => false )
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Standard type: Symbol (more)</h1>
+<ul><li>Has a .to_s method</li>
+<li>For Strings (and Symbol!), you can write .to_sym</li>
+<li>Can use quote marks: Can write :"foobar", :"$&$!!" and the like</li></ul></div>
+<div class="slide">
+  <h1>Standard type: Regular Expression (Regexp)</h1>
+<ul><li>Could have a whole class in regular expressions</li>
+<li>idioms
+
+<br/><br/><textarea class='runnable ' rows='10'>
+if "www.google.com" =~ /www\..*?\.com/
+  puts "It's a dot com web server host name"
+end
+
+if "www.google.com" =~ /www\.(.*?)\.com/
+  puts "It's a dot com web server host name for #{$1}"
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Object-oriented Regexp</h1>
+<ul><li>Full object-oriented classes for doing Regexp (like Java)
+
+<br/><br/><textarea class='runnable ' rows='7'>
+r = Regexp.new('www\.(.*?)\.com')
+if matches = r.match('www.google.com')
+  puts "It's a dot com web server host name for #{matches[1]}"
+end
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Regexp via String</h1>
+<ul><li>String has some useful Regexp methods</li>
+<li>split, scan, gsub, gsub!</li>
+<li>Also block forms of these methods
+
+<br/><br/><textarea class='runnable irb' rows='8'>
+## Split against two separate characters, comma and semi-colon
+'John,Paul;George,Ringo'.split(/,|;/)
+'abcdefghijklmnopqrstuvwyxz'.split(//)
+## Convert sentence into UbbiDubbi
+'It was a dark and stormy night'.gsub(/([aeiou]+)/, 'ub')
+</textarea></li></ul></div>
+<div class="slide">
+  <h1>Bonus slide: Operator Precedence Gotcha 1</h1>
+<ul><li>Ruby has & (bitwize and) and && (logical "and") in typical precedence order (like C and Java) but also has an "and"; So,</li>
+<li>total = shopping_cart.empty? and shopping_cart.total</li>
+<li>Evaluates like:</li>
+<li>(total = shopping_cart.empty?) and shopping_cart.total</li>
+<li>THEREFORE, use the && operator because</li>
+<li>total = shopping_cart.empty? && shopping_cart.total</li>
+<li>Evaluates like:</li>
+<li>total = (shopping_cart.empty? && shopping_cart.total)</li>
+<li>You have been warned! See http://blog.jayfields.com/2007/08/ruby-operator-precedence-of-and-which.html</li>
+<li>Similar issues for |, ||, and "or"</li></ul></div>
+<div class="slide">
+  <h1>Bonus slide: Operator Precedence Gotcha 2</h1>
+<ul><li>Another gotcha: In Ruby, bitwize ^ and | have same precedence: In C and Java, bitwize XOR is higher)</li>
+<li>Java: 03 | 01 ^ 03 evaluates to 3.</li>
+<li>Ruby: 03 | 01 ^ 03 evaluates to 0.</li></ul></div>
+<div class="slide">
+  <h1>The End</h1>
+
+<center><img width='400' src='lecture1b/fin.jpg'/></center></div>
+
+
+
+</body>
+</html>

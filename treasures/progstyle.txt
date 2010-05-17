@@ -9,3 +9,8 @@ All code handed in should follow these basic professional standard. Note that yo
 
 * All classes and methods are preceded by something explaining it (can be as little as one sentence.)
 * Variable and other names should be well chosen. (Hint: if it's one letter, it may not be so well chosen.)
+
+RUBY CONVENTIONS
+
+* Class names are capitalized CamelCase
+* Variables are lowercase, non-camel, underscore_separated

@@ -1,0 +1,66 @@
+8
+
+dir
+48
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09/trunk/lectures/html/finished/support/OTS/ruby-in-browser
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09
+
+
+
+2009-09-13T20:46:51.741263Z
+48
+jgn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1845a009-6ba0-4c37-b6c9-b5e6adae077d
+
+build
+file
+
+
+
+
+2009-09-13T19:45:54.000000Z
+b2f4374b923b755b95ebd933916c4e13
+2009-09-12T20:29:06.676913Z
+43
+jgn
+has-props
+
+lib
+dir
+
+src
+dir
+
+evalruby
+dir
+
+classes
+dir
+
+check
+file
+
+
+
+
+2009-09-13T20:46:30.000000Z
+89a168f8948a4219694f5f83c7d06902
+2009-09-13T20:46:51.741263Z
+48
+jgn
+has-props
+

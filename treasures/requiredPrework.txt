@@ -1,0 +1,18 @@
+We expect everyone to do some serious hacking with Ruby before the class starts. We expect you to have a good working knowledge of the Ruby language. 
+
+During the first week we will have a show and tell of your work.
+
+== Required Prework ==
+ * Get your computer set up with Ruby and Git
+ * 'Sponsor' at least one, and up to three Incubator Projects
+ * Learn Git: http://progit.org/
+ * Download the course notes repository: http://github.com/pitosalas/brandeis-cosci.git
+ * Read chapters 1 through 10 of Programming Ruby
+ * Play with this, you will find it useful: http://tryruby.org/ 
+ * Write a program to do one of these problems:
+  * SecretSanta
+  * MadLibs
+  * AnimalGame
+
+You may work with one partner. Either one of you may be asked to explain the solution. 
+In your code, follow the ProgrammingStyle

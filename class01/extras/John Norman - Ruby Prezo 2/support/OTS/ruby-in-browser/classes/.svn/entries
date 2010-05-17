@@ -1,0 +1,41 @@
+8
+
+dir
+48
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09/trunk/lectures/html/finished/support/OTS/ruby-in-browser/classes
+svn+ssh://a.jgnhome.dyndns.org/usr/local/svn/e168f09
+
+
+
+2009-09-12T20:29:06.676913Z
+43
+jgn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1845a009-6ba0-4c37-b6c9-b5e6adae077d
+
+RubyApplet.class
+file
+49
+
+
+
+2009-09-13T20:56:30.000000Z
+60008623b9c34865a746cc8a361751ee
+2009-09-13T21:12:55.366368Z
+49
+jgn
+has-props
+

@@ -12,6 +12,7 @@ SQL HOMEWORK
 RAILS HOMEWORK
 
  * Continue reading and doing examples: Development With Rails: Chapters 9, 10, 11 and 14
+ * Teams build your minimalist Rails app for your product.
 
 
 
