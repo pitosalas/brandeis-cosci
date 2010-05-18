@@ -1,0 +1,5 @@
+Here are some good online resources for learning ruby
+
+ * http://tryruby.org/ - interactive web page to play with ruby
+ * http://rubylearning.com/satishtalim/tutorial.html - Looks like a decent step by step tutorial
+ * For this one you need to download the course git repository to your machine. Then look into ./class01/extras/John Norman and you will see three "prezo" (presentations) which are slides I got from Don Norman that he uses for an introductory Ruby class.

@@ -1,0 +1,58 @@
+=== Course:Web Application Development Concepts and Techniques (CSxxx) ===
+
+ * Fundamentals of Internet Architecture
+  * Servers, Clients
+  * IP addresses, DNS
+  * Protocols
+  * TCP/IP, Sockets
+ * Fundamentals of Web Application Architecture
+  * HTTP
+  * URLs
+  * Routing
+  * MVC
+  * Databases
+  * OR Mapping
+  * HTML/CSS
+  * Fundamentals of deploying, securing and scaling
+ * Ruby and Rails
+  * Ruby programming
+  * Rails architecture
+  * Generating applications
+  * Designing and defining the model
+  * Controllers, actions, dispatch
+  * Routing design
+  * Designing Views
+  * Debugging the application
+
+=== Course: Mobile Application Development Concepts and Techniques (CSxxx) ===
+ * Fundamentals of Mobile Applications
+ * Building Mobile Applications
+  * Architecture of an Android App
+  * Configurations
+  * MVC as applied to Mobile
+  * Developing Android apps
+  * Design of the User Interface and experience
+ * Starting your own project or company
+  * Market
+  * Technology
+  * Financing
+  * Staffing
+  * How does VC work
+
+=== Course: JBS Incubator ===
+ * Processes
+  * Agile Development / Scrum
+   * Standup meetings
+   * Stories
+   * Backlog
+   * Pair Programming
+   * Continual Integration
+  * Defining a product
+ * Development
+  * Writing initial stories
+  * Hello World app
+  * Define the model
+  * Feature Complete
+  * Continual integration
+  * User testing
+  * Deployment

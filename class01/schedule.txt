@@ -3,5 +3,4 @@
  * 10:00-10:30: [http://github.com/pitosalas/brandeis-cosci/tree/master/class01/intro.txt, Kickoff (Pito+Tim)] 
  * 10:30-12:00: [http://github.com/pitosalas/brandeis-cosci/blob/master/class01/ip.txt, Internet Protocols (Pito)]
  * 12:00-1:00: Lunch
- * 1:00-2:30: Incubator: Interactive Q&A and Demo of Ruby, Brainstorming projects:
- * Homework for tomorrow: see Github
+ * 1:00-2:30: Incubator: Interactive Q&A and Demo of Ruby, Start culling list of projects

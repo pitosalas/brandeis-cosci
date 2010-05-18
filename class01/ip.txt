@@ -30,6 +30,8 @@ SECOND CONCEPT
 * Solution: Indirection. But now we need a directory. Why?
 * DNS: distributed name service
 
+DEMO: dig, dig -x
+
 IP
 
 * So the IP address = 1 specific 'host' or server
@@ -47,6 +49,8 @@ ENTER PACKET SWITCHING
 * Packet switching breaks message into pieces and sends them all on their way
 * Each one finds its own way to the target
 * Other components of the network? Routers
+
+DEMO: TraceRoute
 
 WEB ARCHITECTURE - CLIENT
 
