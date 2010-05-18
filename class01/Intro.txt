@@ -13,8 +13,9 @@ DISCUSSION
 
 MECHANICS
 
-* Grading: Class participation, Doing exercises, Sign up for one of the student-led presentations, 2 Papers
 * Each class has a file called homework.txt
 * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
 * Collect all your work product in your Github account so you can hand it in at the end
 * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
+* HAND IN: Programming homework on PAPER first thing next day
+* BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog

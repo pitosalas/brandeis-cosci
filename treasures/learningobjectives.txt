@@ -15,7 +15,7 @@
   * HTML/CSS
   * Fundamentals of deploying, securing and scaling
  * Ruby and Rails
-  * Ruby programming
+  * Ruby programming, good quality code
   * Rails architecture
   * Generating applications
   * Designing and defining the model

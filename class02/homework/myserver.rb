@@ -1,13 +1,3 @@
-# MyServer.rb - Pito Salas
-# Simple client app that accepts connections on port 8888. If the incoming message is
-# t - returns the time
-# c - returns a fortune cookie
-# x - the server exists 
-#
-# To Run:
-# ruby myserver.rb
-#
-
 require 'gserver'
 
 FORTUNES = ["You will learn a lot", "You will get an 'A", "You still have much to learn, Grasshopper"]
@@ -19,7 +9,6 @@ class MyServer < GServer
   end
   
   def serve(io_object)
-    # Increment the client ID so each client gets a unique ID
     @@client_id += 1
     my_client_id = @@client_id
     io_object.sync = true

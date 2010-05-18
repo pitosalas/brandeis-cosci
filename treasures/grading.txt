@@ -26,7 +26,7 @@
  * Course Requirements
   * Students will be required to be present, be prepared, and participate
   * Master the principles of Agile/Scrum development and apply them to product. Write good stories and track them; Lab Notebook in the form of written standup meeting summaries on the blog
-  * Build the product; define and design the product; apply rails and ruby to coding; write professional 
+  * Build the product: adopt a product, define and design the product; apply rails and ruby to coding; write professional code
   * Final product: quality, level of interest, meeting requirements, presentation
  * Grading
   * PPP: 20%
