@@ -1,8 +1,7 @@
-==== 13: Web Application Authentication, authorization ====
+==== 13: User Interface ====
  * 10:00-10:20 - Homework cold calls
- * 10:20-12:00 - User Interface
+ * 10:20-12:00 - [http://github.com/pitosalas/brandeis-cosci/tree/master/class13/, User Interface]
  * 12:00-1:00: Lunch
- * Homework for tomorrow: see Github
  * 1:00-1:30 Project Report
  * 1:30-2:30 Workshop/Q&A
  

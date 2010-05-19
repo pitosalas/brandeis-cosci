@@ -5,6 +5,7 @@
   * IP addresses, DNS [1]
   * Protocols [1,2]
   * TCP/IP, Sockets [2]
+
  * Fundamentals of Web Application Architecture
   * HTTP [2]
   * URLs [2]
@@ -16,7 +17,10 @@
   * Fundamentals of deploying, securing and scaling [8]
   * Sessions, Authentication, Cookies, Persistence [9]
   * Javascript, Ajax [11]
-  * REST, Web Services [10]
+  * REST, Web Services, Cloud [10]
+  * User Interface [13]
+  * Security: Attacks and defenses [14]
+
  * Ruby and Rails
   * Ruby programming, good quality code [all]
   * Rails architecture [4,5]
@@ -25,9 +29,9 @@
   * Controllers, actions, dispatch [7]
   * Routing design [7]
   * The Model [6]
-  * Designing Views []
-  * Security
-  * Debugging the application
+  * Designing Views [7]
+  * Security [13]
+  * Debugging the application [12]
 
 === Course: Mobile Application Development Concepts and Techniques (CSxxx) ===
  * Fundamentals of Mobile Applications

@@ -9,7 +9,8 @@
 * Does having a session require having a password?
 * Does it require having a username?
 
-=== TECHNIQUES === 
+=== TECHNIQUES ===
+
 * Adding state to the URL
 * Cookies
 * Other ways?
