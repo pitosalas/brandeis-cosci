@@ -1,27 +1,32 @@
 === Course:Web Application Development Concepts and Techniques (CSxxx) ===
 
  * Fundamentals of Internet Architecture
-  * Servers, Clients
-  * IP addresses, DNS
-  * Protocols
-  * TCP/IP, Sockets
+  * Servers, Clients [1,2]
+  * IP addresses, DNS [1]
+  * Protocols [1,2]
+  * TCP/IP, Sockets [2]
  * Fundamentals of Web Application Architecture
-  * HTTP
-  * URLs
-  * Routing
-  * MVC
-  * Databases
-  * OR Mapping
-  * HTML/CSS
-  * Fundamentals of deploying, securing and scaling
+  * HTTP [2]
+  * URLs [2]
+  * Routing [4]
+  * MVC [4]
+  * Databases [5]
+  * OR Mapping [5]
+  * HTML/CSS [3]
+  * Fundamentals of deploying, securing and scaling [8]
+  * Sessions, Authentication, Cookies, Persistence [9]
+  * Javascript, Ajax [11]
+  * REST, Web Services [10]
  * Ruby and Rails
-  * Ruby programming, good quality code
-  * Rails architecture
-  * Generating applications
-  * Designing and defining the model
-  * Controllers, actions, dispatch
-  * Routing design
-  * Designing Views
+  * Ruby programming, good quality code [all]
+  * Rails architecture [4,5]
+  * Generating applications [4]
+  * Designing and defining the model [4,5]
+  * Controllers, actions, dispatch [7]
+  * Routing design [7]
+  * The Model [6]
+  * Designing Views []
+  * Security
   * Debugging the application
 
 === Course: Mobile Application Development Concepts and Techniques (CSxxx) ===

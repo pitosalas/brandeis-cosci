@@ -1,19 +1,32 @@
-STATE MANAGEMENT
+=== STATE MANAGEMENT === 
 
 * HTTP is state-less. What does this mean?
 * What is good about this, and what is bad?
 * Some places where you do need state; and some where you don't need it
 
-SESSIONS
+=== SESSIONS ===
 * Having state (often) means having sessions
 * Does having a session require having a password?
 * Does it require having a username?
 
-TECHNIQUES
+=== TECHNIQUES === 
 * Adding state to the URL
 * Cookies
 * Other ways?
 
-COOKIES
+=== COOKIES ===
+
 * Are cookies a server concept, a client concept, or something else?
 * Preview the Cookies assignment
+
+=== Web Application Authentication/Authorization/Access Control ===
+
+ * what is authentication?
+ * what are the ways that you could do it?
+ * what capabilities does the browser offer?
+ * simplistic scheme
+ * storing password in the clear in the db is not a good idea!
+ 
+
+
+

@@ -1,7 +1,7 @@
 ==== 7: Scaling: Thu, June 10 ====
 
  * 10:00-10:20 - Homework cold calls
- * 10:20-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class07/, 3-tier, Load balancing, Caching, Scaling (Tim)] 
+ * 10:20-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class07/, Views and Controllers (Pito)] 
  * 12:00-1:00 Lunch
  * 1:00-3:00 Incubator: Brainstorm on each project. Identify M-V-C for each
  * Homework for tomorrow: see Github

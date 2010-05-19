@@ -1,9 +1,0 @@
-=== Web Application Authentication/Authorization/Access Control ===
-
- * what is authentication?
- * what are the ways that you could do it?
- * what capabilities does the browser offer?
- * simplistic scheme
- * storing password in the clear in the db is not a good idea!
- 
- 
