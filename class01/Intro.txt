@@ -20,3 +20,4 @@ MECHANICS
 * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
 * HAND IN: Programming homework on PAPER first thing next day
 * BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
+* Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.

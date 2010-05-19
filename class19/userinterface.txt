@@ -5,21 +5,5 @@ class 19: Thursday July 1st
 
 -----------
 
-DISCUSSION
-
-* Good - bad - indifferent user interfaces
-
-KEY CONCEPTS
-
-* Affordences
-* Personas
-* Imagination: 'what is the user looking for RIGHT NOW?'
-* Terminology: Use the natural terms. The user will be looking for those.
-
-PAPER PROTOTYPING / WIREFRAMING
-
-* How to do paper prototyping
-* What it gives you
-* What's a wireframe? Why is it used?
 
  

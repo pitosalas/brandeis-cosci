@@ -2,8 +2,8 @@
 
  * Course Requirements
   * Students will be required to be present, be prepared, and participate
-  * As part of homework or other assignments, students will write short (2-5 paragraph) blogs on specific assigned topics
-  * Homework will also include programming assignments which will be evaluated for style and correct function
+  * Students will write short (2-5 paragraph) blogs on specific assigned topics
+  * Homework will include programming assignments which will be evaluated for style and correct function
   * There will be extensive opportunity for class participation
  * Grading
   * PPP: 20%

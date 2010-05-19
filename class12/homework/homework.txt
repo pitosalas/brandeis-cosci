@@ -1,2 +1,3 @@
 * READ Chapter 14 of AWDR
-* 
+
+* Choose one site that has a good and one that has a bad user interface. Critique each one in a separate blog post

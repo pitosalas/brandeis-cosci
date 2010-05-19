@@ -1,9 +1,9 @@
 === RAILS === 
  * Continue reading and doing examples: Development With Rails: Chapters 1 - 8
- * Email a blog post to the list about each chapter what you found interesting or/and confusing
+ * deliverable: Email a blog post to the list about each chapter what you found interesting or/and confusing
 
 === YOUR PERSONAL APP === 
- * You will be working and extending this application for the rest of the term. Pick something that interests you that is in some sense a list manager. For example it can be a list of the music you own, the countries you've visited, the people you know, and so on. Pick something and stick to it.
+ * Deliverable: You will be working and extending this application for the rest of the term. Pick something that interests you that is in some sense a list manager. For example it can be a list of the music you own, the countries you've visited, the people you know, and so on. Pick something and stick to it.
  * Decide what the model will be for it. What is the central 'thing' you are tracking?
  * Decide what the properties of it will be.
  * Use the generator to generate the simplest version of it
