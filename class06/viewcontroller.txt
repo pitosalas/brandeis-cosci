@@ -1,6 +1,0 @@
- * review: the model (sometimes we say the "domain model") has the actual 'data' of the application
- * it has NO user interface and NO real algorithms. (Although the boundary can be grey)
- * Lets take a look at a real application, ElectionManager
- * First look at the user experience, and identify the views and the controllers
- * Now look at the code and find the corresponding elements
- 

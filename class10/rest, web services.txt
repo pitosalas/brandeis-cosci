@@ -55,6 +55,18 @@ CLOUD
 * What's a data center? What does one look like
 * How big is the Google data center do you think?
 
+WEB BASED APIs
+
+* lets look at some specifics
+* Amazon S3. What is it.
+* What does it cost? How can Amazon actually make it so cheap?
+* Let's try to imagine with it looks like behind the scenes. What might it's architecture be?
+
+DEMO: Lets do a quick ruby example with S3
+
+* So there are numerous, numerous APIs
+* Take a look at www.programmableweb.com
+
 
 
 

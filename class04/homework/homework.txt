@@ -1,11 +1,14 @@
-RAILS
+=== RAILS === 
  * Continue reading and doing examples: Development With Rails: Chapters 1 - 8
  * Email a blog post to the list about each chapter what you found interesting or/and confusing
- * Create a Rails application, for example: "music" (any other trivial list manager is ok)
- * For music, have the application contain "Title", "Genre", "Artist", "Date Added"
- * Provide CRUD functionality
 
-HINTS
+=== YOUR PERSONAL APP === 
+ * You will be working and extending this application for the rest of the term. Pick something that interests you that is in some sense a list manager. For example it can be a list of the music you own, the countries you've visited, the people you know, and so on. Pick something and stick to it.
+ * Decide what the model will be for it. What is the central 'thing' you are tracking?
+ * Decide what the properties of it will be.
+ * Use the generator to generate the simplest version of it
+
+=== HINTS === 
 
  * Read the tutorials because you can do a quick and easy version of this assignment a few shell commands
  * But it's ok if you want to be fancier

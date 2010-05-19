@@ -26,6 +26,7 @@ DEMO
 
 curl http://brandeis.edu
 curl http://www.brandeis.edu
+curl -v http://www.brandeis.edu
 
 - What does curl do?
 - Why do brandeis.edu and www.brandeis.edu act differently?
@@ -48,3 +49,4 @@ TCP
 * handles delivery of those bits to and from a particular "application" to another "application"
 * adds a 'port' number
 * the 'application' aka the 'server' and the other application aka the 'client'
+* Sockets

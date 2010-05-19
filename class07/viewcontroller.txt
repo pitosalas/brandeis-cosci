@@ -1,0 +1,27 @@
+ * review: the model (sometimes we say the "domain model") has the actual 'data' of the application
+ * it has NO user interface and NO real algorithms. (Although the boundary can be grey)
+ * Lets take a look at a real application, ElectionManager
+ * First look at the user experience, and identify the views and the controllers
+ * Now look at the code and find the corresponding elements
+ 
+ * Look at the directory structure. The views correspond to the folders
+ * Each view is an .erb file which is a 'template' language
+ * Rails will locate the right one and display it
+ * Notice the <% %> and <%= %>
+ 
+ * Controllers set up variables and context for the view to be displayed
+ * Context come from the database
+ * Routing invokes the Controller
+ 
+ * Chain is kind of like Routing -> Controller -> View -> back to Routing when user clicks
+ 
+ * Routing is how the URL typed (or 'typed') leads to a controller running
+ * Look at the routing table
+ * demo: RAKE ROUTES
+ * Some routes correspond to a specific set or element, for example:
+ 
+ DEMO: 0.0.0.0:3000/jurisdictions
+       0.0.0.0:3000/jurisdictions/current
+       
+ * Routes also generate URLs. So jurisdictions_current_path generates the 'right' url
+ 

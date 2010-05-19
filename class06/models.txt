@@ -1,0 +1,22 @@
+=== The Model ===
+
+ * The 'Domain Model' 
+ * The core concepts of the product
+ 
+=== ACTIVERECORD ===
+ * the OR mapping layer in Rails
+ * Makes db tables appear as objects
+ * It's the foundation
+ * Includes lots of features
+ * Validation, Triggers
+
+=== Related Tables ===
+ * :has_many tracks
+ * 'meta programming'
+ * seems magical at first
+ * the thing to understand: it creates methods
+ * @thealbum.class => MusicAlbum
+ * @thealbum.tracks => a collection of objects of class MusicTrack
+ 
+=== Look at some more complicate examples ===
+
