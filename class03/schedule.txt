@@ -3,4 +3,3 @@
  * 10:20-12:00: [http://github.com/pitosalas/brandeis-cosci/tree/master/class03/, HTML, CSS, Forms (Tim)]
  * 12:00-1:00: Lunch
  * 1:00-3:00: Incubator: (Alyssa) Teams formation
- * Homework for tomorrow: see Github

@@ -8,7 +8,7 @@
  * Grading
   * PPP: 20%
   * Blogs: 20%
-  * Presentation:20%
+  * Screencast Presentation:20%
   * Programming Homework: 40%
 
 === Mobile Application Development (Cosi 153aj) ===
@@ -20,17 +20,20 @@
  * Grading
   * PPP: 20%
   * Blogs: 20%
-  * Presentation:20%
+  * Screencast Presentation:20%
   * Programming Homework: 40%
 
 === The JBS Incubator (Cosi 154aj) ===
  * Course Requirements
   * Students will be required to be present, be prepared, and participate
-  * Master the principles of Agile/Scrum development and apply them to product. Write good stories and track them; Lab Notebook in the form of written standup meeting summaries on the blog
+  * Master the principles of Agile/Scrum development and apply them to product. Write good stories and track them; Lab Notebook in the form of written standup meeting summaries on the blog; effective use of pivotal tracker
   * Build the product: adopt a product, define and design the product; apply rails and ruby to coding; write professional code
   * Final product: quality, level of interest, meeting requirements, presentation
  * Grading
   * PPP: 20%
-  * Agile: 25%
-  * Build Product: 25%
-  * Final Product Result: 30%
+  * Student Led: 20%
+  * Agile: 20%
+  * Interim report: 10%
+  * Final Product Result and Report: 30%
+
+

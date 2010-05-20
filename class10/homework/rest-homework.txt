@@ -1,0 +1,3 @@
+=== REST HOMEWORK === 
+ * Read http://en.wikipedia.org/wiki/Representational_State_Transfer
+ * Read Chapter 21 from Rails Book

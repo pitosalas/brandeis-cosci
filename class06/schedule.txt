@@ -1,10 +1,8 @@
-==== 6: Views and Controllers: Wed, June 9 ====
+==== 6: Models: Wed, June 9 ====
 
  * 10:00-10:20 - Homework cold calls
  * 10:20-11:00 [:StudentLed: Student Led Discussion]
  * 11:00-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class06/, Models (Pito)]
  * 12:00-1:00 Lunch
- * 1:00-2:30: Teams demonstrate their empty rails apps with basic models
- * Homework for tomorrow: see Github
- 
+ * 1:00-2:00 Incubator: 2 Teams Weekly Report. 
  

@@ -1,33 +1,67 @@
-INCUBATOR
+=== JBS INCUBATOR ===
 
-SHOULD CHECK OFF 6 of these
+ * Each student has been asked to 'sponsor' at least one idea on the
+   product idea list
+   (http://jbs2010.wordpress.com/2010/05/20/sponsoring-incubator-product-ideas/)
 
-* GPS
-* Maps
-* Touch screen
-* Gestural interface
-* A web server
-* Some kind of Database
-* Several public APIS
-* Could make money
-* Has social value
-* Impresses your Mom
-* Works with huge database
-* Accelerometer
-* Voice Recognition
+ * We will split off into 3 or 4 product teams
 
+==== REQUIREMENTS ====
 
+ * Each product, when completed should meet at least 6 of these requirements: 
+  * Uses GPS
+  * Uses and or displays Maps
+  * Touch screen's gestural interface
+  * Uses a web server or service as the back end
+  * Some kind of Database
+  * Several public APIS
+  * Could make money
+  * Has social value
+  * Impresses your Mom
+  * Works with huge database
+  * Uses the accelerometer
+  * Uses Voice Recognition
+  * other features that you are welcome to suggest ...
 
-IDEAS
+==== STAGES ====
 
-* Quick to set up 'group of people' for file sharing
-* Tool for a researcher to monitor and control their lab instruments remotely
-* Jordan Pollack games
-* Juxtapose and visualize societal data, e.g. stock prices, weather, population, political party, etc.
-* "Ask the Incubator" - a site where members of Brandeis community can ask for projects to do
-* Wireless feedback from listeners to speaker, red/green, poll yes/no, poll
-* One-sentence-definition: A site where people supply a single sentence definition or explanation of anything at all. Supernova. Discrimination. Lawn Mower.
-* Youtube map of countries vs. number of listeners. Also Timeline of listeners vs. Videos (does this already exist? probably!)
-* API bingo: generate a suggestion for an application by randomly combining several web resources (e.g. apis) into a proposal written in quasi-english
-* Brandeis Mobile Photo Bench: Take a picture anywhere on campus (or not) and it appears on a site, keyed to the map of the campus, as well as time of day, what course is going on there if anything, etc. Make it suitable to be embedded on another site.
-* If you liked this course/professor you will like this one.
+The incubator projects will go through the full 8 weeks of the
+summer. At the end of each week, you should be at a certain milestone
+if you want to be able to complete the project.
+
+ * Week 1: Groups chosen, high level features chosen, stories written
+ * Week 2: Models designed and built. Default scaffolding for controllers 
+      and views in place, project runs. Some initial features are implemented.
+ * Week 3: Product is feature complete
+ * Week 4: Product is stable enough, deployed to Heroku
+ * Week 5: Mobile models designed, paper implementation
+ * Week 6: Mobile models designed and built. Scaffolding for C&V in place
+ * Week 7: Mobile Product is feature complete
+ * Week 8: Mobile product is stable
+
+The final project must have both web and mobile components, but it can be more
+heavily weighted toward one or the other, at the groups discretion. 
+
+==== PROCESS ====
+
+ * You will create a github repository for your product. At the end of
+   every day you should push the latest sources up to the repository
+
+ * At any point, whatever code that is in the repository should run
+   and do something (however little)
+
+ * Many days there will be 1/2 hour for 'standup meetings' where each
+   team will spend no more than 5 minutes summarizing: 'what was
+   accomplished yesterday', 'what is planned for today', and 'what is
+   blocking progress'
+
+ * At the end of each week, each team will give a 1/2 hour status
+   update, with a demo of the progress so far
+
+ * At the end of week 4 and week 8, each team will hand in a 
+   5-page paper covering the product market need, competiion and so on.
+   And deliver a 1/2 hour presentation to the class. 
+   Week 4 is an interim report, with final due on week 8.
+
+ * Each team will maintain their Backlog and Stories in a
+   PivotalTracker space

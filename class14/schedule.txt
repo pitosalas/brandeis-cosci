@@ -2,5 +2,4 @@
  * 10:00-10:20 - Homework cold calls
  * 10:20-12:00 - [http://github.com/pitosalas/brandeis-cosci/tree/master/class14/, Web Attacks and defenses (Tim)]
  * 12:00-1:00 - Lunch
- * 1:00-2:00 - Incubator Project Team Reports
- * Homework for tomorrow: see Github
+ * 1:00-2:00 - Incubator Project Team Status (3 & 4)

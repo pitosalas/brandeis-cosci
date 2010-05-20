@@ -66,3 +66,18 @@
   * Continual integration
   * User testing
   * Deployment
+
+Learning Objectives
+ CS152aj
+  At the end of the course the students should be able
+   * write ruby on rails applications that use multiple tables in databases
+   * understand the architecture of the internet and the structure of web applications
+   * develop appropriate models using various database back ends
+   * deploy applications on servers and organize their scalability and security
+
+  Skills to be developed
+   * create screencasts 
+   * using the Eclipse IDE to write Ruby on Rails applications
+   * FInding answersz to technical questions using web newsgroups, screencasts, and resources.
+   
+   * ...

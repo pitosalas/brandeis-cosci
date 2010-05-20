@@ -3,5 +3,4 @@
  * 10:20-11:00 [:StudentLed: Student Led Discussion]
  * 11:00-12:00 - REST API Design, Programmable Web (Pito)
  * 12:00-1:00: Lunch
- * 1:00-1:30: Incubator Project Report
- * Homework for tomorrow: see Github
+ * 1:00-2:00: Incubator: Project Team 1,2 Status Presentation
