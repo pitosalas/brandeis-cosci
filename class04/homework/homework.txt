@@ -1,9 +1,10 @@
 === RAILS === 
  * Continue reading and doing examples: Development With Rails: Chapters 1 - 8
- * deliverable: Email a blog post to the list about each chapter what you found interesting or/and confusing
+ * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
 
 === YOUR PERSONAL APP === 
- * Deliverable: You will be working and extending this application for the rest of the term. Pick something that interests you that is in some sense a list manager. For example it can be a list of the music you own, the countries you've visited, the people you know, and so on. Pick something and stick to it.
+
+ * DELIVERABLE: You will be working and extending this application for the rest of the term. Pick something that interests you that is in some sense a list manager. For example it can be a list of the music you own, the countries you've visited, the people you know, and so on. Pick something and stick to it.
  * Decide what the model will be for it. What is the central 'thing' you are tracking?
  * Decide what the properties of it will be.
  * Use the generator to generate the simplest version of it
@@ -14,3 +15,4 @@
  * But it's ok if you want to be fancier
  * Review and understand the folder structure created. We will discuss this in class
  * What does it mean 'to do examples?' You should type in some of the ones from the book, and get them to run. Be prepared to talk about them in class.
+ 

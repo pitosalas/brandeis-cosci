@@ -1,22 +1,21 @@
-HTML/CSS
+==== HTML/CSS ====
 
-- create (by hand, in a text editor) a working html page or more
-- include in it header levels, a few paragraphs, some graphics and a table of some kind
-- As an example, it can be a list of music (cd's) that you own
-- Demonstrate it in 3 different browsers
-- Investigate why it looks different
-- Investigate whether it is HTML5, 4 or whatever
-- Load it up on a web server (provided)
-- Include some css to make it look prettier
+ * DELIVERABLE: create (by hand, in a text editor) a working html page or more
+  * include in it header levels, a few paragraphs, some graphics and a table of some kind
+  * As an example, it can be a list of music (cd's) that you own
+  * Demonstrate it in 3 different browsers
+  * Investigate why it looks different
+  * Investigate whether it is HTML5, 4 or whatever
+  * Load it up on a web server (provided)
+  * Include some css to make it look prettier
 
-RAILS PRE-WORK
+==== RAILS PRE-WORK ====
 
- * Read "Agile Web Development", Chapter 1-6. Do some of the examples yourself
- * Make sure you have a good installation of Ruby, Rails, and Gem on your computer
- * I recommend Ruby 1.8.x and Rails 2.3.x but you are welcome to try Ruby 1.9
- * Install Rails, and create at least, a "Hello World" application
- 
-SPEAKER
+ * Read Chapters 4-7 of Agile Web Development 
+  * DELIVERABLE: Actually type in and do several of the programs
+  * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
+
+==== SPEAKER ====
 
  * On Monday, there will be a speaker. Who will prepare 5+ minutes about his company?
 

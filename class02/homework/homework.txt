@@ -1,4 +1,4 @@
-RUBY CLIENT AND SERVER ASSIGNMENT
+==== RUBY CLIENT AND SERVER ASSIGNMENT ==== 
 
 * Here are two applications (see homework directory)
 
@@ -14,22 +14,33 @@ myserver.rb
 * if text that is sent is "t", then, the server responds with time of day
 * if text that is sent is "f", then the server responds with a fortune
 
-* Deliverable: Update the comments for both programs to follow progstyle.txt
-* Deliverable: What does line 12 and line 26 in myserver.rb do?
+* DELIVERABLE: Update the comments for both programs to follow progstyle.txt
+* DELIVERABLE: What does line 12 and line 26 in myserver.rb do?
 
-* Modify myserver.rb as follows:
+* DELIVERABLE: Modify myserver.rb as follows:
   * if the text that is sent is d followed by a filename (e.g. dtest.txt) then respond with that file
   * what if the text file contains html? What would it take to get it to display in a browser?
 
 ROUTING ASSIGNMENT
 
-* Add logic to your server
-* Accept urls that look like these. Do as many as you can.
+ * DELIVERABLE: Add logic to your server so it accepts commands that look like these. Do as many as you can
 
-http:0.0.0.0:10110//date
-http:0.0.0.0:10110//time
-http:0.0.0.0:10110//message/joke
-http:0.0.0.0:10110//message/fortune
-http:0.0.0.0:10110//message/joke?lang=en
-http:0.0.0.0:10110//message/joke?lang=<another language>
-  
+date
+time
+message/joke
+message/fortune
+message/joke?lang=en
+message/joke?lang=.someotherlanguage
+
+==== RUBY and RAILS
+
+ * Make sure you have a good installation of Ruby, Rails, and Gem on your computer
+ * I recommend Ruby 1.8.x and Rails 2.3.x but you are welcome to try Ruby 1.9
+ * Install Rails, and create at least, a "Hello World" application
+
+==== READING ====
+
+ * Read Chapters 1-4 of Agile Web Development 
+ * DELIVERABLE: Actually type in and do several of the programs
+ * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
+ 

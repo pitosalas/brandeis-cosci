@@ -12,22 +12,22 @@
   * this is not a real exercise
   * get you used to how I will write these up
   * run exercise1.rb now
- * Deliverable: Comment the app using the standard progstyle.txt (see treasures)
+ * DELIVERABLE: Comment the app using the standard progstyle.txt (see treasures)
 
  * Review exercise2.txt and run exercise2.rb 
- * Deliverable: Comment the app using the standard progstyle.txt (see treasures)
+ * DELIVERABLE: Comment the app using the standard progstyle.txt (see treasures)
 
  * Modify exercise2.rb as follows:
   * add more fortunes
   * ensure that the same fortune does not show up twice
-  * Deliverable: Comment the app using the standard progstyle.txt (see treasures)
+  * DELIVERABLE: Comment the app using the standard progstyle.txt (see treasures)
 
  * Review exercise3.rb and run it
  * Modify it so that each time it is called, it returns a fortune cookie
- * Deliverable: Comment the app using the standard progstyle.txt (see treasures)
+ * DELIVERABLE: Comment the app using the standard progstyle.txt (see treasures)
 
  * Read http://railstips.org/blog/archives/2010/01/12/i-have-no-talent/
- * Deliverable: Write a short blog reaction to this article.
+ * DELIVERABLE: Write a short blog reaction to this article.
 
 
  
