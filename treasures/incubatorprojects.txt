@@ -37,7 +37,7 @@ if you want to be able to complete the project.
  * Week 5: Mobile models designed, paper implementation
  * Week 6: Mobile models designed and built. Scaffolding for C&V in place
  * Week 7: Mobile Product is feature complete
- * Week 8: Mobile product is stable
+ * Week 8: Mobile product is stable, and deployed to all students' Androids
 
 The final project must have both web and mobile components, but it can be more
 heavily weighted toward one or the other, at the groups discretion. 
