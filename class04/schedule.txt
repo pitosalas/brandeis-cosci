@@ -1,6 +1,6 @@
 ==== 4: Introduction to Rails: Mon, June 7 ====
 
  * 10:00-10:20 - Homework cold calls 
- * 10:20-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class04/, Intro to Rails and MVC (Pito)] 
+ * 10:20-12:00 [:IntroRailsMVC:, Intro to Rails and MVC (Pito)] 
  * 1:00-2:00: Speaker: [http://www.linkedin.com/ppl/webprofile?vmi=&id=327389&pvs=pp&authToken=MjL8&authType=name&locale=en_US&trk=ppro_viewmore&lnk=vw_pprofile, Jered Floyd, CTO of Permabit Inc.]
- * 2:00-3:00 Incubator: Intro to Pivotal Tracker; Review each product in Pivotal
+ * 1:00-1:30 Incubator: Standup meetings for each product

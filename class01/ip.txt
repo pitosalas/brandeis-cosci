@@ -1,51 +1,53 @@
-IP/PROTOCOLS/ETC
+==== IP/PROTOCOLS/ETC ====
 
-* IP: "internetwork" protocol
-* Gets  data between one 'host' (=computer or server) and another
-* Like the boxes, we need an address from and to: "IP address!" 123.22.112.1 
+ * IP: "internetwork" protocol
+ * Gets  data between one 'host' (=computer or server) and another
+ * Like the boxes, we need an address from and to: "IP address!" 123.22.112.1 
 
-* what's a protocol? protocols are always layered, one on top of the other
-* lower level protocols are 'closer to the hardware', higher level protocols are 'closer to the user'
-* question: could you call .mp3 or .jpg a protocol?
+ * what's a protocol? protocols are always layered, one on top of the other
+ * lower level protocols are 'closer to the hardware', higher level protocols are 'closer to the user'
+ * question: could you call .mp3 or .jpg a protocol?
 
-* Decentralized 'distribution' of a key. I set up a new computer, where's the key come from?
-* Problem: I want to have a unique key that is guaranteed to be unique
-* But, I don't want to have to go to a central authority to get the key
-* Discussion: By the way, why not?
-* Other examples of this principle?
+ * Decentralized 'distribution' of a key. I set up a new computer, where's the key come from?
+ * Problem: I want to have a unique key that is guaranteed to be unique
+ * But, I don't want to have to go to a central authority to get the key
+ * Discussion: By the way, why not?
+ * Other examples of this principle?
 
-* We don't want 'people' to remember 12.31.2.123
-* Why not? What problems would arise?
-* Instead what do people remember easier?
-* Any regular life examples of this?
-* Solution: Indirection. But now we need a directory. Why?
-* DNS: distributed name service
+ * We don't want 'people' to remember 12.31.2.123
+ * Why not? What problems would arise?
+ * Instead what do people remember easier?
+ * Any regular life examples of this?
+ * Solution: Indirection. But now we need a directory. Why?
+ * DNS: distributed name service
 
-DEMO: dig, dig -x
-DEMO: http://map-o-net.com/
-DEMO: http://icicle.dylex.net/~ipmap/
+{{{$ dig <url>
+$ dig -x <url>
+$ http://map-o-net.com/
+$ http://icicle.dylex.net/~ipmap/}}}
 
-* So the IP address = 1 specific 'host' or server
-* (as usual there are exceptions :)
-* IP is the way servers talk 'to each other' to get a packet of bits between them
-* Conceptually, 'send these bits to this ip address'
-* Problems: your client isn't attached to my server by a wire
-* So who is that message sent to?
+ * So the IP address = 1 specific 'host' or server
+ * (as usual there are exceptions :)
+ * IP is the way servers talk 'to each other' to get a packet of  bits between them
+ * Conceptually, 'send these bits to this ip address'
+ * Problems: your client isn't attached to my server by a wire
+ * So who is that message sent to?
 
-* Packet switching, Contrast with POTS
-* There was a 'connection' literally between my phone and yours
-* Packet switching breaks message into pieces and sends them all on their way
-* Each one finds its own way to the target
-* Other components of the network? Routers
+ * Packet switching, Contrast with POTS
+ * There was a 'connection' literally between my phone and yours
+ * Packet switching breaks message into pieces and sends them all on their way
+ * Each one finds its own way to the target
+ * Other components of the network? Routers
 
-DEMO: TraceRoute
+{{{
+$ TraceRoute }}}
 
-WEB ARCHITECTURE - CLIENT
+==== WEB ARCHITECTURE - CLIENT ====
 
-* Web client: just a tcp/ip client that makes requests and displays results in a window
-* Default: HTTP protocol, port 80, expects to see html
-* But what other protocols and formats does it support?
+ * Web client: just a tcp/ip client that makes requests and displays results in a window
+ * Default: HTTP protocol, port 80, expects to see html
+ * But what other protocols and formats does it support?
 
-WEB ARCHITECTURE - SERVER
+==== WEB ARCHITECTURE - SERVER ====
 
-* Web server: just a tcp/ip server that listens and responds to HTTP requests
+ * Web server: just a tcp/ip server that listens and responds to HTTP requests

@@ -1,4 +1,4 @@
-=== The Model ===
+==== The Model ====
 
  * What is the Domain Model. What does that mean. Are there other models?
  * Where does it exist, in memory or on disk? Or somewhere else? In Rails it's DB independent.
@@ -7,7 +7,7 @@
  * Examples: 'Person' in FB, 'Story' in Pivotal, 'Precinct' in ElectionManager
  * Some things are debatable... Is a 'session' a model? Is a model'relational'?
  
-=== ACTIVERECORD ===
+==== ACTIVERECORD ====
 
  * the OR mapping layer in Rail. It Makes db tables appear as objects. Any DB.
  * Column maps to an attribute and vice-versa. When is DB read and written? User controlled.
@@ -17,21 +17,21 @@
  * Leaky abstractions
  * App evolves, needs change. Models are added or changed or deleted. Migrations
 
-DEMO: 
-  rails demome
-  rm public/index
-  cd demome/
-  rm public/index.html 
-  script/generate resource Card name:string telephone:string friend:boolean
-  script generate resource AddressBook name:string
-  script/console
-  rake db:migrate
-  script/console
-  script/generate migration AddAddressBookIdToCard addressbook_id:integer
-  rake db:migrate
-  script/console
-
-=== Associations ===
+{{{
+$ rails demome
+$ rm public/index
+$ cd demome/
+$ rm public/index.html 
+$ script/generate resource Card name:string telephone:string friend:boolean
+$ script generate resource AddressBook name:string
+$ script/console
+$ rake db:migrate
+$ script/console
+$ script/generate migration AddAddressBookIdToCard addressbook_id:integer
+$ rake db:migrate
+$ script/console
+}}}
+==== Associations ====
  * 'foreign key'. Joins. Association. Another abstraction.
  * :has_many tracks
  * 'meta programming'
@@ -40,5 +40,5 @@ DEMO:
  * @thealbum.class => MusicAlbum
  * @thealbum.tracks => a collection of objects of class MusicTrack
  
-=== Look at some more complicate examples ===
+==== Look at some more complicate examples ====
 

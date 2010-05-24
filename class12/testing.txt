@@ -1,25 +1,32 @@
-- levels of testing
-- why testing is important
-- cost and complexity of finding a bug late vs. early
-- the earlier the better
-- test driven development. Write the test before you write the code. Huh?
-- DEMO: take a look at test_unit and shoulda
-- within rails, the tests are part of the basic structure
-- whenever you create a new app, or model, or controller, the tests are automatically generated (at least tempates)
-- unit testing of models is the simplest
-- still you will be surprised at how often the 'this could never fail' turns up a bug
-- Within rails, there are (by default) 3 modes: production, development and test
-- There's a database specifically for tests
-- For an application of any complexity there should also be logging
-- Logging levels, e.g. SEVERE, BUG, INFO, etc.
-- This is part of the framework
-- Data for testing: Fixtures. You can't rely on what might or might not be in the database
-- Otherwise your tests won't be reliable
-- Brittle Test Problem: a small change in the code breaks your tests. They are too dependent. Experience will dictate
+==== TESTING ====
+ * levels of testing
+ * why testing is important
+ * cost and complexity of finding a bug late vs. early
+ * the earlier the better
+ * test driven development. Write the test before you write the code. Huh?
+ * DEMO: take a look at test_unit and shoulda
+ * within rails, the tests are part of the basic structure
+ * whenever you create a new app, or model, or controller, the tests are automatically generated (at least tempates)
+ * code coverage
+ * unit testing of models is the simplest
+ * still you will be surprised at how often the 'this could never fail' turns up a bug
+ * Within rails, there are (by default) 3 modes: production, development and test
+ * There's a database specifically for tests
+ * For an application of any complexity there should also be logging
+ * Logging levels, e.g. SEVERE, BUG, INFO, etc.
+ * This is part of the framework
+ * Data for testing: Fixtures. You can't rely on what might or might not be in the database
+ * Otherwise your tests won't be reliable
+ * Brittle Test Problem: a small change in the code breaks your tests. They are too dependent. Experience will dictate
+
 DEMO: Using Fixtures within Rails tests
-- Functional Testing, combines unit testing with the actual controllers
-- A lot more difficult because a small change in the UI will break your test
+
+ * Functional Testing, combines unit testing with the actual controllers
+ * A lot more difficult because a small change in the UI will break your test
+
 DEMO: Show Behavior Driven Development, with stories and Cucumber as an example
-- Other ways that system status and errors can be reported
-- Email or sms
+
+ * Other ways that system status and errors can be reported
+ * Email or sms
+
 

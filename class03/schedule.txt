@@ -1,5 +1,5 @@
 ==== 3: HTML, CSS, Forms: Thu, June 3 ====
  * 10:00-10:20 - Homework cold calls
- * 10:20-12:00: [http://github.com/pitosalas/brandeis-cosci/tree/master/class03/, HTML, CSS, Forms (Tim)]
+ * 10:20-12:00: HTML, CSS, Forms (Tim)
  * 12:00-1:00: Lunch
- * 1:00-3:00: Incubator: Discuss chosen products in more depth. Set projects in Pivotal. Jointly write some stories for each product. 
+ * 1:00-3:00: Incubator: Discuss chosen products in more depth. Set up projects in Pivotal. Jointly write some stories for each product. 

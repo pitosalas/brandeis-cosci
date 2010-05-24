@@ -1,52 +1,52 @@
-CORE WEB ARCHITECTURE
+==== CORE WEB ARCHITECTURE ====
 
-* Discussion. How does it all work?
-* Web Browsers are 'clients'
-* Web Servers are 'servers'
-* Client's ask work to be done; server does it.
-* Web browser is an http 'client'
-* What does that mean?
-* Web server is an http 'server'
-* What does that mean?
-* Take a look at a url
-* Let's take it apart
+ * Discussion. How does it all work?
+ * Web Browsers are 'clients'
+ * Web Servers are 'servers'
+ * Client's ask work to be done; server does it.
+ * Web browser is an http 'client'
+ * What does that mean?
+ * Web server is an http 'server'
+ * What does that mean?
+ * Take a look at a url
+ * Let's take it apart
 
-URLS
+==== URLS ====
 
-* What does it stand for?
-* What are the parts of a URL
-* http:// -> protocol
-* brandeis.edu -> where's the server
-* So the client -- your computer needs to be able to 'talk to' the server
-* Hm. So is http a protocol?
-* What about tcp/ip. What does that stand for?
-* So we have 3 protocols already: http, tcp and ip.
+ * What does it stand for?
+ * What are the parts of a URL
+ * http:// -> protocol
+ * brandeis.edu -> where's the server
+ * So the client -- your computer needs to be able to 'talk to' the server
+ * Hm. So is http a protocol?
+ * What about tcp/ip. What does that stand for?
+ * So we have 3 protocols already: http, tcp and ip.
 
-DEMO
+==== DEMO ====
 
-curl http://brandeis.edu
-curl http://www.brandeis.edu
-curl -v http://www.brandeis.edu
+{{{$ curl http://brandeis.edu
+$ curl http://www.brandeis.edu
+$ curl -v http://www.brandeis.edu}}}
 
-- What does curl do?
-- Why do brandeis.edu and www.brandeis.edu act differently?
-- Why does it act differently from in the browser?
-- Who handles HTTP result-codes?
+ * What does curl do?
+ * Why do brandeis.edu and www.brandeis.edu act differently?
+ * Why does it act differently from in the browser?
+ * Who handles HTTP result-codes?
 
-PROTOCOLS
+==== PROTOCOLS ====
 
-* A protocol is a set of rules (see TV show '24' :) )
-* Protocols determine the way information is interpreted 'on the wire'
-* You can think of them as 'envelopes'
-* Imagine I mail a big box of books to 'brandeis unversity, South Street, Waltham MA'
-* Inside the box there are smaller boxes: 'computer science dept', 'math dept', etc.
-* Each book is in an envelope: J. Smith, F. Johnson, etc.
-* So with protocols are the first set of bits the 'higher' or 'lower' level protocol?
+ * A protocol is a set of rules
+ * Protocols determine the way information is interpreted 'on the wire'
+ * You can think of them as 'envelopes'
+ * Imagine I mail a big box of books to 'brandeis unversity, South Street, Waltham MA'
+ * Inside the box there are smaller boxes: 'computer science dept', 'math dept', etc.
+ * Each book is in an envelope: J. Smith, F. Johnson, etc.
+ * So with protocols are the first set of bits the 'higher' or 'lower' level protocol?
 
-TCP
+==== TCP ====
 
-* transport control protocol
-* handles delivery of those bits to and from a particular "application" to another "application"
-* adds a 'port' number
-* the 'application' aka the 'server' and the other application aka the 'client'
-* Sockets
+ * transport control protocol
+ * handles delivery of those bits to and from a particular "application" to another "application"
+ * adds a 'port' number
+ * the 'application' aka the 'server' and the other application aka the 'client'
+ * Sockets

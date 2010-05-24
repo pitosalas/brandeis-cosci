@@ -13,14 +13,16 @@
 ==== PREWORK ====
  * Prework Review:  I will ask a couple of you to show us what your results were for the prework
 
-==== MECHANICS ==== 
+==== MECHANICS ====
 
-* Discuss and get buy in on learning goals
-* Discuss expected time investments and why
-* Each class has a file called homework.txt
-* Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
-* Collect all your work product in your Github account so you can hand it in at the end
-* Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
-* HAND IN: Programming homework on PAPER first thing next day
-* BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
-* Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
+ * Discuss and get buy in on learning goals
+ * Discuss expected time investments and why
+ * Each class has a file called homework.txt
+ * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
+ * Collect all your work product in your Github account so you can hand it in at the end
+ * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
+ * HAND IN: Programming homework on PAPER first thing next day
+ * BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
+ * Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
+ * Volunteering: everyone will have to do one, so ...
+ * Student Led Discussions

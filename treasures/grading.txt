@@ -1,3 +1,7 @@
+As you probably realize, this JBS is three separate courses taught
+in a single intensive 8 week period. While they are packed together
+and the boundaries during class may not be sharp, they are treated as three separate courses. 
+
 === Web Application Development (Cosi 152aj) ===
 
  * Course Requirements

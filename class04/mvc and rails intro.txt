@@ -7,20 +7,21 @@
  * demo a hello world rails app (Page 35 of ADR book)
  * how to launch server
  * how to look at result
- 
+{{{ 
  $ rails helloworld
  $ cd helloworld
  $ script/generate scaffold card name:string age:integer friend:boolean
  $ rake db:migrate
  $ script/server
- 
+}}}
  * tour of the code
 
 ==== ROUTING ====
 
-Look at these URLS:
-	http://www.facebook.com/pitosalas?ref=profile
-	http://www.jewishboston.com/events/67-glbt-and-and-friends-shabbat-potluck
+{{{
+http://www.facebook.com/pitosalas?ref=profile
+http://www.jewishboston.com/events/67-glbt-and-and-friends-shabbat-potluck
+}}}
 	
  * Let's deconstruct:
 	* What does http:// tell us?
@@ -34,13 +35,13 @@ Look at these URLS:
  * This can get fairly complicated by the way
  * Try accessing a url that doesn't route yet. What happens?
 
-==== MVC ==== 
+==== MVC ====
 
  * Model: purely data representation. No UI. Connects to database
  * View: purely UI, no data. How information is displayed to the screen
  * Controller: Implement actions by calling code and then displaying new Views
 
-==== MORE DEMO (Rest of Chapter 4) ==== 
+==== MORE DEMO (Rest of Chapter 4) ====
 
  * Show where M, V and C are in the code
  * Make a change to see the result

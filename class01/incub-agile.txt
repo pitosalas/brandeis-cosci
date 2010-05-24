@@ -1,11 +1,11 @@
-==== Incubator ====
+=== Incubator ===
  * Build a product with both Web and Mobile aspects
  * Use 'Agile' methodology
  
-==== Agile Methodology ====
+=== Agile Methodology ===
  * Not a survey; just learning how to use a particular tool
- * Agile => Extreme Programming, Scrum, and many other variants. See http://agilemanifesto.org/
- * Other methodologies: waterfall. "BDUF". See: http://en.wikipedia.org/wiki/Big_Design_Up_Front
+ * Agile => Extreme Programming, Scrum, and many other variants. Read http://agilemanifesto.org/
+ * Other methodologies: waterfall. "BDUF". Read: http://en.wikipedia.org/wiki/Big_Design_Up_Front
  * Stories
  * Backlog
  * Scrum Master
@@ -17,6 +17,6 @@
  * Test Driven Development
 
 === Tools ===
- * www.pivotaltracker.com. Free. Each team should set up a tracker.
+ * http://www.pivotaltracker.com. Free. Each team should set up a tracker.
  * We will have 3 or 4 teams
 

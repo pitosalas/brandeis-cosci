@@ -1,133 +1,68 @@
-=== Course:Web Application Development Concepts and Techniques (CS152aj) ===
- * Fundamentals of Internet Architecture
-  * Servers, Clients [1,2]
-  * IP addresses, DNS [1]
-  * Protocols [1,2]
-  * TCP/IP, Sockets [2]
+=== Learning Objectives ===
+All the stuff that we expect you to learn during this intensive 2 month program. We will discuss these and revise them with the class on the first day to make sure you are getting out of this what would 
+be most important.
 
- * Fundamentals of Web Application Architecture
-  * HTTP [2]
-  * URLs [2]
-  * Routing [4]
-  * MVC [4]
-  * Databases [5]
-  * SQL, Joins, Tools [5]
-  * OR Mapping [5,6]
-  * HTML/CSS [3]
-  * Fundamentals of deploying, securing and scaling [8]
-  * Sessions, Authentication, Cookies, Persistence [9]
-  * Javascript, Ajax [11]
-  * REST, Web Services, Cloud [10]
-  * User Interface [13]
-  * Security: Attacks and defenses [14]
+==== CS152aj - Web App Development ====
+ * At the end of the course the students should be able to:
+  * understand the architecture of the internet and the structure of web applications
+  * understand concepts underlying modern software testing, automation and development practices
+  * understand HTTP, HTML, CSS, MVC, 
+  * understand how a ruby on rails app works and implements the web architecture
+  * think critically about user interface and user experience design
+  * understand what it means to design the model for a particular application
+  * understand web services, REST, cloud computing concepts
 
- * Ruby and Rails
-  * Ruby programming, good quality code [all]
-  * Rails architecture [4,5]
-  * Generating applications [4]
-  * Designing and defining the model [4,5]
-  * Controllers, actions, dispatch [7]
-  * Routing design [7]
-  * The Model [6]
-  * Designing Views [7]
-  * Security [13]
-  * Debugging the application [12]
+* Skills to be developed:
+  * develop appropriate models using various database back ends
+  * design, code, test, deploy ruby on rails applications that use multiple tables in databases
+  * deploy applications on servers and organize their scalability and security
+  * create screencasts 
+  * using the Eclipse IDE to write Ruby on Rails applications
+  * finding answers to technical questions using web newsgroups, screencasts, and resources.
 
-=== Course: Mobile Application Development Concepts and Techniques (CS153aj) ===
- * Fundamentals of Mobile Applications
- * Building Mobile Applications
-  * Architecture of an Android App
-  * Configurations
-  * MVC as applied to Mobile
-  * Developing Android apps
-  * Design of the User Interface and experience
- * Starting your own project or company
-  * Market
-  * Technology
-  * Financing
-  * Staffing
-  * How does VC work
+==== CS153aj - Mobile App Development ====
+ * At the end of the course the students should be able to
+  * explain the different trade-offs that come into play when developing for mobile platforms (vs others)
+   * deployment, app stores etc
+   * disconnected use
+   * version management
+   * scaling. How to think about it.
+   * security
+  * understand the Android development platform; be able to explain the core classes
+  * understand unique hardware and sw capabilities of mobile platforms, e.g. gps, voice etc
+  * have a sense of why and how to think about starting a company, what the steps are, what the challenges are and in general feel somewhat familiar with the process
+* Skills to be developed:
+ * write Android applications in Java that use the key architectural elements of the Android platform
+ * use the Android/Eclipse development tools to design, implement and test applications
+ * create an Android User Interface
+ * write Android apps that:
+  * interact with a back end web server/service
+  * use voice
+  * use gps
+  * have local data persistence
 
-=== Course: JBS Incubator (CS153aj) ===
- * Processes
-  * Agile Development / Scrum
-   * Standup meetings
-   * Stories
-   * Backlog
-   * Pair Programming
-   * Continual Integration
-  * Defining a product
- * Development
-  * Writing initial stories
-  * Hello World app
-  * Define the model
-  * Feature Complete
-  * Continual integration
-  * User testing
-  * Deployment
-
-=== Learning Objectives === 
- * CS152aj - Web App Development
-  * At the end of the course the students should be able to:
-   * understand the architecture of the internet and the structure of web applications
-   * understand concepts underlying modern software testing, automation and development practices
-   * understand HTTP, HTML, CSS, MVC, 
-   * understand how a ruby on rails app works and implements the web architecture
-   * think critically about user interface and user experience design
-   * understand what it means to design the model for a particular application
-   * understand web services, REST, cloud computing concepts
-
- * Skills to be developed:
-   * develop appropriate models using various database back ends
-   * design, code, test, deploy ruby on rails applications that use multiple tables in databases
-   * deploy applications on servers and organize their scalability and security
-   * create screencasts 
-   * using the Eclipse IDE to write Ruby on Rails applications
-   * finding answers to technical questions using web newsgroups, screencasts, and resources.
-
- * CS153aj - Mobile App Development
-  * At the end of the course the students should be able to
-   * explain the different trade-offs that come into play when developing for mobile platforms (vs others)
-    * deployment, app stores etc
-    * disconnected use
-    * version management
-    * scaling. How to think about it.
-    * security
-   * understand the Android development platform; be able to explain the core classes
-   * understand unique hardware and sw capabilities of mobile platforms, e.g. gps, voice etc
-   * have a sense of why and how to think about starting a company, what the steps are, what the challenges are and in general feel somewhat familiar with the process
- * Skills to be developed:
-  * write Android applications in Java that use the key architectural elements of the Android platform
-  * use the Android/Eclipse development tools to design, implement and test applications
-  * create an Android User Interface
-  * write Android apps that:
-   * interact with a back end web server/service
-   * use voice
-   * use gps
-   * have local data persistence
-
- * CS154aj - JBS Incubator
-  * At the end of the course the students should be able to
-   * understand the principles of agile methodology, concepts and reasoning behind them
-    * stories
-    * backlog
-    * iteration/sprint
-    * velocity
-    * pair programming
-    * continual integration
-    * constant refactoring/automated testing
-   * understand how to think about marketability, business model, money when it comes to creating a product
-   * understand the difference between developing a toy program and a real application
-   * connect the principles of web and mobile app development from the other two course to a real world product effort
- * Skills to be developed:
-   * develop a complete product that has both a web based and mobile component
-   * test and deploy this product to the Brandeis community
-   * user and usability testing/feedback
-   * Use ruby, rails, gems, git and heroku
-   * having a working instance of a product at all times starting at the earliest possible moment in a project.
-   * work in a professional software team: making and meeting commitments, asking and giving help to assure the success of the team, communicating well to each other and to 'management', and delivering on objectives
-   * be highly resourceful in solving problems by taking advantage of all the resources of the web
-   * describe and show what it took to select, design, develop, test and deploy a mobile product
+==== CS154aj - JBS Incubator ====
+ * At the end of the course the students should be able to
+  * understand the principles of agile methodology, concepts and reasoning behind them
+   * stories
+   * backlog
+   * iteration/sprint
+   * velocity
+   * pair programming
+   * continual integration
+   * constant refactoring/automated testing
+  * understand how to think about marketability, business model, money when it comes to creating a product
+  * understand the difference between developing a toy program and a real application
+  * connect the principles of web and mobile app development from the other two course to a real world product effort
+* Skills to be developed:
+  * develop a complete product that has both a web based and mobile component
+  * test and deploy this product to the Brandeis community
+  * user and usability testing/feedback
+  * Use ruby, rails, gems, git and heroku
+  * having a working instance of a product at all times starting at the earliest possible moment in a project.
+  * work in a professional software team: making and meeting commitments, asking and giving help to assure the success of the team, communicating well to each other and to 'management', and delivering on objectives
+  * be highly resourceful in solving problems by taking advantage of all the resources of the web
+  * describe and show what it took to select, design, develop, test and deploy a mobile product
 
  
  

@@ -1,6 +1,6 @@
 ==== 1: Internet Protocols Refresher: Tue, June 1 ====
 
- * 10:00-11:00: [http://github.com/pitosalas/brandeis-cosci/blob/master/class01/Intro.txt Kickoff (Pito+Tim)] 
- * 11:00-12:00: [http://github.com/pitosalas/brandeis-cosci/blob/master/class01/ip.txt Internet Protocols (Pito)]
+ * 10:00-11:00: [:Intro: Kickoff (Pito+Tim)] 
+ * 11:00-12:00: [:Ip: Protocols (Pito)]
  * 12:00-1:00: Lunch
- * 1:00-3:00: Incubator: Intro to Agile; Define and brainstorm projects
+ * 1:00-3:00: [:IncubAgile: Incubator: Intro to Agile; Define and brainstorm projects]

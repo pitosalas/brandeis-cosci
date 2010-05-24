@@ -1,8 +1,6 @@
 === JBS INCUBATOR ===
 
- * Each student has been asked to 'sponsor' at least one idea on the
-   product idea list
-   (http://jbs2010.wordpress.com/2010/05/20/sponsoring-incubator-product-ideas/)
+ * Each student has been asked to 'sponsor' at least one idea on the product idea list (http://jbs2010.wordpress.com/2010/05/20/sponsoring-incubator-product-ideas/)
 
  * We will split off into 3 or 4 product teams
 
@@ -30,8 +28,7 @@ summer. At the end of each week, you should be at a certain milestone
 if you want to be able to complete the project.
 
  * Week 1: Groups chosen, high level features chosen, stories written
- * Week 2: Models designed and built. Default scaffolding for controllers 
-      and views in place, project runs. Some initial features are implemented.
+ * Week 2: Models designed and built. Default scaffolding for controllers and views in place, project runs. Some initial features are implemented.
  * Week 3: Product is feature complete
  * Week 4: Product is stable enough, deployed to Heroku
  * Week 5: Mobile models designed, paper implementation
@@ -44,24 +41,9 @@ heavily weighted toward one or the other, at the groups discretion.
 
 ==== PROCESS ====
 
- * You will create a github repository for your product. At the end of
-   every day you should push the latest sources up to the repository
-
- * At any point, whatever code that is in the repository should run
-   and do something (however little)
-
- * Many days there will be 1/2 hour for 'standup meetings' where each
-   team will spend no more than 5 minutes summarizing: 'what was
-   accomplished yesterday', 'what is planned for today', and 'what is
-   blocking progress'
-
- * At the end of each week, each team will give a 1/2 hour status
-   update, with a demo of the progress so far
-
- * At the end of week 4 and week 8, each team will hand in a 
-   5-page paper covering the product market need, competiion and so on.
-   And deliver a 1/2 hour presentation to the class. 
-   Week 4 is an interim report, with final due on week 8.
-
- * Each team will maintain their Backlog and Stories in a
-   PivotalTracker space
+ * You will create a github repository for your product. At the end of every day you should push the latest sources up to the repository
+ * At any point, whatever code that is in the repository should run and do something (however little)
+ * Many days there will be 1/2 hour for 'standup meetings' where each team will spend no more than 5 minutes summarizing: 'what was accomplished yesterday', 'what is planned for today', and 'what is blocking progress'
+ * At the end of each week, each team will give a 1/2 hour status update, with a demo of the progress so far
+ * At the end of week 4 and week 8, each team will hand in a 5-page paper covering the product market need, competiion and so on. And deliver a 1/2 hour presentation to the class. Week 4 is an interim report, with final due on week 8.
+ * Each team will maintain their Backlog and Stories in a PivotalTracker space

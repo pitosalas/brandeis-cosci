@@ -1,4 +1,4 @@
-==== DATABASES ==== 
+==== DATABASES ====
 
   * A way to manage large amounts of data. Persistence. Standard access.
   * Different vendors, different features. standardization is hard. 
@@ -6,7 +6,7 @@
   * Tables containing records (or objects, or other things)
   * Examples: SQL Databases, DNS database, Hierarchical file system, etc. etc.
 
-==== SQL Databases ==== 
+==== SQL Databases ====
 
  * Most common still. "Relational" database
  * SQL is a simple programming/command language. Let's look at some examples.
@@ -18,13 +18,12 @@
  * Administration
  * Simplistic way to look at operations: Create, Retrieve, Update, Delete
  
- 
-==== INTERACTIVE DEMO ==== 
+==== INTERACTIVE DEMO ====
 
  * Use SQL command line
  * Use GUI
 
-==== JOIN ==== 
+==== JOIN ====
 
  * Family of operations to allow tables to be combined
  * 3d Normal form
@@ -35,7 +34,7 @@
  * Something from one of the projects
  * How would that be mapped into a relational table?
 
-==== OR MAPPING ==== 
+==== OR MAPPING ====
 
  * How does a relational table get accessed in an OO language?
  * Pros and Cons
@@ -45,7 +44,7 @@
  * Below the surface, they are still actual relational tables
  * Above the surface they function much like standard classes
 
-=== ActiveRecord ===
+==== ActiveRecord ====
 
  * Part of Rails that does OR Mapping
  * Automatically defines methods on classes based on the underlying database
