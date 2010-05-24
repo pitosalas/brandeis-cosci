@@ -27,4 +27,5 @@ These are books referenced that you might find interesting
   
 === Useful Links ===
  * [http://progit.org/book/, Pro Git Book, online, free] - a comprehensive intro to Git
+ * [http://onestepback.org/articles/10things/index.html - 10 Things a Java Programmer should know about Ruby]
 
