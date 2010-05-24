@@ -3,24 +3,26 @@
  * Course Requirements
   * Students will be required to be present, be prepared, and participate
   * Students will write short (2-5 paragraph) blogs on specific assigned topics
-  * Homework will include programming assignments which will be evaluated for style and correct function
+  * Homework will include programming assignments which will be evaluated for style and correct function. Record a very short screencast showing the app working.
   * There will be extensive opportunity for class participation
+  * Create a screencast. (See: http://railscasts.com/ for style and examples.) Choose some tool, library, GEM, technique and create and record a screencast tutorial to teach it to others. The screencast should be at least 10 minutes long.
  * Grading
   * PPP: 20%
   * Blogs: 20%
-  * Screencast Presentation:20%
+  * Screencast/Presentation:20%
   * Programming Homework: 40%
 
 === Mobile Application Development (Cosi 153aj) ===
  * Course Requirements
   * Students will be required to be present, be prepared, and participate
   * As part of homework or other assignments, students will write short (2-5 paragraph) blogs on specific assigned topics
-  * Homework will also include programming assignments which will be evaluated for style and correct function
+  * Homework will also include programming assignments which will be evaluated for style and correct function. Record a very short screencast showing the app working.
   * There will be extensive opportunity for class participation
+  * Create a screencast (See: http://railscasts.com/ for style and examples). Choose some tool, library, GEM, technique and create and record a screencast tutorial to teach it to others. The screencast should be at least 10 minutes long.
  * Grading
   * PPP: 20%
   * Blogs: 20%
-  * Screencast Presentation:20%
+  * Screencast/Presentation:20%
   * Programming Homework: 40%
 
 === The JBS Incubator (Cosi 154aj) ===

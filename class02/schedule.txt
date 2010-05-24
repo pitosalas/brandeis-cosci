@@ -3,4 +3,4 @@
  * 10:00-10:20 - Homework cold calls
  * 10:20-12:00 (Pito)[http://github.com/pitosalas/brandeis-cosci/tree/master/class02/, Web Architecture, URLs, HTTP] 
  * 12:00-1:00 Lunch
- * 1:00-3:00 Incubator: Form project teams; further define products
+ * 1:00-3:00 Incubator: Form project teams; further define products; create Pivotal Tracker projects

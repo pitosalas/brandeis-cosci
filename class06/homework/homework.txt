@@ -1,8 +1,12 @@
-IN YOUR APP
+=== IN YOUR PERSONAL APP === 
  * Add logic to list a subset of the objects in your app
  * For example, if you have a list of birthdays, then a subset might be all the birthdays this month
  * 0.0.0.0:3000/birthdays
  * 0.0.0.0:3000/birthdays/current_month
  * Add an additional view to display this
+ * DELIVERABLE: A screencast showing you demoing this.
+ 
+ 
+ 
  
  

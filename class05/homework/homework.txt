@@ -1,7 +1,8 @@
-SQL HOMEWORK
+==== SQL HOMEWORK ====
 
- * Read and learn command line for sqllite3 (http://www.sqlite.org/index.html)
- * Read and study SQL for Sqlite3: http://www.sqlite.org/lang.html
+ * Get familiar with and play with command line for sqllite3 (http://www.sqlite.org/index.html)
+ * Get familiar with and play SQL for Sqlite3: http://www.sqlite.org/lang.html
+ * DELIVERABLE: Create a database with two tables and demonstrate a joined query
 
  * http://vermonster.com/2010/03/31/nosql-workshop-featuring-riak-and-couchdb/
 
@@ -9,11 +10,14 @@ SQL HOMEWORK
  * Follow along: http://souptonuts.sourceforge.net/readme_sqlite_tutorial.html
  * Examine the database that you created in the previous homework
  
-RAILS HOMEWORK
+==== RAILS HOMEWORK ==== 
 
  * Continue reading and doing examples: Development With Rails: Chapters 9, 10, 11 and 14
- * Add some new properties to your personal app's model. 
+ * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
+ * DELIVERABLE: Blog about you (and your partner's) idea for your personal project
+ * Add new properties to your personal app's model. 
  * Create and run a migration to update the database.
+ * DELIVERABLE: Check in your personal project into your github space
  
 
 

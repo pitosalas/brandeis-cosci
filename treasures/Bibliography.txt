@@ -3,7 +3,8 @@
  * Programming Ruby 1.9, Thomas
  * Agile Web Development with Rails, Ruby and Thomas
  * Hello Android
-
+ * Agile Software Development with Scrum (Schwaber + Beedle)
+ 
 === Highly Recommended books ===
 
 I recommend these books very highly. You should consider having them on your bookshelf.
@@ -13,6 +14,9 @@ I recommend these books very highly. You should consider having them on your boo
  * Design Patterns ("Gang of Four Book"), 
  * Crossing the Chasm, Geoffrey Moore
  * "The Innovator's Dilemma," by Clayton M. Christensen
+ * Extreme Programming Applied, Auer + Miller
+ * Practices of an Agile Developer, Subramaniam + Hunt
+ * Agile Software Development with Scrum (Schwaber + Beedle)
 
 === Other Bibliography ===
 

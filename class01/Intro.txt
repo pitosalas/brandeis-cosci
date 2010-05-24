@@ -1,19 +1,21 @@
-WELCOME
+==== WELCOME ====
 
-* Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia
-* About programming languages and platforms. assume you will learn many. don't get too attached to any. they are not precious
-* About complexity: wheels within wheels. layers. amazing that it all works
-* About programming languages: most dot know ruby yet. modern. you will learn many languages and platforms. don't get too attached. the principles cary over. some ideas are re-invented over and over again
-* Difference between a school assignment/academic project and a product that you can build a career around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
+ * Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia
+ * About programming languages and platforms. assume you will learn many. don't get too attached to any. they are not precious
+ * About complexity: wheels within wheels. layers. amazing that it all works
+ * About programming languages: most dot know ruby yet. modern. you will learn many languages and platforms. don't get too attached. the principles cary over. some ideas are re-invented over and over again
+ * Difference between a school assignment/academic project and a product that you can build a career around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
 
-DISCUSSION
+==== DISCUSSION ====
 
-* discussion: What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
+ * discussion: What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
 
-* Prework Review: I will ask a couple of you to show us what your results were for the prework
+==== PREWORK ====
+ * Prework Review:  I will ask a couple of you to show us what your results were for the prework
 
-MECHANICS
+==== MECHANICS ==== 
 
+<<<<<<< HEAD
 * Discuss and get buy in on learning goals
 * Each class has a file called homework.txt
 * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
@@ -22,3 +24,12 @@ MECHANICS
 * HAND IN: Programming homework on PAPER first thing next day
 * BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
 * Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
+=======
+ * Each class has a file called homework.txt
+ * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
+ * Collect all your work product in your Github account so you can hand it in at the end
+ * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt).
+ * HAND IN: Programming homework on PAPER first thing next day. 
+ * BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
+ * Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
+>>>>>>> 20053de3582c024084f52c1d9abc33c693f68d49
