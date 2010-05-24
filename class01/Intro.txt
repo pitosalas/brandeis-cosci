@@ -14,6 +14,7 @@ DISCUSSION
 
 MECHANICS
 
+* Discuss and get buy in on learning goals
 * Each class has a file called homework.txt
 * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
 * Collect all your work product in your Github account so you can hand it in at the end

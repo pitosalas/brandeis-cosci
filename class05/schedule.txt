@@ -4,4 +4,4 @@
  * 10:20-12:00 [http://github.com/pitosalas/brandeis-cosci/tree/master/class05/, Databases, SQL, OR Mapping (Pito)]
  * 12:00-1:00 Lunch
  * 1:00-1:30 Incubator: Standup meetings for each product
- * 1:00-2:30 Intro to PivotalTracker. Set up projects.Create stories etc.
+
