@@ -1,3 +1,8 @@
-=== HTML, CSS===
-
- * yada yada
+=== HTML, CSS ===
+ * Working with htmlcssdemo directory (see extras)
+ * HTML is a variant of XML
+ * Look at the regular tag structure
+ * XML is a universal "platform independent" format
+ * (Note ascii character set, though -- UNICODE issues...)
+ * HTML supposed to describe document "structure" (not always)
+ * CSS describes appearance

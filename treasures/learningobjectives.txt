@@ -12,7 +12,7 @@ be most important.
   * understand what it means to design the model for a particular application
   * understand web services, REST, cloud computing concepts
 
-* Skills to be developed:
+ * Skills to be developed:
   * develop appropriate models using various database back ends
   * design, code, test, deploy ruby on rails applications that use multiple tables in databases
   * deploy applications on servers and organize their scalability and security
@@ -31,11 +31,12 @@ be most important.
   * understand the Android development platform; be able to explain the core classes
   * understand unique hardware and sw capabilities of mobile platforms, e.g. gps, voice etc
   * have a sense of why and how to think about starting a company, what the steps are, what the challenges are and in general feel somewhat familiar with the process
-* Skills to be developed:
- * write Android applications in Java that use the key architectural elements of the Android platform
- * use the Android/Eclipse development tools to design, implement and test applications
- * create an Android User Interface
- * write Android apps that:
+
+ * Skills to be developed:
+  * write Android applications in Java that use the key architectural elements of the Android platform
+  * use the Android/Eclipse development tools to design, implement and test applications
+  * create an Android User Interface
+  * write Android apps that:
   * interact with a back end web server/service
   * use voice
   * use gps
@@ -54,7 +55,8 @@ be most important.
   * understand how to think about marketability, business model, money when it comes to creating a product
   * understand the difference between developing a toy program and a real application
   * connect the principles of web and mobile app development from the other two course to a real world product effort
-* Skills to be developed:
+
+ * Skills to be developed:
   * develop a complete product that has both a web based and mobile component
   * test and deploy this product to the Brandeis community
   * user and usability testing/feedback
@@ -63,7 +65,3 @@ be most important.
   * work in a professional software team: making and meeting commitments, asking and giving help to assure the success of the team, communicating well to each other and to 'management', and delivering on objectives
   * be highly resourceful in solving problems by taking advantage of all the resources of the web
   * describe and show what it took to select, design, develop, test and deploy a mobile product
-
- 
- 
-  

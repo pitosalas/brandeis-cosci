@@ -1,18 +1,7 @@
-==== CORE WEB ARCHITECTURE ====
-
- * Discussion. How does it all work?
- * Web Browsers are 'clients'
- * Web Servers are 'servers'
- * Client's ask work to be done; server does it.
- * Web browser is an http 'client'
- * What does that mean?
- * Web server is an http 'server'
- * What does that mean?
- * Take a look at a url
- * Let's take it apart
-
 ==== URLS ====
 
+ * Take a look at a url
+ * Let's take it apart
  * What does it stand for?
  * What are the parts of a URL
  * http:// -> protocol
@@ -45,8 +34,33 @@ $ curl -v http://www.brandeis.edu}}}
 
 ==== TCP ====
 
- * transport control protocol
+ * transport control protocol, on TOP of IP
  * handles delivery of those bits to and from a particular "application" to another "application"
- * adds a 'port' number
+ * adds a 'port' number to IP
  * the 'application' aka the 'server' and the other application aka the 'client'
  * Sockets
+
+==== HTTP ====
+ * One of the foundational protocols of the web (other ones are?)
+ * Request -> Response. Stateless.
+ * [http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol, HTTP Protocol]
+ * At the heart: a way to deliver 'URL' in to a 'Web Server' and tell it what to do with it and then process the result (TCP/IP not required!)
+ * URL -- URI?
+ * HTTP methods: GET, PUT, POST, DELETE... and others
+ * HTTP Request: Do <method> to this <url> resource.
+ * HTTP Response: <status> happened. Here's the result: <result>
+
+Example Request:
+{{{GET /index.html HTTP/1.1
+Host: www.example.com
+}}}
+Example Response:
+{{{HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Server: Apache/1.3.3.7 (Unix)  (Red-Hat/Linux)
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Etag: "3f80f-1b6-3e1cb03b"
+Accept-Ranges: bytes
+Content-Length: 438
+Connection: close
+Content-Type: text/html; charset=UTF-8}}}
