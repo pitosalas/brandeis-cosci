@@ -1,0 +1,89 @@
+/* @override http://www.macrabbit.com/cssedit/welcome/2.5/welcome.css */
+
+/*
+	Note: this style sheet does not validate.
+	This is because the W3C validator is not
+	aware of RGBA colors, which are part of
+	the CSS3 specification.
+*/
+
+body {
+	font: 13px/1.5 "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #fff;
+	background: #555 url(images/PageShadow.png) repeat-x fixed;
+	margin: px 0 0;
+	padding: 0;
+	cursor: default;
+}
+
+/* @group Headers */
+
+h1 {
+	font: normal 36px "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	color: #fff;
+	text-transform: lowercase;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+	margin: 0 0 20px;
+}
+
+h1 span {
+	color: rgba(0,0,0,0.6);
+	text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+}
+
+h3 {
+	font-size: 1em;
+}
+
+/* @end */
+
+/* @group Content */
+
+#content {
+	background: url(images/CSSEdit.png) no-repeat 0 0;
+	display: block;
+	min-height: 300px;
+	max-width: 600px;
+	padding: 25px 65px 50px 210px;
+}
+
+p {
+	color: rgba(255,255,255,0.7);
+}
+
+p strong {
+	color: #fff;
+}
+
+#try-it {
+	color: #fff;
+	padding: 0 0 0 20px;
+}
+
+#try-it li {
+	list-style-position: inside;
+	margin: 5px 0;
+}
+
+/* @end */
+
+/* @group Override Banner */
+
+#override-info {
+	background-color: #3f3f3f; /* First for Firefox */
+	background-color: rgba(62,62,62,0.95);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+#override-info p {
+	font-size: 11px;
+	color: rgba(255,255,255,0.5);
+	background: url(images/OverrideGlyph.png) no-repeat 80px 50%;
+	margin: 0;
+	padding: 15px 80px 15px 120px;
+}
+
+/* @end */
