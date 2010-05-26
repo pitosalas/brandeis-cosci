@@ -6,7 +6,7 @@
 
  * what's a protocol? protocols are always layered, one on top of the other
  * lower level protocols are 'closer to the hardware', higher level protocols are 'closer to the user'
- * question: could you call .mp3 or .jpg a protocol?
+ * question: could you call .mp3 or .jpg a protocol??
 
  * Decentralized 'distribution' of a key. I set up a new computer, where's the key come from?
  * Problem: I want to have a unique key that is guaranteed to be unique
