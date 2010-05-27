@@ -1,10 +1,13 @@
 Add this to your .irbrc file:
 
 begin
-    puts "running wirble"
     require 'rubygems'
     require 'pp'
     require 'ap'
+    require 'map_by_method'
+    require 'what_methods'
+    require 'pp'
+    IRB.conf[:AUTO_INDENT]=true
     require 'wirble'
     Wirble.init
     Wirble.colorize
@@ -20,3 +23,6 @@ begin
 rescue LoadError => err
     $stderr.puts "Couldn't load something for irb: #{err}"
 end
+
+
+
