@@ -24,7 +24,7 @@ $ curl -v http://www.brandeis.edu}}}
 
 ==== PROTOCOLS ====
 
- * A protocol is a set of rules
+ * A protocol is a set of rules. Abstraction. Leaky Abstraction.
  * Protocols determine the way information is interpreted 'on the wire'
  * You can think of them as 'envelopes'
  * Imagine I mail a big box of books to 'brandeis unversity, South Street, Waltham MA'
@@ -50,17 +50,38 @@ $ curl -v http://www.brandeis.edu}}}
  * HTTP Request: Do <method> to this <url> resource.
  * HTTP Response: <status> happened. Here's the result: <result>
 
-Example Request:
-{{{GET /index.html HTTP/1.1
-Host: www.example.com
+==== Demo ====
+{{{
+$ telnet www.salas.com 80
+Trying 64.34.168.137...
+Connected to salas.com.
+Escape character is '^]'.
+GET / HTTP/1.0
+Host: Salas.com
+
+HTTP/1.1 301 Moved Permanently
+...
 }}}
-Example Response:
-{{{HTTP/1.1 200 OK
-Date: Mon, 23 May 2005 22:38:34 GMT
-Server: Apache/1.3.3.7 (Unix)  (Red-Hat/Linux)
-Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
-Etag: "3f80f-1b6-3e1cb03b"
-Accept-Ranges: bytes
-Content-Length: 438
-Connection: close
-Content-Type: text/html; charset=UTF-8}}}
+
+{{{
+~ $ telnet www.salas.com 80
+Trying 64.34.168.137...
+Connected to salas.com.
+Escape character is '^]'.
+GET / HTTP/1.1
+Host: www.salas.com
+
+HTTP/1.1 200 OK
+Server: nginx/0.5.31
+Date: Fri, 28 May 2010 14:57:08 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/4.3.9
+X-Pingback: http://www.salas.com/xmlrpc.php
+Set-Cookie: wwsgd_visits=1; expires=Sat, 28-May-2011 14:57:08 GMT; path=/
+
+edc
+<!DOCTYPE html PUBLIC "-//W3C
+...
+}}}

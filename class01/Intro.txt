@@ -1,28 +1,29 @@
 ==== WELCOME ====
 
  * Some stories: Starting of eRoom; Open Source software for elections; my first patent; how to get into wikipedia
- * About programming languages and platforms. assume you will learn many. don't get too attached to any. they are not precious
- * About complexity: wheels within wheels. layers. amazing that it all works
- * About programming languages: most dot know ruby yet. modern. you will learn many languages and platforms. don't get too attached. the principles cary over. some ideas are re-invented over and over again
+ * About complexity: wheels within wheels. layers. amazing that it all works. Abstractions and Leaky abstractions
+ * About programming languages: most don't know ruby yet. modern. you will learn many languages and platforms. don't get too attached. the principles cary over. some ideas are re-invented over and over again
  * Difference between a school assignment/academic project and a product that you can build a career around. patents. 10% 'interesting', 90% blocking and tackling. 'remember your helmet.'
+ * Review of underlying principles. Modern platforms give a false sense of security. Write a blogging service in 10 minutes. But it's not real. Real systems are complex. Abstractions Leak. All is not what it seems.
 
 ==== DISCUSSION ====
 
  * discussion: What happens when I type in "google.com" into Firefox? Let's write it all on the whiteboard and see where that leads us.
 
 ==== PREWORK ====
- * Prework Review:  I will ask a couple of you to show us what your results were for the prework
+
+* Prework Review:  I will ask a couple of you to show us what your results were for the prework
 
 ==== MECHANICS ====
 
+ * Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
  * Discuss and get buy in on learning goals
  * Discuss expected time investments and why
+ * Volunteering: everyone will have to do one, so ...
+ * Student Led Discussions. Please sign up asap. Everyone needs to do at least one by end of term
  * Each class has a file called homework.txt
  * Do homework in PAIRS. But each person create a solution. One of you may be called upon to demo and describe solution.
  * Collect all your work product in your Github account so you can hand it in at the end
  * Programming homework: 3 attempts. Needs to follow good programming style. (See progstyle.txt)
- * HAND IN: Programming homework on PAPER first thing next day
+ * HAND IN: Programming homework on PAPER first thing next day. And email to list a screencast of you demoing (running) the programming homework. You may show code if you wish.
  * BLOG: Blogging homework is delivered on the JBS2010.wordpress.com blog
- * Curriculum is mostly the way you see it, but there will be changes as we go. They will be announced.
- * Volunteering: everyone will have to do one, so ...
- * Student Led Discussions

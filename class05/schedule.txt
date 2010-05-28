@@ -4,3 +4,5 @@
  * 10:20-12:00 [:Databases: Databases, SQL, OR Mapping (Pito)]
  * 12:00-1:00 Lunch
  * 1:00-1:30 Incubator: Standup meetings for each product
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class05/homework/ Homework is here]
+

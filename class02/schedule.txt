@@ -5,3 +5,4 @@
  * 12:00-1:00 Lunch
  * 1:00-3:00 Incubator: Form project teams; further define products; create Pivotal Tracker projects
  * 4:30-5:30 JBS Ice Cream Social - details coming soon
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class01/homework/ Homework is here]

@@ -1,7 +1,8 @@
 ==== 9: 3Tier, Loadbalancing, Deployment and Scale: Tue, 15th ====
 
  * 10:00-10:20 - Homework cold calls
- * 10:20-11:00 [:StudentLed: Student Led Discussion]
  * 11:00-12:00 [:3TierBalancing: 3Tier, Loadbalancing, Scale (Tim)]
  * 12:00-1:00 Lunch
  * 1:00-1:30 Weekly Standup meetings
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class09/homework/ Homework is here]
+

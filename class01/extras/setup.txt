@@ -24,5 +24,6 @@ rescue LoadError => err
     $stderr.puts "Couldn't load something for irb: #{err}"
 end
 
+Also this git completion/shell prompt is very handy: http://github.com/guides/put-your-git-branch-name-in-your-shell-prompt
 
 

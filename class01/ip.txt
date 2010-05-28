@@ -1,5 +1,7 @@
 ==== IP/PROTOCOLS/ETC ====
 
+ * Review for some, new for others. Basics. Need to understand this if you want to be successful debugging Rails and Android apps.
+
  * IP: "internetwork" protocol
  * Gets  data between one 'host' (=computer or server) and another
  * Like the boxes, we need an address from and to: "IP address!" 123.22.112.1 

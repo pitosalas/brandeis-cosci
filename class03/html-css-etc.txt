@@ -1,5 +1,8 @@
 === HTML, CSS ===
- * Working with htmlcssdemo directory (see extras)
+
+ * [http://www.w3schools.com/tags/default.asp Html Tag Reference] (One of many)
+ * [http://www.w3schools.com/css/default.asp Css Reference] (One of many)
+ * Working with [http://github.com/pitosalas/brandeis-cosci/tree/master/class03/extras htmlcssdemo directory (see extras)]
  * HTML is a variant of XML
  * Look at the regular tag structure
  * XML is a universal "platform independent" format

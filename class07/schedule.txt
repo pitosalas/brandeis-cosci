@@ -4,3 +4,7 @@
  * 10:20-12:00 [:ViewsControllers:, Views and Controllers (Pito)] 
  * 12:00-1:00 Lunch
  * 1:00-2:00 Incubator: 2 Teams Weekly Report
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class07/homework/ Homework is here]
+
+
+

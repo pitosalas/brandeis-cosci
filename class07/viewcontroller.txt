@@ -28,4 +28,5 @@
        0.0.0.0:3000/jurisdictions/current
        
  * Routes also generate URLs. So jurisdictions_current_path generates the 'right' url
+ * [http://guides.rubyonrails.org/routing.html This is a good reference on routine]
  

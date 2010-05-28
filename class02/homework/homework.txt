@@ -30,7 +30,7 @@ time
 message/joke
 message/fortune
 message/joke?lang=en
-message/joke?lang=.someotherlanguage
+message/joke?lang=someotherlanguage
 
 ==== RUBY and RAILS
 

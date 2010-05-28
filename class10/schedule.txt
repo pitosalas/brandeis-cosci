@@ -4,3 +4,6 @@
  * 11:00-12:00 [:RestWebServ: REST API Design, Programmable Web (Pito)]
  * 12:00-1:00: Lunch
  * 1:00-2:00: Incubator: Project Team 1,2 Status Presentation
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class10/homework/ Homework is here]
+
+
