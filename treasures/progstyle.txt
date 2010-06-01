@@ -1,16 +1,29 @@
-All code handed in should follow these basic professional standard. Note that you will get three attempts to hand something in (before it gets graded)
+==== General Homework Guidelines ====
 
-* All source files start with a comment block header explaining:
-** the name of the program
-** briefly its purpose
-** your name
-**  specific preconditions to running it (e.g. install this gem)
-** command line(s) to run it and demonstrate that it works
+ * Always include your name and the Homework number in all paper or digital hand-ins to make sure it gets graded 
+ 
+==== How to hand in so it gets graded ====
 
-* All classes and methods are preceded by something explaining it (can be as little as one sentence.)
-* Variable and other names should be well chosen. (Hint: if it's one letter, it may not be so well chosen.)
+ 1. Hand in on the morning that it is due
+ 1. Program source code should be on PAPER!
+ 1. Create a brief [:ScreenCasts: screencast] demonstrating running it and producing the right results.
+ 1. Check it in, by homework number, into your github repo
 
-RUBY CONVENTIONS
+==== Style guide for Programming homework ====
 
-* Class names are capitalized CamelCase
-* Variables are lowercase, non-camel, underscore_separated
+All code handed in should follow these basic professional standards. Note that you will get three attempts to hand something in (before it gets graded)
+
+ * All source files start with a comment block header explaining:
+  * the name of the program, the homework assignment number
+  * briefly its purpose
+  * your name
+  * specific preconditions to running it (e.g. install this gem)
+  * command line(s) to run it and demonstrate that it works
+
+  * You should demonstrate good programming habits:
+   * All classes and many methods are preceded by something explaining it (can be as little as one sentence.)
+   * Variable and other names should be well chosen. (Hint: if it's one letter, it may not be so well chosen.)
+
+ * You should follow RUby Coding Conventions
+  * Class names are capitalized CamelCase
+  * Variables are lowercase, non-camel, underscore_separated
