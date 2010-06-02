@@ -1,5 +1,7 @@
-==== 13: User Interface: Tue June 22 ==== 
+==== 13: User Interface: Tue June 22 ====
  * 10:00-10:20 - Homework cold calls
  * 10:20-12:00 - [:UserInterface: User Interface]
  * 12:00-1:00: Lunch
- * 1:00-2:00 - Incubator Project Team Status (x2)
+ * 1:00-2:00 - Incubator: 2 Project Team Status Reports
+ * [http://github.com/pitosalas/brandeis-cosci/tree/master/class013/homework/ Homework is here]
+

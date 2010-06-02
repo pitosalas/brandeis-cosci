@@ -1,5 +1,5 @@
 === HOMEWORK === 
 
  * Read and understand http://en.wikipedia.org/wiki/Affordance
-
+ * Do you use Windows or Mac? Pick three parts of the user interface that are bad. Explain why
  

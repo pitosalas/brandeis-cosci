@@ -43,4 +43,13 @@ message/joke?lang=someotherlanguage
  * Read Chapters 1-4 of Agile Web Development 
  * DELIVERABLE: Actually type in and do several of the programs
  * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
+
+=== Incubator Homework (teams)====
+
+ * Create PivotalTracker project for your product
+ * Come up with a code name for your product
+ * Write at least 10 stories. Hopefully more.
+ * Write a blog post describing 3 different user 'personas'. "Joe is a freshman at Brandeis. He just met his roommate." etc.
+ * Brainstorm as a team with some ideas for the UI. Be prepared to informally discuss it in class
+
  
