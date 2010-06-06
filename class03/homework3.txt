@@ -1,0 +1,32 @@
+==== HTML/CSS ====
+
+ * DELIVERABLE: create (by hand, in a text editor) a working html page or more
+  * include in it header levels, a few paragraphs, some graphics and a table of some kind, and a form
+  * As an example, it can be a list of music (cd's) that you own, or a sample page or two from your product
+  * Demonstrate it in 3 different browsers
+  * Investigate why it looks different
+  * Investigate whether it is HTML5, 4 or whatever
+  * Include CSS to make it look as pretty and cool as you can. Feel free to copy from other sites. But be sure you can explain why it works!
+
+==== Rails Pre-work ====
+
+ * Read Chapters 4-7 of Agile Web Development
+  * DELIVERABLE: Actually type in and do several of the programs
+  * DELIVERABLE: Blog about 2 chapters that you found interesting or/and confusing
+
+==== Learning Ruby ====
+
+ * DELIVERABLE: Blog about a cool Ruby class or method you discovered to share with the class
+ * Implement '''one''' of these two Ruby problems (similar procedure to pre-work)
+   * [:HangMan: Hangman puzzle]
+   * [:Translate: Translate simple math expressions]
+
+==== Speaker ====
+
+ * On Monday, there will be a speaker. Who will prepare 5+ minutes about his company?
+
+==== Incubator ====
+ * Sketch out the model for your product (team deliverable)
+ * Officially move 15 stories into the backlog, prioritized, assigned, estimated. (team deliverable)
+
+==== META: All previous homeworks have to be handed in by the end of the weekend ====

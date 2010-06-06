@@ -1,0 +1,39 @@
+There are many different ways to write mathematical equations. Infix notation is probably the most popular and yields expressions like:
+
+{{{2 * (3 + 5)}}
+
+Some people like to work with a postfix notation (often called Reverse Polish Notation or just RPN) though, which doesn't require parentheses for the same equation:
+
+{{{2 3 5 + *}}}
+
+You can compare the results of these equations using the Unix utilities bc (infix) and dc (postfix):
+
+{{{$ bc <<< '2 * (3 + 5)'
+16
+$ dc <<< '2 3 5 + * p'
+16}}}
+
+The "p" instruction tacked onto the end of the expression for dc just tells it to print the result.
+
+This week's quiz is to write a script that translates postfix expressions into the equivalent infix expression. In the simplest form, your script should function as such:
+
+{{{$ ruby postfix_to_infix.rb '2 3 +'
+2 + 3}}}
+
+At minimum, try to support the four basic math operators: +, -, *, and /. Feel free to add others though. For numbers, remember to accept decimal values.
+
+You can count on the postfix expressions having spaces between each term, if you like. While dc is content with 2 3+p, you don't have to support it unless you want to.
+
+For an added bonus, try to keep the parentheses added to infix expressions to the minimum of what is needed. For example, prefer these results:
+
+{{{$ ruby postfix_to_infix.rb '56 34 213.7 + * 678 -'
+56 * (34 + 213.7) - 678
+$ ruby postfix_to_infix.rb '1 56 35 + 16 9 - / +'
+1 + (56 + 35) / (16 - 9)}}}
+
+to these:
+
+{{{$ ruby postfix_to_infix.rb '56 34 213.7 + * 678 -'
+((56 * (34 + 213.7)) - 678)
+$ ruby postfix_to_infix.rb '1 56 35 + 16 9 - / +'
+(1 + ((56 + 35) / (16 - 9)))}}}

@@ -1,0 +1,66 @@
+=== Hangman ===
+
+Most people are probably familiar with the game of Hangman. The first player picks a word or phrase, and the second player has to guess it a letter at a time. If they make six wrong guesses (i.e. the target word does not contain the guessed letter), they lose. If they guess the entire word before then, they win.
+
+This quiz is to make a Hangman guessing player in Ruby. Play should proceed as follows:
+
+ * The program requests how many letter in the phrase, user supplies a number
+
+ * The program suggests a letter, or may guess the entire word or phrase.
+
+ * The user indicates which letter positions, if any, match that letter.
+If none match, a life is lost. If five (or configurable) lives are lost,
+the program loses.
+
+So for example:
+{{{
+Computer asks how many letter in the phrase: 6
+
+User has 5 lives!
+
+_ _ _ _ _ _
+1 2 3 4 5 6
+
+
+
+Computer guesses "s"
+User says that "s" occurs in position: 1
+
+User has 5 lives!
+
+s
+_ _ _ _ _ _ 
+1 2 3 4 5 6
+
+Computer guesses "a"
+User says that "s" occurs in position: nope
+
+User has 4 lives!
+
+s
+_ _ _ _ _ _
+1 2 3 4 5 6
+}}}
+
+
+The specification is otherwise open-ended to allow you to focus on whatever part of the problem interests you. For example:
+
+ * You can just show the number of wrong guesses made, or you can actually
+draw the hangman.
+
+ * You may concentrate on improving the play, for example by using a
+dictionary to improve the guesses made at each stage. A suitable file
+is /usr/share/dict/words on many Linux systems.
+
+ * A dynamic solution could start with an empty dictionary, and guess the
+answer by chance. If it fails, it would prompt the user for the word
+or phrase they were thinking of. It would add new words or phrases to
+its dictionary so as to become a better player over time.
+
+ * You could investigate ways of precomputing a hangman decision tree,
+optimizing it for the minimum number of wrong guesses along each branch.
+The aim is to produce an unbeatable guesser for a given dictionary.
+
+ * You may wish to consider how best to decouple the UI from the guessing
+logic, to enable different UI's to work with the same guessing engine,
+or vice versa.
