@@ -29,7 +29,7 @@
   * in an external style sheet, for example the file calendar.css might contain
        td.holday {color:red}
     where the head of the HTML would contain a link to that file:
-      <link rel="stylesheet" src="calendar.css" />
+      <link rel="stylesheet" href="calendar.css" />
   * or in a CSS file imported from a CSS file that is included!
     you can import a CSS file into another one by including the line
       import "base.css";
