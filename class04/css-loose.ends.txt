@@ -1,0 +1,44 @@
+ * Standard Use of CSS in HTML
+  * links to css files in head element
+  * tags in body have id or class attributes specifying css in head
+ * Contextual CSS selectors
+  * can specify contexts in which CSS is applied, e.g. the following CSS
+    would put a border around any form which appears in an HTML element
+    with the id "forgotpw"
+
+        #forgotpw form {border:thick solid blue}
+
+   likewise we can attach style to all td elements in a table of class "month"
+   using
+
+       table.month td {padding:5px; margin:2px; border:2px solid black}
+
+   See the specification for more details on this useful functionality:
+      http://www.w3.org/TR/CSS2/selector.html#pattern-matching
+
+ * Priority
+  CSS can be specified in many different ways, e.g. 
+  * in line via the style attribute
+     <td style="color:red">....</td>
+  * in the head using the style element
+    <style type="text/css">
+       td.holiday {color:red}
+    </style>
+    where the corresponding td would have a class selector
+    <td class="red">July 4</td>
+  * in an external style sheet, for example the file calendar.css might contain
+       td.holday {color:red}
+    where the head of the HTML would contain a link to that file:
+      <link rel="stylesheet" href="calendar.css" />
+  * or in a CSS file imported from a CSS file that is included!
+    you can import a CSS file into another one by including the line
+      import "base.css";
+    at the top of the CSS file (don't forget the semicolon!)
+  CSS has a rigid set of rules that explains how to specify style on a tag
+  that comes under the influence of several different bits of CSS (e.g. 
+  inline CSS, CSS in the head, CSS linked from a file, CSS on a tag, 
+  CSS on a tag with a class specifier, CSS with only a class specifier, etc.
+  The main idea is that the most specific selector wins, and if two are equal
+  then the one processed last wins.
+  See http://www.w3.org/TR/CSS2/cascade.html#specificity for more detail
+
