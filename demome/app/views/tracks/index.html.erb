@@ -1,0 +1,15 @@
+<h1>Track#index</h1>
+
+<p>Here are the params:
+<%= params.inspect%>
+<%= i=0 %>
+</p>
+<p>And it's the same text substitution! Oh and the time is <%= Time.now %></p>
+
+<% @tracks.each do |track| %>
+  <p>
+    <b>Title<%= i += 1%></b>: <%= track.title %>  <%= link_to 'Edit', edit_track_path(track) %> 
+        (path string: <%= edit_track_path(track)%>)
+  </p>
+<% end %>
+
