@@ -3,49 +3,910 @@
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
-  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
-  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
-Migrating to CreateCards (20100521212432)
-  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" varchar(255), "friend" boolean, "created_at" datetime, "updated_at" datetime) [0m
-  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100521212432')[0m
-Migrating to CreateAddressBooks (20100521212458)
-  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "address_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100521212458')[0m
+Migrating to CreateTracks (20100609232620)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "tracks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "genre_id" integer, "artist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609232620')[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
-  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("address_books")[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cards")[0m
-  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
-Migrating to CreateCards (20100521212432)
-Migrating to CreateAddressBooks (20100521212458)
-Migrating to AddAddressBookIdToCard (20100521212621)
-  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "cards" ADD "addressbook_id" integer[0m
-  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100521212621')[0m
-  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
-  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("address_books")[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cards")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tracks")[0m
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 19:32:50) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:32:54) [GET]
+
+ActionController::RoutingError (No route matches "/track" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:32:57) [GET]
+
+ActionController::RoutingError (No route matches "/track/0" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:32:59) [GET]
+
+ActionController::RoutingError (No route matches "/track/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 19:33:09) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 19:34:34) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/genres/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:41:30) [GET]
+
+ActionController::RoutingError (No route matches "/genres/show/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 19:41:50) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 19:42:30) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: action):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 19:42:42) [GET]
+
+ActionView::MissingTemplate (Missing template tracks/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:58:25) [GET]
+
+NameError (uninitialized constant TracksController):
+  
+
+Rendered rescues/_trace (22.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:58:34) [GET]
+
+ActionController::RoutingError (No route matches "/track" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:58:36) [GET]
+
+NameError (uninitialized constant TracksController):
+  
+
+Rendered rescues/_trace (20.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:58:51) [GET]
+
+NameError (uninitialized constant TracksController):
+  
+
+Rendered rescues/_trace (21.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 19:58:52) [GET]
+
+NameError (uninitialized constant TracksController):
+  
+
+Rendered rescues/_trace (21.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 19:59:24) [GET]
+
+ActionView::MissingTemplate (Missing template tracks/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:00:50) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:01:04) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:01:19) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 20:01:50) [GET]
+
+SyntaxError (/mydev/demome/app/controllers/tracks_controller.rb:7: unterminated string meets end of file
+/mydev/demome/app/controllers/tracks_controller.rb:7: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (22.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:01:59) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 20:02:05) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks/1]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 20:02:32) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks/1]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 20:16:48) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionView::MissingTemplate (Missing template tracks/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:16:52) [GET]
+
+ActionView::MissingTemplate (Missing template tracks/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 20:16:56) [GET]
+
+ActionController::RoutingError (No route matches "/track" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:17:04) [GET]
+
+ActionView::MissingTemplate (Missing template tracks/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:17:19) [GET]
+Rendering tracks/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:22:10) [GET]
+Rendering tracks/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:23:20) [GET]
+Rendering tracks/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:30:05) [GET]
+
+NameError (uninitialized constant TracksController::Tracks):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+Rendered rescues/_trace (62.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:30:29) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:31:19) [GET]
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:31:20) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:31:45) [GET]
+Rendering tracks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:32:05) [GET]
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:32:21) [GET]
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:32:36) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:33:00) [GET]
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:33:10) [GET]
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+ERROR: compiling _run_erb_app47views47tracks47index46html46erb RAISED compile error
+/mydev/demome/app/views/tracks/index.html.erb:8: syntax error, unexpected '|', expecting '}'
+...r.concat(( @tracks.each do { |t| t.title} ).to_s); @output_b...
+                              ^
+/mydev/demome/app/views/tracks/index.html.erb:8: syntax error, unexpected '}', expecting kEND
+...@tracks.each do { |t| t.title} ).to_s); @output_buffer
+                              ^
+/mydev/demome/app/views/tracks/index.html.erb:11: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47tracks47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Track#index</h1>\n\n<p>Here are the params:\n"
+
+
+; @output_buffer.concat(( params.inspect).to_s); @output_buffer.concat "\n</p>\n<p>And it's the same text substitution! Oh and the time is "
+
+; @output_buffer.concat(( Time.now ).to_s); @output_buffer.concat "</p>\nThe value of the @tracks variable:\n"
+
+; @output_buffer.concat(( @tracks.each do { |t| t.title} ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /mydev/demome/app/views/tracks/index.html.erb:11:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/mydev/demome/app/views/tracks/index.html.erb:8: syntax error, unexpected '|', expecting '}'
+...r.concat(( @tracks.each do { |t| t.title} ).to_s); @output_b...
+                              ^
+/mydev/demome/app/views/tracks/index.html.erb:8: syntax error, unexpected '}', expecting kEND
+...@tracks.each do { |t| t.title} ).to_s); @output_buffer
+                              ^
+/mydev/demome/app/views/tracks/index.html.erb:11: syntax error, unexpected $end, expecting ')') on line #8 of app/views/tracks/index.html.erb:
+5: </p>
+6: <p>And it's the same text substitution! Oh and the time is <%= Time.now %></p>
+7: The value of the @tracks variable:
+8: <%= @tracks.each do { |t| t.title} %>
+
+    app/views/tracks/index.html.erb:11:in `compile!'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:33:16) [GET]
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:34:11) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:34:32) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:34:33) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 45ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:35:08) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:35:09) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:35:36) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:36:42) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #8 of app/views/tracks/index.html.erb:
+5: </p>
+6: <p>And it's the same text substitution! Oh and the time is <%= Time.now %></p>
+7: The value of the @tracks variable:
+8: <%= @tracks.each  { puts t} %>
+
+    app/views/tracks/index.html.erb:8:in `t'
+    app/views/tracks/index.html.erb:8
+    app/views/tracks/index.html.erb:8:in `each'
+    app/views/tracks/index.html.erb:8
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:36:49) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:37:28) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:38:12) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:38:49) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:38:59) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:39:12) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:41:15) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:41:30) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:41:51) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:43:09) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+ERROR: compiling _run_erb_app47views47tracks47index46html46erb RAISED compile error
+/mydev/demome/app/views/tracks/index.html.erb:10: syntax error, unexpected ')'
+... @output_buffer.concat(( i++ ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47tracks47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Track#index</h1>\n\n<p>Here are the params:\n"
+
+
+; @output_buffer.concat(( params.inspect).to_s); @output_buffer.concat "\n</p>\n<p>And it's the same text substitution! Oh and the time is "
+
+; @output_buffer.concat(( Time.now ).to_s); @output_buffer.concat "</p>\n\n"
+
+;  @tracks.each do |track| ; @output_buffer.concat "\n  <p>\n  <b>Title"
+
+; @output_buffer.concat(( i++ ).to_s); @output_buffer.concat "</b>: "; @output_buffer.concat(( track.title ).to_s); @output_buffer.concat "</td>\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /mydev/demome/app/views/tracks/index.html.erb:17:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/mydev/demome/app/views/tracks/index.html.erb:10: syntax error, unexpected ')'
+... @output_buffer.concat(( i++ ).to_s); @output_buffer.concat ...
+                              ^) on line #10 of app/views/tracks/index.html.erb:
+7: 
+8: <% @tracks.each do |track| %>
+9:   <p>
+10:   <b>Title<%= i++ %></b>: <%= track.title %></td>
+11:   </p>
+12: <% end %>
+
+    app/views/tracks/index.html.erb:17:in `compile!'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:43:19) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #10 of app/views/tracks/index.html.erb:
+7: 
+8: <% @tracks.each do |track| %>
+9:   <p>
+10:   <b>Title<%= i += 1%></b>: <%= track.title %></td>
+11:   </p>
+12: <% end %>
+
+    app/views/tracks/index.html.erb:10
+    app/views/tracks/index.html.erb:8:in `each'
+    app/views/tracks/index.html.erb:8
+
+Rendered rescues/_trace (68.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:43:34) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:46:37) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:48:41) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:49:12) [GET]
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#edit (for 127.0.0.1 at 2010-06-09 20:49:14) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to edit. Actions: index and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TracksController#edit (for 127.0.0.1 at 2010-06-09 20:50:08) [GET]
+  Parameters: {"id"=>"2"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/tracks/2/edit]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 20:51:51) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks]
+
+
+Processing TracksController#edit (for 127.0.0.1 at 2010-06-09 20:51:53) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks/2/edit]
+
+
+Processing TracksController#edit (for 127.0.0.1 at 2010-06-09 20:54:07) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/tracks/edit.html.erb:
+1: <h1>Edit this track</h1>
+2: 
+3: <% form_for(@track) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/tracks/edit.html.erb:3
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#edit (for 127.0.0.1 at 2010-06-09 21:00:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+Rendering tracks/edit
+Completed in 69ms (View: 65, DB: 0) | 200 OK [http://0.0.0.0/tracks/2/edit]
+
+
+Processing TracksController#update (for 127.0.0.1 at 2010-06-09 21:00:28) [PUT]
+  Parameters: {"commit"=>"Update", "track"=>{"title"=>"Wayward Child!"}, "authenticity_token"=>"Ph2fQbUetJARv9BXdLIP/legXo307fTtZIpDDhlw1Ck=", "id"=>"2"}
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/tracks_controller.rb:16:in `update'
+
+Rendered rescues/_trace (23.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#update (for 127.0.0.1 at 2010-06-09 21:01:02) [PUT]
+  Parameters: {"commit"=>"Update", "track"=>{"title"=>"Wayward Child!"}, "authenticity_token"=>"Ph2fQbUetJARv9BXdLIP/legXo307fTtZIpDDhlw1Ck=", "id"=>"2"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-06-10 01:01:02', "title" = 'Wayward Child!' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/tracks/2
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/tracks/2]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:01:02) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/tracks/2]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:03:22) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/tracks/show.html.erb:
+1: <h1>Show Track</h1>
+2: 
+3: <p>
+4:   Track: <%= @track.id %>, title: <%= @track.title %>
+5: </p>
+6:   
+
+    app/views/tracks/show.html.erb:4
+
+Rendered rescues/_trace (69.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:04:18) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #4 of app/views/tracks/show.html.erb:
+1: <h1>Show Track</h1>
+2: 
+3: <p>
+4:   Track: title: <%= @track.title %>
+5: </p>
+6:   
+
+    app/views/tracks/show.html.erb:4
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:04:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering tracks/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #4 of app/views/tracks/show.html.erb:
+1: <h1>Show Track</h1>
+2: 
+3: <p>
+4:   Track: title: <%= @track.title %>
+5: </p>
+6:   
+
+    app/views/tracks/show.html.erb:4
+
+Rendered rescues/_trace (70.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#update (for 127.0.0.1 at 2010-06-09 21:04:40) [PUT]
+  Parameters: {"commit"=>"Update", "track"=>{"title"=>"Wayward Child!"}, "authenticity_token"=>"Ph2fQbUetJARv9BXdLIP/legXo307fTtZIpDDhlw1Ck=", "id"=>"2"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+Redirected to http://0.0.0.0:3000/tracks/2
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/tracks/2]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:04:40) [GET]
+  Parameters: {"id"=>"2"}
+Rendering tracks/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #4 of app/views/tracks/show.html.erb:
+1: <h1>Show Track</h1>
+2: 
+3: <p>
+4:   Track: title: <%= @track.title %>
+5: </p>
+6:   
+
+    app/views/tracks/show.html.erb:4
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:04:56) [GET]
+  Parameters: {"id"=>"1"}
+Rendering tracks/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #4 of app/views/tracks/show.html.erb:
+1: <h1>Show Track</h1>
+2: 
+3: <p>
+4:   Track: title: <%= @track.title %>
+5: </p>
+6:   
+
+    app/views/tracks/show.html.erb:4
+
+Rendered rescues/_trace (27.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:05:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 1) [0m
+Rendering tracks/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/tracks/1]
+
+
+Processing TracksController#show (for 127.0.0.1 at 2010-06-09 21:05:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+Rendering tracks/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/tracks/2]
+
+
+Processing TracksController#index (for 127.0.0.1 at 2010-06-09 21:05:28) [GET]
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" [0m
+Rendering tracks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/tracks]

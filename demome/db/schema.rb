@@ -9,21 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100521212621) do
+ActiveRecord::Schema.define(:version => 20100609232620) do
 
-  create_table "address_books", :force => true do |t|
-    t.string   "name"
+  create_table "tracks", :force => true do |t|
+    t.string   "title"
+    t.integer  "genre_id"
+    t.integer  "artist_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "cards", :force => true do |t|
-    t.string   "name"
-    t.string   "telephone"
-    t.boolean  "friend"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "addressbook_id"
   end
 
 end
