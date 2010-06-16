@@ -1,6 +1,7 @@
 === HOMEWORK FOR STATE and AUTHENTICATION === 
-* Read and do examples in Chapter 27 of Agile Web with Rails
 * Read and follow along: http://railscasts.com/episodes/21-super-simple-authentication
 * Read and follow along: http://railscasts.com/episodes/82-http-basic-authentication
 * Read and follow along: http://railscasts.com/episodes/160-authlogic
 * Add a login feature to your web application
+* Hand in the files you needed to create/modify to add authentication and
+  add a comment in each file explaining the purpose of that file in the authentication process
