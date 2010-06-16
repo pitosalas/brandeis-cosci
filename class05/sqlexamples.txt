@@ -1,7 +1,8 @@
 ' create a new database called brandeis, with a table called students
 
 $ sqlite3 brandeis
-
+.tables
+.database
 create table students(name string, phone integer, major string);
 
 insert into students values ("john smith", "666-1212", "computers");
@@ -9,7 +10,7 @@ insert into students values ("karla smith", "234-1212", "computers");
 insert into students values ("karla jones", "666-4444", "history");
 
 select * from students;
-
+.tables
 .mode line
 select * from sqlite_master;
 .tables

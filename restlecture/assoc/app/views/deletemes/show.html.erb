@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @deleteme.name %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%=h @deleteme.home_phone %>
+</p>
+
+<p>
+  <b>Office phone:</b>
+  <%=h @deleteme.office_phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_deleteme_path(@deleteme) %> |
+<%= link_to 'Back', deletemes_path %>

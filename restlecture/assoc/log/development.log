@@ -1,0 +1,554 @@
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCards (20100614193211)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "home_phone" integer, "office_phone" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100614193211')[0m
+Migrating to CreatePhones (20100614193245)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "phones" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100614193245')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("cards")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("phones")[0m
+
+
+Processing ApplicationController#index to xml (for 127.0.0.1 at 2010-06-15 16:39:54) [GET]
+
+SyntaxError (/mydev/brandeis/assoc/app/controllers/cards_controller.rb:84: syntax error, unexpected kEND, expecting $end):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index to xml (for 127.0.0.1 at 2010-06-15 16:40:51) [GET]
+
+LoadError (Expected /mydev/brandeis/assoc/app/controllers/cards_controller.rb to define CardsController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index to xml (for 127.0.0.1 at 2010-06-15 16:41:17) [GET]
+
+NoMethodError (undefined method `call' for CardsController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 16:41:36) [GET]
+
+ActionController::RoutingError (No route matches "/card.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 16:41:43) [GET]
+
+ActionController::RoutingError (No route matches "/phone/1.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#show to xml (for 127.0.0.1 at 2010-06-15 16:41:46) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `call' for PhonesController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show to xml (for 127.0.0.1 at 2010-06-15 16:42:16) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `call' for PhonesController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 16:42:56) [GET]
+
+NoMethodError (undefined method `call' for PhonesController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show to xml (for 127.0.0.1 at 2010-06-15 16:43:16) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `call' for PhonesController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-06-15 16:43:20) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `call' for PhonesController:Class):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhonesController#show (for 127.0.0.1 at 2010-06-15 16:43:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template phones/show.erb in view path app/views):
+  app/controllers/phones_controller.rb:19:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhonesController#show to xml (for 127.0.0.1 at 2010-06-15 16:43:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPhone Load (0.2ms)[0m   [0mSELECT * FROM "phones" WHERE ("phones"."id" = 1) [0m
+Completed in 125ms (View: 119, DB: 0) | 200 OK [http://localhost/phones/1.xml]
+
+
+Processing CardsController#show to xml (for 127.0.0.1 at 2010-06-15 18:24:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Completed in 225ms (View: 171, DB: 0) | 200 OK [http://localhost/cards/1.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 18:25:05) [GET]
+
+ActionController::RoutingError (No route matches "/card/1.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 18:26:44) [GET]
+
+ActionController::RoutingError (No route matches "/card/1.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 18:26:53) [GET]
+
+ActionController::RoutingError (No route matches "/card/1.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 18:27:20) [GET]
+
+ActionController::RoutingError (No route matches "/card/1.xml" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CardsController#show (for 127.0.0.1 at 2010-06-15 19:56:55) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;35;1mCard Load (0.3ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template cards/show.erb in view path app/views):
+  app/controllers/cards_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CardsController#show to xml (for 127.0.0.1 at 2010-06-15 19:57:27) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/cards/1.xml?name=hello]
+
+
+Processing CardsController#show to xml (for 127.0.0.1 at 2010-06-15 19:57:33) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;35;1mCard Load (0.2ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/cards/1.xml?name=hello]
+
+
+Processing CardsController#store (for 127.0.0.1 at 2010-06-15 20:09:56) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+
+ActionController::UnknownAction (No action responded to store. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CardsController#store (for 127.0.0.1 at 2010-06-15 20:11:02) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Redirected to http://localhost:3000/cards/1
+Completed in 49ms (DB: 0) | 302 Found [http://localhost/cards/1/store?name=hello]
+
+
+Processing CardsController#show (for 127.0.0.1 at 2010-06-15 20:11:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCard Load (0.2ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template cards/show.erb in view path app/views):
+  app/controllers/cards_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CardsController#store (for 127.0.0.1 at 2010-06-15 20:12:35) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Redirected to http://localhost:3000/cards/1
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/cards/1/store?name=hello]
+
+
+Processing CardsController#show (for 127.0.0.1 at 2010-06-15 20:12:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCard Load (0.3ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template cards/show.erb in view path app/views):
+  app/controllers/cards_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CardsController#store (for 127.0.0.1 at 2010-06-15 20:12:41) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Redirected to http://localhost:3000/cards/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/cards/1/store?name=hello]
+
+
+Processing CardsController#show (for 127.0.0.1 at 2010-06-15 20:12:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCard Load (0.3ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template cards/show.erb in view path app/views):
+  app/controllers/cards_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CardsController#store (for 127.0.0.1 at 2010-06-15 20:15:14) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Redirected to http://localhost:3000/cards/1
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/cards/1/store?name=hello]
+
+
+Processing CardsController#show (for 127.0.0.1 at 2010-06-15 20:15:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCard Load (0.3ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template cards/show.erb in view path app/views):
+  app/controllers/cards_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:15:54) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/cards/1/store.xml?name=hello]
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:16:58) [GET]
+  Parameters: {"name"=>"hello", "id"=>"1"}
+  [4;35;1mCard Load (0.3ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/cards/1/store.xml?name=hello]
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:17:26) [GET]
+  Parameters: {"id"=>"1", "card"=>{"name"=>"hello"}}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 1) [0m
+  [4;35;1mCard Update (27.7ms)[0m   [0mUPDATE "cards" SET "updated_at" = '2010-06-16 00:17:26', "name" = 'hello' WHERE "id" = 1[0m
+Completed in 42ms (View: 1, DB: 28) | 200 OK [http://localhost/cards/1/store.xml?card[name]=hello]
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:23:37) [GET]
+  Parameters: {"id"=>"2", "card"=>{"name"=>"pito salas"}}
+  [4;36;1mCard Load (0.3ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 2) [0m
+  [4;35;1mCard Update (0.4ms)[0m   [0mUPDATE "cards" SET "updated_at" = '2010-06-16 00:23:37', "name" = 'pito salas' WHERE "id" = 2[0m
+Completed in 25ms (View: 1, DB: 1) | 200 OK [http://localhost/cards/2/store.xml?card[name]=pito%20salas]
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:24:41) [GET]
+  Parameters: {"id"=>"5", "card"=>{"name"=>"pito salas"}}
+  [4;36;1mCard Load (0.2ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 5) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Card with ID=5):
+  app/controllers/cards_controller.rb:75:in `store'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:25:17) [GET]
+  Parameters: {"id"=>"5", "card"=>{"name"=>"pito salas"}}
+  [4;35;1mCard Load (0.2ms)[0m   [0mSELECT * FROM "cards" WHERE ("cards"."id" = 5) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Card with ID=5):
+  app/controllers/cards_controller.rb:75:in `store'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CardsController#store to xml (for 127.0.0.1 at 2010-06-15 20:27:11) [GET]
+  Parameters: {"id"=>"5", "card"=>{"name"=>"pito salas"}}
+  [4;36;1mCard Load (0.2ms)[0m   [0;1mSELECT * FROM "cards" WHERE ("cards"."id" = 5) [0m
+  [4;35;1mCard Create (32.4ms)[0m   [0mINSERT INTO "cards" ("name", "created_at", "office_phone", "updated_at", "home_phone") VALUES('pito salas', '2010-06-16 00:27:11', NULL, '2010-06-16 00:27:11', NULL)[0m
+Completed in 60ms (View: 1, DB: 33) | 200 OK [http://localhost/cards/5/store.xml?card[name]=pito%20salas]

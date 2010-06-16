@@ -1,0 +1,24 @@
+<h1>Editing deleteme</h1>
+
+<% form_for(@deleteme) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :home_phone %><br />
+    <%= f.text_field :home_phone %>
+  </p>
+  <p>
+    <%= f.label :office_phone %><br />
+    <%= f.text_field :office_phone %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @deleteme %> |
+<%= link_to 'Back', deletemes_path %>
