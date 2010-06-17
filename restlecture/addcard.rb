@@ -6,7 +6,7 @@ class CardUtil
   base_uri 'localhost:3000'
   
   def update_card(cardnum, text)
-    options = {:query => {:card => {:name => text}}}
+    options = {:query => {:card => {:name => text, :home_phone => "1234"}}}
     self.class.get("/cards/#{cardnum}/store.xml", options)
   end
 end
