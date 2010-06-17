@@ -1,6 +1,14 @@
+<!-- 
+  This demo is a modification of the demo from the w3schools site 
+     http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_first
+-->
 <script type="text/javascript">
+
 function loadXMLDoc()
 {
+	
+// first we define an XMLHttpRequest object to communicate with the Rails server
+// we need a different constructor to handle Microsoft ....
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
@@ -9,13 +17,18 @@ else
   {// code for IE6, IE5
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   }
+
+// next we register a callback function with the XMLHttpRequest object
+// which will get called when its state changes (e.g. when a response arrives!)
 xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
+    {// when a response arrives, store the data in the div with id "myDiv" in the body of this page ..
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
+
+// finally, we send a GET request to the Rail server that sends *this* page, but asking for the "Date" service
 xmlhttp.open("GET","/theDate",true);
 xmlhttp.send();
 }
