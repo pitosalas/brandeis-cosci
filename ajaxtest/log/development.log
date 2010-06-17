@@ -1,0 +1,70 @@
+
+
+Processing ApplicationController#theDate (for 127.0.0.1 at 2010-06-16 23:28:30) [GET]
+
+LoadError (Expected /Users/tim/Research/Teaching/Sum10/JBS/projects/ajaxtest/app/controllers/ajax_controller.rb to define AjaxController):
+  
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#theDate (for 127.0.0.1 at 2010-06-16 23:30:23) [GET]
+
+LoadError (Expected /Users/tim/Research/Teaching/Sum10/JBS/projects/ajaxtest/app/controllers/ajaxdemos_controller.rb to define AjaxdemosController):
+  
+
+Rendered rescues/_trace (25.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:14) [GET]
+Rendering ajaxdemos/theDate
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#index (for 127.0.0.1 at 2010-06-16 23:31:20) [GET]
+Rendering ajaxdemos/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/ajaxdemos]
+
+
+Processing AjaxdemosController#jspage (for 127.0.0.1 at 2010-06-16 23:31:24) [GET]
+Rendering ajaxdemos/jspage
+Completed in 76ms (View: 74, DB: 0) | 200 OK [http://localhost/ajaxdemos/jspage]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:28) [GET]
+Rendering ajaxdemos/theDate
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:30) [GET]
+Rendering ajaxdemos/theDate
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:30) [GET]
+Rendering ajaxdemos/theDate
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:31) [GET]
+Rendering ajaxdemos/theDate
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:32) [GET]
+Rendering ajaxdemos/theDate
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:35) [GET]
+Rendering ajaxdemos/theDate
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
+
+
+Processing AjaxdemosController#theDate (for 127.0.0.1 at 2010-06-16 23:31:41) [GET]
+Rendering ajaxdemos/theDate
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/theDate]
