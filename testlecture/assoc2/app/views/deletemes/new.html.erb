@@ -1,0 +1,23 @@
+<h1>New deleteme</h1>
+
+<% form_for(@deleteme) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :home_phone %><br />
+    <%= f.text_field :home_phone %>
+  </p>
+  <p>
+    <%= f.label :office_phone %><br />
+    <%= f.text_field :office_phone %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', deletemes_path %>

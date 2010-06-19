@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+valid_area_code:
+  number: 781-444-1234
+
+valid_area_code_2:
+  number: 617-231-1234
+  
+invalid_area_code:
+  number: 000-000-0000

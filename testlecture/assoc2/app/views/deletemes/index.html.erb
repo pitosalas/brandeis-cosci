@@ -1,0 +1,24 @@
+<h1>Listing deletemes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Home phone</th>
+    <th>Office phone</th>
+  </tr>
+
+<% @deletemes.each do |deleteme| %>
+  <tr>
+    <td><%=h deleteme.name %></td>
+    <td><%=h deleteme.home_phone %></td>
+    <td><%=h deleteme.office_phone %></td>
+    <td><%= link_to 'Show', deleteme %></td>
+    <td><%= link_to 'Edit', edit_deleteme_path(deleteme) %></td>
+    <td><%= link_to 'Destroy', deleteme, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New deleteme', new_deleteme_path %>

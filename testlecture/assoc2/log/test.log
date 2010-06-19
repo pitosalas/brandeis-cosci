@@ -1,0 +1,35 @@
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 770850601) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 770850601) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 770850601) [0m
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 945710476) [0m
+  [4;35;1mPhone Load (0.3ms)[0m   [0mSELECT * FROM "phones" WHERE ("phones"."id" = 516126762) [0m
+  [4;36;1mPhone Load (0.3ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 945710476) [0m
+  [4;35;1mPhone Load (0.3ms)[0m   [0mSELECT * FROM "phones" WHERE ("phones"."id" = 945710476) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
