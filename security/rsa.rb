@@ -231,10 +231,10 @@ puts @c
 puts "..."
 
 def encode s
- rsa_encoder k[0],k[1],s
+ rsa_encoder @k[0],@k[1],s
 end
 
 def decode a
- rsa_decoder k[2],a
+ rsa_decoder @k[2],a
 end
 
