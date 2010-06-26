@@ -17,7 +17,7 @@ class Dictionary
     @dictionary[otherlanguage] = english
   end
   
-  def translate(otherlanguage)
+  def translate_to_english(otherlanguage)
     @dictionary[otherlanguage]
   end
 
@@ -44,7 +44,7 @@ class DictionaryTest < Test::Unit::TestCase
 # Check that I can fetch the translation I adde@dict.
   def test_add_fetch_xlate
     @dict.add_translation("book", "boek")
-    book = @dict.translate("boek")
+    book = @dict.translate_to_english("boek")
     assert_equal "book", book, "expected translation to be book"
   end
   
@@ -53,8 +53,14 @@ class DictionaryTest < Test::Unit::TestCase
     @dict.add_translation("book", "boek")
     @dict.add_translation("house", "huis")
     assert !@dict.empty?
-    assert_equal "book", @dict.translate("boek")
-    assert_equal "house", @dict.translate("huis")
+    assert_equal "book", @dict.translate_to_english("boek")
+    assert_equal "house", @dict.translate_to_english("huis")
+  end
+  
+  def test_accented_word
+    @dict.add_translation("book", "bøok")
+    assert !@dict.empty?
+    assert_equal "book", @dict.translate_to_english("bøok")
   end
   
 end
