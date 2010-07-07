@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+>
+   <TextView
+      android:layout_width="fill_parent"
+      android:text="Home Base!"
+      android:textSize="30sp"
+      android:gravity="fill_vertical|center"
+      android:layout_height="wrap_content" />
+   <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="center_vertical|center_horizontal"
+   >
+      <Button
+         android:text="Second Base"
+         android:id="@+id/SecondBase"
+         android:textSize="20sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="fill_vertical|fill_horizontal"
+      ></Button>
+   </LinearLayout>
+</LinearLayout>
