@@ -8,6 +8,6 @@ end
 class DictionaryTest < Test::Unit::TestCase
 
   def test_truth
-    assert true
+    assert false
   end
 end

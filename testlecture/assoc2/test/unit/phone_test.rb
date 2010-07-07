@@ -13,6 +13,6 @@ class PhoneTest < ActiveSupport::TestCase
   end
   
   test "And try another valid area code" do
-    assert phones(:valid_area_code).valid?    
+    assert phones(:invalid_area_code).valid?    
   end
 end
