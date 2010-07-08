@@ -52,3 +52,5 @@
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+  [4;36;1mPhone Load (0.5ms)[0m   [0;1mSELECT * FROM "phones" WHERE ("phones"."id" = 945710476) [0m
+  [4;35;1mPhone Load (0.6ms)[0m   [0mSELECT * FROM "phones" WHERE ("phones"."id" = 770850601) [0m

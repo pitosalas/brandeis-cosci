@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   android:id="@+id/widget31"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   xmlns:android="http://schemas.android.com/apk/res/android"
+>
+   <TextView
+      android:id="@+id/widget32"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="30sp"
+      android:layout_weight="1"
+      android:padding="20px"
+      android:text="Second Base"
+   >
+   </TextView>
+   <LinearLayout
+      android:id="@+id/widget33"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_weight="1"
+      android:padding="2px"
+      android:background="@color/color2"
+   >
+      <Button
+         android:id="@+id/third_to_home"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Home Plate"
+      >
+      </Button>
+      <Button
+         android:id="@+id/third_to_second"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Second Base"
+      >
+      </Button>
+      <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:padding="10px"
+         android:background="@color/color1"
+         android:textColor="@color/black"
+         android:id="@+id/secLog"
+      >
+      </TextView>
+   </LinearLayout>
+</LinearLayout>
