@@ -23,7 +23,7 @@ public class ActiveSecond extends Activity implements OnClickListener {
     
     public void onClick(View v) {
         Log.d(TAG, "clicked on button");
-        Intent intent = new Intent(ActiveSecond.this, ActiveHome.class);
+        Intent intent = new Intent(ActiveSecond.this, ActiveFirst.class);
         startActivity(intent);
     } 
 }
